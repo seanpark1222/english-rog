@@ -1,0 +1,3430 @@
+<!DOCTYPE html>
+<html lang="ko"><head><script data-bard-client-injected="true">(function(firebaseConfig, initialAuthToken, appId) {
+        window.__firebase_config = firebaseConfig;
+        window.__initial_auth_token = initialAuthToken;
+        window.__app_id = appId;
+            })("\n{\n  \"apiKey\": \"AIzaSyCqyCcs2R2e7AegGjvFAwG98wlamtbHvZY\",\n  \"authDomain\": \"bard-frontend.firebaseapp.com\",\n  \"projectId\": \"bard-frontend\",\n  \"storageBucket\": \"bard-frontend.firebasestorage.app\",\n  \"messagingSenderId\": \"175205271074\",\n  \"appId\": \"1:175205271074:web:2b7bd4d34d33bf38e6ec7b\"\n}\n","eyJhbGciOiJSUzI1NiIsImtpZCI6IjExNjRiNzdiNDMzZDdhMDAyMWI4NjE4YjhjYTU3ZTMyZGI5MWUxMTMiLCJ0eXAiOiJKV1QifQ.eyJzdWIiOiJmaXJlYmFzZS1hZG1pbnNkay1mYnN2Y0BiYXJkLWZyb250ZW5kLmlhbS5nc2VydmljZWFjY291bnQuY29tIiwiYXVkIjoiaHR0cHM6Ly9pZGVudGl0eXRvb2xraXQuZ29vZ2xlYXBpcy5jb20vZ29vZ2xlLmlkZW50aXR5LmlkZW50aXR5dG9vbGtpdC52MS5JZGVudGl0eVRvb2xraXQiLCJ1aWQiOiIxNTI4MTE4MTA0NzQ5ODI1Mjk1NCIsImlzcyI6ImZpcmViYXNlLWFkbWluc2RrLWZic3ZjQGJhcmQtZnJvbnRlbmQuaWFtLmdzZXJ2aWNlYWNjb3VudC5jb20iLCJjbGFpbXMiOnsiYXBwSWQiOiJjX2Y4MzA3NmEwMGFjMTI2YzdfZW5nbGlzaF9tYXN0ZXIuaHRtbC0yMTkifSwiZXhwIjoxNzk1NDIyMjkxLCJpYXQiOjE3OTU0MTg2OTEsImFsZyI6IlJTMjU2In0.XkW9u3X-cJBbWD6r_Sg7GfCH-5uzaBHBPPYLMOG9eA80q30TR_t2LQlmHzCaOSNQ2stLKubqmJE2ISsHlsSitctNAKYMGrSbyQTb7nuIAu4YGwd9rtsc6CDdRJjYa0TVzYnCrsiDuG95E1OrlSyM-4ZbTwRodLaDNB3IemF0wgEWKsDGjXTJRi0HBHnr4daKCpziZr5Y94QAVzzbCXtzelu6xw9BZ5L3KQBYkDfNOAvtoCULDRBY2UGk7V5PCYoHxUCaHmPcDcskiWa96v5R6mEe1_jvcmvMHuCy0OwlC3fwqOTOL9fKCOt7NagdtQjURE4w-HHuDEXCGCll5injZg","c_f83076a00ac126c7_english_master.html-219")</script><script data-bard-client-injected="true">
+  document.addEventListener('input', (event) => {
+    if (event.target && (event.target.isContentEditable || event.target.hasAttribute('contenteditable'))) {
+      const clonedDoc = document.cloneNode(true);
+      const injectedScripts = clonedDoc.querySelectorAll('[data-bard-client-injected="true"]');
+      injectedScripts.forEach(el => el.remove());
+      window.parent.postMessage({
+        type: 'inlineEdit',
+        html: '<!DOCTYPE html>\n' + clonedDoc.documentElement.outerHTML
+      }, '*');
+    }
+  });
+</script><script data-bard-client-injected="true">(function(){'use strict';window.addEventListener("message",a=>{a.data&&a.data.type==="SUPPLEMENTAL_DATA_UPDATE"&&window.dispatchEvent(new CustomEvent("supplementaldataupdate",{detail:a.data.data}))});}).call(this);
+</script><script data-bard-client-injected="true">(function(){'use strict';var k=typeof Object.defineProperties=="function"?Object.defineProperty:function(a,b,d){if(a==Array.prototype||a==Object.prototype)return a;a[b]=d.value;return a};function m(a){a=["object"==typeof globalThis&&globalThis,a,"object"==typeof window&&window,"object"==typeof self&&self,"object"==typeof global&&global];for(var b=0;b<a.length;++b){var d=a[b];if(d&&d.Math==Math)return d}throw Error("Cannot find global object");}var q=m(this);
+function r(a,b){if(b)a:{var d=q;a=a.split(".");for(var c=0;c<a.length-1;c++){var e=a[c];if(!(e in d))break a;d=d[e]}a=a[a.length-1];c=d[a];b=b(c);b!=c&&b!=null&&k(d,a,{configurable:!0,writable:!0,value:b})}}function t(a){function b(c){return a.next(c)}function d(c){return a.throw(c)}return new Promise(function(c,e){function f(g){g.done?c(g.value):Promise.resolve(g.value).then(b,d).then(f,e)}f(a.next())})}function u(a){return t(a())}
+r("Object.values",function(a){return a?a:function(b){var d=[],c;for(c in b)Object.prototype.hasOwnProperty.call(b,c)&&d.push(b[c]);return d}});r("Array.prototype.includes",function(a){return a?a:function(b,d){var c=this;c instanceof String&&(c=String(c));var e=c.length;d=d||0;for(d<0&&(d=Math.max(d+e,0));d<e;d++){var f=c[d];if(f===b||Object.is(f,b))return!0}return!1}});/*
+
+ MIT License
+
+ Copyright (c) 2017-2023 W.Y.
+
+ Permission is hereby granted, free of charge, to any person obtaining a copy
+ of this software and associated documentation files (the "Software"), to deal
+ in the Software without restriction, including without limitation the rights
+ to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ copies of the Software, and to permit persons to whom the Software is
+ furnished to do so, subject to the following conditions:
+
+ The above copyright notice and this permission notice shall be included in
+ all copies or substantial portions of the Software.
+
+ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+ SOFTWARE.
+
+*/
+function v(a,b){var d=a.style;b.backgroundColor&&(d.backgroundColor=b.backgroundColor);b.width&&(d.width=`${b.width}px`);b.height&&(d.height=`${b.height}px`);var c=b.style;c!=null&&Object.keys(c).forEach(e=>{d[e]=c[e]})};var aa=(()=>{var a=0;return()=>{a+=1;return`u${`0000${(Math.random()*1679616<<0).toString(36)}`.slice(-4)}${a}`}})();function w(a){var b=[];for(let d=0,c=a.length;d<c;d++)b.push(a[d]);return b}let y=null;function z(a={}){return y?y:a.u?y=a.u:y=w(window.getComputedStyle(document.documentElement))}function A(a,b){return(a=(a.ownerDocument.defaultView||window).getComputedStyle(a).getPropertyValue(b))?parseFloat(a.replace("px","")):0}
+function B(a,b={}){var d;if(!(d=b.width)){d=A(a,"border-left-width");var c=A(a,"border-right-width");d=a.clientWidth+d+c}(b=b.height)||(b=A(a,"border-top-width"),c=A(a,"border-bottom-width"),b=a.clientHeight+b+c);return{width:d,height:b}}function C(a){return new Promise((b,d)=>{var c=new Image;c.onload=()=>{c.decode().then(()=>{requestAnimationFrame(()=>b(c))})};c.onerror=d;c.crossOrigin="anonymous";c.decoding="async";c.src=a})}
+function ba(a){return u(function*(){return Promise.resolve().then(()=>(new XMLSerializer).serializeToString(a)).then(encodeURIComponent).then(b=>`data:image/svg+xml;charset=utf-8,${b}`)})}
+function ca(a,b,d){return u(function*(){var c=document.createElementNS("http://www.w3.org/2000/svg","svg"),e=document.createElementNS("http://www.w3.org/2000/svg","foreignObject");c.setAttribute("width",`${b}`);c.setAttribute("height",`${d}`);c.setAttribute("viewBox",`0 0 ${b} ${d}`);e.setAttribute("width","100%");e.setAttribute("height","100%");e.setAttribute("x","0");e.setAttribute("y","0");e.setAttribute("externalResourcesRequired","true");c.appendChild(e);e.appendChild(a);return ba(c)})}
+var D=(a,b)=>{if(a instanceof b)return!0;a=Object.getPrototypeOf(a);return a===null?!1:a.constructor.name===b.name||D(a,b)};function da(a,b){return z(b).map(d=>{var c=a.getPropertyValue(d),e=a.getPropertyPriority(d);return`${d}: ${c}${e?" !important":""};`}).join(" ")}
+function E(a,b,d,c){a=window.getComputedStyle(a,d);var e=a.getPropertyValue("content");if(e!==""&&e!=="none"){var f=aa();try{b.className=`${b.className} ${f}`}catch(h){return}e=document.createElement("style");var g=e.appendChild;d=`.${f}:${d}`;a.cssText?(c=a.getPropertyValue("content"),c=`${a.cssText} content: '${c.replace(/'|"/g,"")}';`):c=da(a,c);g.call(e,document.createTextNode(`${d}{${c}}`));b.appendChild(e)}};function F(a){return a.search(/^(data:)/)!==-1}function G(a,b,d){return u(function*(){var c=yield fetch(a,b);if(c.status===404)throw Error(`Resource "${c.url}" not found`);var e=yield c.blob();return new Promise((f,g)=>{var h=new FileReader;h.onerror=g;h.onloadend=()=>{try{f(d({v:c,result:h.result}))}catch(l){g(l)}};h.readAsDataURL(e)})})}const H={};function ea(a,b,d){var c=a.replace(/\?.*/,"");d&&(c=a);/ttf|otf|eot|woff2?/i.test(c)&&(c=c.replace(/.*\//,""));return b?`[${b}]${c}`:c}
+function I(a,b,d){return u(function*(){var c=ea(a,b,d.F);if(H[c]!=null)return H[c];d.B&&(a+=(/\?/.test(a)?"&":"?")+(new Date).getTime());try{let f=yield G(a,d.l,({v:g,result:h})=>{b||(b=g.headers.get("Content-Type")||"");return h.split(/,/)[1]});var e=`data:${b};base64,${f}`}catch(f){e=d.o||""}return H[c]=e})};const J={R:"application/font-woff",S:"application/font-woff",O:"application/font-truetype",C:"application/vnd.ms-fontobject",J:"image/png",H:"image/jpeg",G:"image/jpeg",D:"image/gif",N:"image/tiff",M:"image/svg+xml",P:"image/webp"};function K(a){return(a=/\.([^./]*?)$/g.exec(a))?a[1]:""};function fa(a){return u(function*(){var b=a.toDataURL();return b==="data:,"?a.cloneNode(!1):C(b)})}function ha(a,b){return u(function*(){if(a.currentSrc){var d=document.createElement("canvas");let c=d.getContext("2d");d.width=a.clientWidth;d.height=a.clientHeight;c==null||c.drawImage(a,0,0,d.width,d.height);d=d.toDataURL();return C(d)}d=a.poster;d=yield I(d,J[K(d).toLowerCase()]||"",b);return C(d)})}
+function ia(a,b){return u(function*(){try{let d;if(a==null?0:(d=a.contentDocument)==null?0:d.body)return yield L(a.contentDocument.body,b,!0)}catch(d){}return a.cloneNode(!1)})}function ja(a,b){return u(function*(){return D(a,HTMLCanvasElement)?fa(a):D(a,HTMLVideoElement)?ha(a,b):D(a,HTMLIFrameElement)?ia(a,b):a.cloneNode(a.tagName!=null&&a.tagName.toUpperCase()==="SVG")})}
+function ka(a,b,d){return u(function*(){if(b.tagName!=null&&b.tagName.toUpperCase()==="SVG")return b;var c=[];if(a.tagName!=null&&a.tagName.toUpperCase()==="SLOT"&&a.assignedNodes)c=w(a.assignedNodes());else{let e;if(D(a,HTMLIFrameElement)&&((e=a.contentDocument)==null?0:e.body))c=w(a.contentDocument.body.childNodes);else{let f;c=w(((f=a.shadowRoot)!=null?f:a).childNodes)}}if(c.length===0||D(a,HTMLVideoElement))return b;yield c.reduce((e,f)=>e.then(()=>L(f,d)).then(g=>{g&&b.appendChild(g)}),Promise.resolve());
+return b})}function la(a,b,d){var c=b.style;if(c){var e=window.getComputedStyle(a);e.cssText?(c.cssText=e.cssText,c.transformOrigin=e.transformOrigin):z(d).forEach(f=>{var g=e.getPropertyValue(f);f==="font-size"&&g.endsWith("px")&&(g=`${Math.floor(parseFloat(g.substring(0,g.length-2)))-.1}px`);D(a,HTMLIFrameElement)&&f==="display"&&g==="inline"&&(g="block");f==="d"&&b.getAttribute("d")&&(g=`path(${b.getAttribute("d")})`);c.setProperty(f,g,e.getPropertyPriority(f))})}}
+function ma(a,b){D(a,HTMLSelectElement)&&(b=Array.from(b.children).find(d=>a.value===d.getAttribute("value")))&&b.setAttribute("selected","")}
+function na(a,b){return u(function*(){var d=a.querySelectorAll?a.querySelectorAll("use"):[];if(d.length===0)return a;var c={};for(var e=0;e<d.length;e++){var f=d[e].getAttribute("xlink:href");if(f){let g=document.querySelector(f);a.querySelector(f)||!g||c[f]||(c[f]=yield L(g,b,!0))}}d=Object.values(c);if(d.length){c=document.createElementNS("http://www.w3.org/1999/xhtml","svg");c.setAttribute("xmlns","http://www.w3.org/1999/xhtml");c.style.position="absolute";c.style.width="0";c.style.height="0";
+c.style.overflow="hidden";c.style.display="none";e=document.createElementNS("http://www.w3.org/1999/xhtml","defs");c.appendChild(e);for(f=0;f<d.length;f++)e.appendChild(d[f]);a.appendChild(c)}return a})}
+function L(a,b,d){return u(function*(){return d||!b.filter||b.filter(a)?Promise.resolve(a).then(c=>ja(c,b)).then(c=>ka(a,c,b)).then(c=>{D(c,Element)&&(la(a,c,b),E(a,c,":before",b),E(a,c,":after",b),D(a,HTMLTextAreaElement)&&(c.textContent=a.value),D(a,HTMLInputElement)&&c.setAttribute("value",a.value),ma(a,c));return c}).then(c=>na(c,b)):null})};const M=/url\((['"]?)([^'"]+?)\1\)/g,oa=/url\([^)]+\)\s*format\((["']?)([^"']+)\1\)/g,pa=/src:\s*(?:url\([^)]+\)\s*format\([^)]+\)[,;]\s*)+/g;function qa(a){var b=[];a.replace(M,(d,c,e)=>{b.push(e);return d});return b.filter(d=>!F(d))}
+function ra(a,b,d,c){return u(function*(){try{let e=d?(new URL(b,d||void 0)).toString():b,f;f=yield I(e,J[K(b).toLowerCase()]||"",c);return a.replace(new RegExp(`(url\\(['"]?)(${b.replace(/([.*+?^${}()|\[\]\/\\])/g,"\\$1")})(['"]?\\))`,"g"),`$1${f}$3`)}catch(e){}return a})}function sa(a,{K:b}){return b?a.replace(pa,d=>{for(;;){let [c,,e]=oa.exec(d)||[];if(!e)return"";if(e===b)return`src: ${c};`}}):a}
+function N(a,b,d){return u(function*(){if(a.search(M)===-1)return a;var c=sa(a,d);return qa(c).reduce((e,f)=>e.then(g=>ra(g,f,b,d)),Promise.resolve(c))})};function O(a,b,d){return u(function*(){var c,e=(c=b.style)==null?void 0:c.getPropertyValue(a);return e?(c=yield N(e,null,d),b.style.setProperty(a,c,b.style.getPropertyPriority(a)),!0):!1})}function ta(a,b){return u(function*(){(yield O("background",a,b))||(yield O("background-image",a,b));(yield O("mask",a,b))||(yield O("-webkit-mask",a,b))||(yield O("mask-image",a,b))||(yield O("-webkit-mask-image",a,b))})}
+function ua(a,b){return u(function*(){var d=D(a,HTMLImageElement);if(d&&!F(a.src)||D(a,SVGImageElement)&&!F(a.href.baseVal)){var c=d?a.src:a.href.baseVal,e=yield I(c,J[K(c).toLowerCase()]||"",b);yield new Promise((f,g)=>{a.onload=f;a.onerror=b.h?(...h)=>{try{f(b.h(...h))}catch(l){g(l)}}:g;a.decode&&(a.decode=f);a.loading==="lazy"&&(a.loading="eager");d?(a.srcset="",a.src=e):a.href.baseVal=e})}})}
+function va(a,b){return u(function*(){var d=w(a.childNodes).map(c=>P(c,b));yield Promise.all(d).then(()=>a)})}function P(a,b){return u(function*(){D(a,Element)&&(yield ta(a,b),yield ua(a,b),yield va(a,b))})};const Q={};function R(a){return u(function*(){var b=Q[a];if(b!=null)return b;b=yield(yield fetch(a)).text();b={url:a,cssText:b};return Q[a]=b})}function S(a,b){return u(function*(){var d=a.cssText,c=/url\(["']?([^"')]+)["']?\)/g,e=(d.match(/url\([^)]+\)/g)||[]).map(f=>u(function*(){var g=f.replace(c,"$1");g.startsWith("https://")||(g=(new URL(g,a.url)).href);return G(g,b.l,({result:h})=>{d=d.replace(f,`url(${h})`);return[f,h]})}));return Promise.all(e).then(()=>d)})}
+function T(a){if(a==null)return[];var b=[];a=a.replace(/(\/\*[\s\S]*?\*\/)/gi,"");for(var d=RegExp("((@.*?keyframes [\\s\\S]*?){([\\s\\S]*?}\\s*?)})","gi");;){var c=d.exec(a);if(c===null)break;b.push(c[0])}a=a.replace(d,"");d=/@import[\s\S]*?url\([^)]*\)[\s\S]*?;/gi;for(c=RegExp("((\\s*?(?:\\/\\*[\\s\\S]*?\\*\\/)?\\s*?@media[\\s\\S]*?){([\\s\\S]*?)}\\s*?})|(([\\s\\S]*?){([\\s\\S]*?)})","gi");;){let e=d.exec(a);if(e===null)if(e=c.exec(a),e===null)break;else d.lastIndex=c.lastIndex;else c.lastIndex=
+d.lastIndex;b.push(e[0])}return b}
+function wa(a,b){return u(function*(){var d=[],c=[];a.forEach(e=>{if("cssRules"in e)try{w(e.cssRules||[]).forEach((f,g)=>{if(f.type===CSSRule.IMPORT_RULE){let h=g+1;f=R(f.href).then(l=>S(l,b)).then(l=>T(l).forEach(p=>{try{e.insertRule(p,p.startsWith("@import")?h+=1:e.cssRules.length)}catch(x){}})).catch(()=>{});c.push(f)}})}catch(f){let g=a.find(h=>h.href==null)||document.styleSheets[0];e.href!=null&&c.push(R(e.href).then(h=>S(h,b)).then(h=>T(h).forEach(l=>{g.insertRule(l,g.cssRules.length)})).catch(()=>
+{}))}});return Promise.all(c).then(()=>{a.forEach(e=>{if("cssRules"in e)try{w(e.cssRules||[]).forEach(f=>{d.push(f)})}catch(f){}});return d})})}function xa(a){return a.filter(b=>b.type===CSSRule.FONT_FACE_RULE).filter(b=>b.style.getPropertyValue("src").search(M)!==-1)}function ya(a,b){return u(function*(){if(a.ownerDocument==null)throw Error("Provided element is not within a Document");var d=yield wa(w(a.ownerDocument.styleSheets),b);return xa(d)})}
+function za(a){function b(c){(c.style.fontFamily||getComputedStyle(c).fontFamily).split(",").forEach(e=>{d.add(e.trim().replace(/["']/g,""))});Array.from(c.children).forEach(e=>{e instanceof HTMLElement&&b(e)})}var d=new Set;b(a);return d}function Aa(a,b){return u(function*(){var d=yield ya(a,b),c=za(a);return(yield Promise.all(d.filter(e=>c.has(e.style.fontFamily.trim().replace(/["']/g,""))).map(e=>N(e.cssText,e.parentStyleSheet?e.parentStyleSheet.href:null,b)))).join("\n")})}
+function Ba(a,b){return u(function*(){var d=b.m!=null?b.m:b.A?null:yield Aa(a,b);if(d){let c=document.createElement("style");c.appendChild(document.createTextNode(d));a.firstChild?a.insertBefore(c,a.firstChild):a.appendChild(c)}})};function Ca(a,b={}){return u(function*(){var {width:d,height:c}=B(a,b),e=yield L(a,b,!0);yield Ba(e,b);yield P(e,b);v(e,b);return yield ca(e,d,c)})}
+function Da(a,b={}){return u(function*(){var {width:d,height:c}=B(a,b),e=yield Ca(a,b);e=yield C(e);var f=document.createElement("canvas"),g=f.getContext("2d"),h=b.I||window.devicePixelRatio||1,l=b.j||d,p=b.i||c;f.width=l*h;f.height=p*h;!b.L&&(f.width>16384||f.height>16384)&&(f.width>16384&&f.height>16384?f.width>f.height?(f.height*=16384/f.width,f.width=16384):(f.width*=16384/f.height,f.height=16384):f.width>16384?(f.height*=16384/f.width,f.width=16384):(f.width*=16384/f.height,f.height=16384));
+f.style.width=`${l}`;f.style.height=`${p}`;b.backgroundColor&&(g.fillStyle=b.backgroundColor,g.fillRect(0,0,f.width,f.height));g.drawImage(e,0,0,f.width,f.height);return f})}function Ea(a,b={}){return u(function*(){return(yield Da(a,b)).toDataURL()})};const Fa=["gemini.google.com","corp.google.com","proxy.googlers.com"];function V(a){a=Number(a.replace(/px$/,""));return Number.isFinite(a)?a:0}function W(){return document.body.querySelectorAll('[class*="animate"]').length>0}function X(a,b){var d=document.createElement("canvas");d.width=a;d.height=b;return d.toDataURL("image/png")}const Y=X(1,1);
+function Z(a,b){return u(function*(){var d=Math.max(b?b.width:a.offsetWidth,1),c=Math.max(b?b.height:a.offsetHeight,1),e=HTMLCanvasElement.prototype.toDataURL;b&&(HTMLCanvasElement.prototype.toDataURL=function(f,g){var h;if(h=this.isConnected&&a.contains(this)){{let n=this.getBoundingClientRect();if(n.width===0||n.height===0)h=!1;else if(window.getComputedStyle(this).position==="fixed")h=n.bottom>0&&n.top<b.height&&n.right>0&&n.left<b.width;else{h=a.getBoundingClientRect();var l=n.top-h.top,p=n.left-
+h.left,x=n.right-h.left;h=n.bottom-h.top>b.scrollTop&&l<b.scrollTop+b.height&&x>b.scrollLeft&&p<b.scrollLeft+b.width}}h=!h}return h?"data:,":e.call(this,f,g)});try{let f=window.getComputedStyle(a),g=b?`${V(f.marginTop)-b.scrollTop}px`:void 0,h=b?`${V(f.marginLeft)-b.scrollLeft}px`:void 0,l=`${Math.max(a.offsetWidth,d)}px`,p,x=`${Math.max(a.offsetHeight,c+((p=b==null?void 0:b.scrollTop)!=null?p:0))}px`;return yield Ea(a,Object.assign({},{width:d,height:c,j:d,i:c},b?{style:{width:l,height:x,marginTop:g,
+marginLeft:h,marginBlockStart:g,marginInlineStart:h}}:{},{A:!0,filter:n=>{if(n.tagName==="IMG"){let U=n.getAttribute("src");if(!U||U.trim()===""||n.style.display==="none")return!1}return!0},o:Y,h:()=>Y}))}catch(f){return X(d,c)}finally{HTMLCanvasElement.prototype.toDataURL=e}})}
+function Ga(){return u(function*(){var a=document.body.offsetWidth,b=document.body.offsetHeight,d=document.body.cloneNode(!0);d.querySelectorAll('[class*="animate"]').forEach(c=>{c.classList.remove(...Array.from(c.classList).filter(e=>e.startsWith("animate")))});d.style.width=`${a}px`;d.style.height=`${b}px`;return d})}
+function Ha(a){return u(function*(){var b={width:window.innerWidth||document.documentElement.clientWidth||document.body.offsetWidth,height:window.innerHeight||document.documentElement.clientHeight||document.body.offsetHeight,scrollTop:window.scrollY||document.documentElement.scrollTop||document.body.scrollTop||0,scrollLeft:window.scrollX||document.documentElement.scrollLeft||document.body.scrollLeft||0},d=document.body;if(W()){let c=yield Ga();d=c;document.body.appendChild(c)}b=yield Z(d,b);W()&&
+document.body.removeChild(d);window.parent.postMessage({type:"SEND_SCREENSHOT",image:b,topOffset:0},a.origin)})}function Ia(a){return u(function*(){var b={type:"SEND_SCREENSHOT_FOR_DATA_VISUALIZATION",image:yield Z(document.body),topOffset:0};window.parent.postMessage(b,a.origin)})}window.addEventListener("message",a=>u(function*(){if(Fa.some(d=>a.origin.includes(d))){var b=a.data;b&&(b.type==="MAKE_SCREENSHOT"&&(yield Ha(a)),b.type==="MAKE_SCREENSHOT_FOR_DATA_VISUALIZATION"&&(yield Ia(a)))}}));
+})();</script><script data-bard-client-injected="true">(function() {
+  // Ensure this script is executed only once
+  if (window.firebaseAuthBridgeScriptLoaded) {
+    return;
+  }
+  window.firebaseAuthBridgeScriptLoaded = true;
+
+  let nextTokenPromiseId = 0;
+
+  // Stores { resolve, reject } for ongoing token requests
+  const pendingTokenPromises = {};
+
+  // Listen for messages from the Host Application
+  window.addEventListener('message', function(event) {
+
+    const messageData = event.data;
+
+  if (messageData && messageData.type === 'RESOLVE_NEW_FIREBASE_TOKEN') {
+      const { success, token, error, promiseId } = messageData ?? {};
+      if (pendingTokenPromises[promiseId]) {
+        if (success) {
+          pendingTokenPromises[promiseId].resolve(token);
+        } else {
+          pendingTokenPromises[promiseId].reject(new Error(error || 'Token refresh failed from host.'));
+        }
+        delete pendingTokenPromises[promiseId];
+      }
+    }
+  });
+
+  // Expose a function for the Generated App to request a new Firebase token
+  window.requestNewFirebaseToken = function() {
+    const currentPromiseId = nextTokenPromiseId++;
+    const promise = new Promise((resolve, reject) => {
+      pendingTokenPromises[currentPromiseId] = { resolve, reject };
+    });
+    if (window.parent && window.parent !== window) {
+      window.parent.postMessage({
+        type: 'REQUEST_NEW_FIREBASE_TOKEN',
+        promiseId: currentPromiseId
+      }, '*');
+    } else {
+      pendingTokenPromises[currentPromiseId].reject(new Error('No parent window to request token from.'));
+      delete pendingTokenPromises[currentPromiseId];
+    }
+    return promise;
+  };
+})();</script><script data-bard-client-injected="true">
+let realOriginalGetUserMedia = null;
+if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
+  realOriginalGetUserMedia = navigator.mediaDevices.getUserMedia.bind(navigator.mediaDevices);
+}
+
+(function() {
+  if (navigator.mediaDevices && navigator.mediaDevices.__proto__) {
+    try {
+      Object.defineProperty(navigator.mediaDevices.__proto__, 'getUserMedia', {
+        get: function() {
+          return undefined; // Or throw an error
+        },
+        configurable: false
+      });
+    } catch (error) {
+      console.error("Error defining prototype getter:", error);
+    }
+  }
+})();
+
+(function() {
+  const pendingMediaResolvers = {};
+  let nextMediaPromiseId = 0;
+
+  function requestMediaPermissions(constraints) {
+    const mediaPromiseId = nextMediaPromiseId++;
+    const promise = new Promise((resolve, reject) => {
+      pendingMediaResolvers[mediaPromiseId] = (granted) => {
+        delete pendingMediaResolvers[mediaPromiseId];
+        resolve(granted);
+      };
+    });
+
+    window.parent.postMessage({
+      type: 'requestMediaPermission',
+      constraints: constraints,
+      promiseId: mediaPromiseId,
+    }, '*');
+
+    return promise;
+  }
+
+  let originalGetUserMedia = realOriginalGetUserMedia;
+
+  function interceptGetUserMedia() {
+    if (navigator.mediaDevices) {
+      Object.defineProperty(navigator.mediaDevices, 'getUserMedia', {
+        value: function(constraints) {
+          return requestMediaPermissions(constraints).then((granted) => {
+            if (granted) {
+              if (originalGetUserMedia) {
+                return originalGetUserMedia(constraints);
+              } else {
+                throw new Error("Original getUserMedia not available.");
+              }
+            } else {
+              throw new DOMException('Permission denied', 'NotAllowedError');
+            }
+          });
+        },
+        writable: false,
+        configurable: false
+      });
+    }
+  }
+
+  interceptGetUserMedia();
+
+  const observer = new MutationObserver(function(mutationsList, observer) {
+    for (const mutation of mutationsList) {
+      if (mutation.type === 'reconfigured' && mutation.name === 'getUserMedia' && mutation.object === navigator.mediaDevices) {
+        interceptGetUserMedia();
+      } else if (mutation.type === 'attributes' && mutation.attributeName === 'getUserMedia' && mutation.target === navigator.mediaDevices) {
+        interceptGetUserMedia();
+      } else if (mutation.type === 'childList' && mutation.addedNodes) {
+        mutation.addedNodes.forEach(node => {
+          if (node === navigator.mediaDevices) {
+            interceptGetUserMedia();
+          }
+        });
+      }
+    }
+  });
+
+  function interceptSpeechRecognition() {
+    if (!window.SpeechRecognition && !window.webkitSpeechRecognition) {
+      return;
+    }
+
+    const OriginalSpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+
+    const SpeechRecognitionWrapper = function(...args) {
+      const recognizer = new OriginalSpeechRecognition(...args);
+      const originalStart = recognizer.start.bind(recognizer);
+
+      recognizer.start = function() {
+        requestMediaPermissions({ audio: true }).then(granted => {
+          if (granted) {
+            originalStart();
+          } else {
+            const errorEvent = new SpeechRecognitionErrorEvent('error');
+            errorEvent.error = 'not-allowed'; // This is the standard error for permission denial.
+            recognizer.dispatchEvent(errorEvent);
+          }
+        });
+      };
+
+      return recognizer;
+    };
+
+    SpeechRecognitionWrapper.prototype = OriginalSpeechRecognition.prototype;
+    SpeechRecognitionWrapper.prototype.constructor = SpeechRecognitionWrapper;
+
+    if (window.SpeechRecognition) {
+      window.SpeechRecognition = SpeechRecognitionWrapper;
+    }
+    if (window.webkitSpeechRecognition) {
+      window.webkitSpeechRecognition = SpeechRecognitionWrapper;
+    }
+  }
+
+  interceptSpeechRecognition();
+
+  window.addEventListener('message', function(event) {
+    if (event.data) {
+      if (event.data.type === 'resolveMediaPermission') {
+        const { promiseId, granted } = event.data;
+        if (pendingMediaResolvers[promiseId]) {
+          pendingMediaResolvers[promiseId](granted);
+        }
+      }
+    }
+  });
+
+})();</script><script ws-interception-config="{&quot;parentOrigin&quot;:&quot;https://gemini.google.com&quot;,&quot;proxiedDomains&quot;:[]}" data-bard-client-injected="true">(function(){'use strict';var u=typeof Object.defineProperties=="function"?Object.defineProperty:function(b,d,e){if(b==Array.prototype||b==Object.prototype)return b;b[d]=e.value;return b};function v(b){b=["object"==typeof globalThis&&globalThis,b,"object"==typeof window&&window,"object"==typeof self&&self,"object"==typeof global&&global];for(var d=0;d<b.length;++d){var e=b[d];if(e&&e.Math==Math)return e}throw Error("Cannot find global object");}var w=v(this);
+function y(b,d){if(d)a:{var e=w;b=b.split(".");for(var h=0;h<b.length-1;h++){var k=b[h];if(!(k in e))break a;e=e[k]}b=b[b.length-1];h=e[b];d=d(h);d!=h&&d!=null&&u(e,b,{configurable:!0,writable:!0,value:d})}}function z(b){function d(h){return b.next(h)}function e(h){return b.throw(h)}return new Promise(function(h,k){function m(n){n.done?h(n.value):Promise.resolve(n.value).then(d,e).then(m,k)}m(b.next())})}y("globalThis",function(b){return b||w});/*
+
+ Copyright The Closure Library Authors.
+ SPDX-License-Identifier: Apache-2.0
+*/
+function A(b,d){function e(){}e.prototype=d.prototype;b.i=d.prototype;b.prototype=new e;b.prototype.constructor=b;b.h=function(h,k,m){for(var n=Array(arguments.length-2),p=2;p<arguments.length;p++)n[p-2]=arguments[p];return d.prototype[k].apply(h,n)}};function B(b,d,e="*"){function h(a){if(typeof a==="string")return F.encode(a).buffer;if(a instanceof ArrayBuffer)return a.slice(0);if(ArrayBuffer.isView(a))return a.buffer.slice(a.byteOffset,a.byteOffset+a.byteLength);throw Error("Invalid data type");}function k(a){a=h(a);var f={type:"send",data:new Uint8Array(a)},g;(g=r)==null||g.postMessage(f,[a])}function m(){if(!r)throw Error("Data port not captured yet.");r.onmessage=a=>{if(a.data.type==="message"){a=new MessageEvent("message",{data:G.decode(a.data.data)});
+let f;(f=c.onmessage)==null||f.call(c,a);c.dispatchEvent(a)}}}function n(){if(!t)throw Error("Control port not captured yet.");t.onmessage=a=>{switch(a.data.type){case "open":l=1;var f=new Event("open"),g;(g=c.onopen)==null||g.call(c,f);c.dispatchEvent(f);q.forEach(H=>{k(H)});q=[];break;case "close":g=a.data;l=3;g=new CloseEvent("close",{code:g.code,reason:g.reason,wasClean:g.wasClean});(f=c.onclose)==null||f.call(c,g);c.dispatchEvent(g);break;case "error":l=3;f=new Event("error");let x;(x=c.onerror)==
+null||x.call(c,f);c.dispatchEvent(f)}}}function p(a){return z(function*(){var f=new MessageChannel;t=f.port1;var g=new MessageChannel;r=g.port1;n();m();window.parent.postMessage({type:"websocket_open",portOrdering:["control","data"],url:b,protocols:a||[],connectionId:I},e,[f.port2,g.port2])}())}var c=Reflect.construct(EventTarget,[],new.target);c.CONNECTING=0;c.OPEN=1;c.CLOSING=2;c.CLOSED=3;c.url=b;c.binaryType="arraybuffer";c.protocol="";c.extensions="";var l=0,t=null,r=null,q=[],F=new TextEncoder,
+G=new TextDecoder;c.onopen=null;c.onmessage=null;c.onclose=null;c.onerror=null;Object.defineProperty(c,"readyState",{get:()=>l,enumerable:!0,configurable:!0});Object.defineProperty(c,"bufferedAmount",{get:()=>{var a=0;q.forEach(f=>{a+=typeof f==="string"?f.length:f.byteLength});return a},enumerable:!0,configurable:!0});var I=function(){var a;return((a=globalThis.crypto)==null?0:a.randomUUID)?globalThis.crypto.randomUUID():"xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(/[xy]/g,f=>{var g=Math.random()*
+16|0;return(f==="x"?g:g&3|8).toString(16)})}();c.send=a=>{if(l===1)a instanceof Blob?a.arrayBuffer().then(f=>{k(f)}):k(a);else if(l===0)if(typeof a==="string")q.push(a);else if(a instanceof ArrayBuffer||ArrayBuffer.isView(a))q.push(h(a));else throw Error("Sending Blob is not supported before the connection is open.");else console.debug("WebSocket send called in CLOSING or CLOSED state; ignored.")};c.close=(a=1E3,f="")=>{if(l!==2&&l!==3){l=2;a={type:"close",code:a,reason:f,wasClean:a===1E3};var g;
+(g=t)==null||g.postMessage(a)}};Promise.resolve().then(()=>p(d));return c}A(B,EventTarget);var C=document.currentScript,D=C==null?void 0:C.getAttribute("ws-interception-config");if(!D)throw Error("WebSocket Interceptor: Missing ws-interception-config attribute in the script tag.");var E=JSON.parse(D);if(!E.parentOrigin||typeof E.parentOrigin!=="string")throw Error("WebSocket Interceptor: Invalid parentOrigin in ws-interception-config");
+(function(b){var d=Object.getOwnPropertyDescriptor(window,"WebSocket");if(!d||d.writable||d.configurable)d=Object.assign(function(e,h){try{let k=(new URL(e)).hostname;if(b.proxiedDomains.some(m=>k===m||k.endsWith(`.${m}`)))return new B(e,h,b.parentOrigin)}catch(k){throw window.parent.postMessage({type:"websocket_blocked",url:e,reason:"blocked_invalid_url"},b.parentOrigin),new DOMException(`WebSocket connection to '${e}' is not allowed in Canvas.`,"SecurityError");}window.parent.postMessage({type:"websocket_blocked",
+url:e,reason:"blocked_domain_not_allowlisted"},b.parentOrigin);throw new DOMException(`WebSocket connection to '${e}' is not allowed in Canvas.`,"SecurityError");},{CONNECTING:0,OPEN:1,CLOSING:2,CLOSED:3}),Object.defineProperty(window,"WebSocket",{value:d,writable:!1,configurable:!1})})({proxiedDomains:E.proxiedDomains||[],parentOrigin:E.parentOrigin});}).call(this);
+</script><script data-bard-client-injected="true">((function(modelInformation) {
+  const originalFetch = window.fetch;
+  // TODO: b/421908508 - Move these out of the script and match all generative AI model calls.
+  let googleLlmBaseApiUrls = [
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.textModelName + ':streamGenerateContent',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.textModelName + ':generateContent',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.imageModelName + ':predict',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.imageModelName + ':predictLongRunning',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.imageEditModelName + ':generateContent',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.imageTransformModelName + ':generateContent',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.videoModelName + ':predict',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.videoModelName + ':predictLongRunning',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.ttsModelName + ':generateContent',
+  ];
+  modelInformation.deprecatedTextModelNames.forEach((modelName) => {
+    googleLlmBaseApiUrls.push(
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':streamGenerateContent',
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':generateContent',
+    );
+  });
+  modelInformation.deprecatedImageModelNames.forEach((modelName) => {
+    googleLlmBaseApiUrls.push(
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':predict',
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':predictLongRunning',
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':generateContent',
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':streamGenerateContent',
+    );
+  });
+  modelInformation.deprecatedGenerateImageModelNames.forEach((modelName) => {
+    googleLlmBaseApiUrls.push(
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':generateContent',
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':streamGenerateContent',
+    );
+  });
+  modelInformation.deprecatedImageTransformModelNames.forEach((modelName) => {
+    googleLlmBaseApiUrls.push(
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':generateContent',
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':streamGenerateContent',
+    );
+  });
+
+  const pendingFetchResolvers = {};
+  let nextPromiseId = 0;
+
+  function handleStringInput(input, optionsArgument) {
+    const actualUrl = input;
+    const fetchCallArgs = [actualUrl, optionsArgument];
+    const effectiveOptions = optionsArgument || {};
+    const bodyForApiKeyCheck = effectiveOptions.body;
+    const bodyForPostMessage = effectiveOptions.body;
+    return { actualUrl, fetchCallArgs, effectiveOptions, bodyForApiKeyCheck, bodyForPostMessage };
+  }
+
+  function handleRequestInput(input, optionsArgument) {
+    const actualUrl = input.url;
+    const fetchCallArgs = [input, optionsArgument];
+    const effectiveOptions = { method: input.method, headers: new Headers(input.headers) };
+    let bodyForApiKeyCheck;
+    let bodyForPostMessage;
+
+    if (optionsArgument) {
+      if (optionsArgument.method) effectiveOptions.method = optionsArgument.method;
+      if (optionsArgument.headers) effectiveOptions.headers = new Headers(optionsArgument.headers);
+      if ('body' in optionsArgument) {
+        bodyForApiKeyCheck = optionsArgument.body;
+        bodyForPostMessage = optionsArgument.body;
+      } else {
+        bodyForApiKeyCheck = undefined;
+        bodyForPostMessage = input.body;
+      }
+    } else {
+      bodyForApiKeyCheck = undefined;
+      bodyForPostMessage = input.body;
+    }
+    return { actualUrl, fetchCallArgs, effectiveOptions, bodyForApiKeyCheck, bodyForPostMessage };
+  }
+
+  window.fetch = function(input, optionsArgument) {
+    let actualUrl;
+    let fetchCallArgs;
+    let effectiveOptions = {};
+    let bodyForApiKeyCheck;
+    let bodyForPostMessage;
+
+    if (typeof input === 'string') {
+      ({actualUrl, fetchCallArgs, effectiveOptions, bodyForApiKeyCheck, bodyForPostMessage} = handleStringInput(input, optionsArgument));
+    } else if (input instanceof Request) {
+      ({actualUrl, fetchCallArgs, effectiveOptions, bodyForApiKeyCheck, bodyForPostMessage} = handleRequestInput(input, optionsArgument));
+    } else {
+      return originalFetch.apply(window, [input, optionsArgument]);
+    }
+
+    effectiveOptions.method = effectiveOptions.method || 'GET';
+    if (!effectiveOptions.headers) {
+      effectiveOptions.headers = new Headers();
+    }
+
+
+    if (typeof actualUrl === 'string' && googleLlmBaseApiUrls.some((url) => actualUrl.startsWith(url))) {
+      let apiKeyIsNull = true;
+
+      const regex = new RegExp("models/([^:]+)");
+      const modelNameMatch = actualUrl.match(regex);
+      const modelName = modelNameMatch ? modelNameMatch[1] : 'unspecified';
+
+
+      try {
+        const urlObject = new URL(actualUrl);  // Use URL object for robust parsing
+        const apiKeyParam = urlObject.searchParams.get('key');
+        if (apiKeyParam) {
+          apiKeyIsNull = false;
+        }
+      } catch (e) {
+        // Continue checks even if URL parsing fails
+      }
+
+      if (apiKeyIsNull && effectiveOptions.headers) {
+        const h = new Headers(effectiveOptions.headers);
+        const apiKeyHeaderValue = h.get('X-API-Key') || h.get('x-api-key');
+        if (apiKeyHeaderValue) {
+          apiKeyIsNull = false;
+          return originalFetch.apply(window, fetchCallArgs);
+        }
+      }
+
+      if (apiKeyIsNull && effectiveOptions.method && ['POST', 'PUT', 'PATCH'].includes(effectiveOptions.method.toUpperCase()) && typeof bodyForApiKeyCheck === 'string') {
+        try {
+          const bodyData = JSON.parse(bodyForApiKeyCheck);
+          if (bodyData && bodyData.apiKey) {
+            apiKeyIsNull = false;
+            return originalFetch.apply(window, fetchCallArgs);
+          }
+        } catch (e) {
+          // Ignore JSON parsing errors
+        }
+      }
+
+      if(apiKeyIsNull) {
+        const promiseId = nextPromiseId++;
+        const promise = new Promise((resolve) => {
+          pendingFetchResolvers[promiseId] = (resolvedResponse) => {
+            delete pendingFetchResolvers[promiseId];
+            resolve(resolvedResponse);
+          };
+        });
+
+        let serializedBodyForPostMessage;
+        if (typeof bodyForPostMessage === 'string' || bodyForPostMessage == null) {
+            serializedBodyForPostMessage = bodyForPostMessage;
+        } else if (bodyForPostMessage instanceof ReadableStream) {
+            serializedBodyForPostMessage = null;
+        } else {
+            try {
+                serializedBodyForPostMessage = JSON.stringify(bodyForPostMessage);
+            } catch (e) {
+                serializedBodyForPostMessage = null;
+            }
+        }
+
+        const messageOptions = {
+            method: effectiveOptions.method,
+            headers: Object.fromEntries(new Headers(effectiveOptions.headers).entries()),
+            body: serializedBodyForPostMessage
+        };
+
+        window.parent.postMessage({
+          type: 'requestFetch',
+          url: actualUrl,
+          modelName: modelName,
+          options: messageOptions,
+          promiseId: promiseId,
+        }, '*');
+
+        return promise;
+      }
+      return originalFetch.apply(window, fetchCallArgs);
+    }
+    return originalFetch.apply(window, fetchCallArgs);
+  };
+
+  window.addEventListener('message', function(event) {
+    if (event.data && event.data.type === 'resolveFetch') {
+      const { promiseId, response } = event.data;
+      if (pendingFetchResolvers[promiseId]) {
+        try {
+          const reconstructedResponse = new Response(response.body, {
+            status: response.status,
+            statusText: response.statusText,
+            headers: new Headers(response.headers),
+          });
+          pendingFetchResolvers[promiseId](reconstructedResponse);
+        } catch (error) {
+          pendingFetchResolvers[promiseId](new Response(null, { status: 500, statusText: "Interceptor Response Reconstruction Error" }));
+        }
+      }
+    }
+  });
+
+}))({"textModelName":"gemini-3-flash-preview","imageModelName":"imagen-4.0-generate-001","imageEditModelName":"gemini-3.1-flash-image","imageTransformModelName":"gemini-3-pro-image","videoModelName":"veo-2.0-generate-001","ttsModelName":"gemini-2.5-flash-preview-tts","deprecatedTextModelNames":["gemini-2.0-flash","gemini-2.5-flash","gemini-2.5-flash-preview-04-17","gemini-2.5-flash-preview-05-20","gemini-2.5-flash-preview-09-2025"],"deprecatedImageModelNames":["imagen-3.0-generate-001","imagen-3.0-generate-002"],"deprecatedGenerateImageModelNames":["gemini-2.5-flash-image-preview","gemini-2.5-flash-image","gemini-3.1-flash-image-preview"],"deprecatedImageTransformModelNames":["gemini-3-pro-image-preview-11-2025"]})</script><script data-bard-client-injected="true">(function() {
+  const OVERLAY_SELECTOR =
+    'dialog[open], [role="dialog"], [role="alertdialog"], [role="menu"], [role="listbox"], [role="combobox"]';
+
+  function isVisibleOverlay(element) {
+    if (element.closest('[hidden], [aria-hidden="true"], [inert]')) {
+      return false;
+    }
+    if (window.getComputedStyle(element).visibility === 'hidden') {
+      return false;
+    }
+    for (let cur = element; cur; cur = cur.parentElement) {
+      if (window.getComputedStyle(cur).display === 'none') {
+        return false;
+      }
+    }
+    return true;
+  }
+
+  function hasOpenOverlay() {
+    const candidates = document.querySelectorAll(OVERLAY_SELECTOR);
+    for (let i = 0; i < candidates.length; i++) {
+      if (isVisibleOverlay(candidates[i])) {
+        return true;
+      }
+    }
+    try {
+      if (document.querySelector('[popover]:popover-open')) {
+        return true;
+      }
+    } catch (e) {
+      // Ignore engines that do not support :popover-open.
+    }
+    return false;
+  }
+
+  function isNonEmptySearchInput(target) {
+    return (
+      Boolean(target) &&
+      target.tagName === 'INPUT' &&
+      typeof target.type === 'string' &&
+      target.type.toLowerCase() === 'search' &&
+      typeof target.value === 'string' &&
+      target.value.length > 0
+    );
+  }
+
+  function shouldIgnoreEscape(event) {
+    return (
+      event.key !== 'Escape' ||
+      event.altKey ||
+      event.ctrlKey ||
+      event.metaKey ||
+      event.shiftKey ||
+      event.isComposing ||
+      event.repeat ||
+      event.keyCode === 229 ||
+      isNonEmptySearchInput(event.target)
+    );
+  }
+
+  let shouldIgnoreCaptureState = false;
+
+  window.addEventListener(
+    'keydown',
+    function(event) {
+      if (event.key === 'Escape') {
+        shouldIgnoreCaptureState =
+          hasOpenOverlay() || isNonEmptySearchInput(event.target);
+      }
+    },
+    {capture: true},
+  );
+
+  window.addEventListener('keydown', function(event) {
+    if (
+      shouldIgnoreEscape(event) ||
+      event.defaultPrevented ||
+      shouldIgnoreCaptureState
+    ) {
+      return;
+    }
+    const wasBlockedOnCapture = shouldIgnoreCaptureState;
+    queueMicrotask(function() {
+      if (event.defaultPrevented || wasBlockedOnCapture) {
+        return;
+      }
+      if (window.parent && window.parent !== window) {
+        window.parent.postMessage({'type': 'escapeKey'}, '*');
+      }
+    });
+  });
+})();</script><script data-bard-client-injected="true">(function() {
+  function normalizeSlug(str) {
+    try {
+      return str
+        .trim()
+        .toLowerCase()
+        .replace(/[^p{L}p{N}s_-]/gu, '')
+        .replace(/s+/g, '-');
+    } catch (e) {
+      return str
+        .trim()
+        .toLowerCase()
+        .replace(/[^a-z0-9s_-]/g, '')
+        .replace(/s+/g, '-');
+    }
+  }
+
+  function findTargetElement(hash) {
+    if (!hash || hash === '#') {
+      return null;
+    }
+    const rawId = hash.startsWith('#') ? hash.slice(1) : hash;
+    let decodedId = rawId;
+    try {
+      decodedId = decodeURIComponent(rawId);
+    } catch (e) {
+      // Ignore URI malformed errors.
+    }
+
+    // 1. Direct ID match (raw and decoded).
+    let target = document.getElementById(rawId) || document.getElementById(decodedId);
+    if (target) {
+      return target;
+    }
+
+    // 2. Name attribute match (<a name="...">).
+    try {
+      if (typeof CSS !== 'undefined' && CSS.escape) {
+        target =
+          document.querySelector('[name="' + CSS.escape(rawId) + '"]') ||
+          document.querySelector('[name="' + CSS.escape(decodedId) + '"]');
+      } else {
+        const namedElements = document.getElementsByName(rawId);
+        if (namedElements && namedElements.length > 0) {
+          return namedElements[0];
+        }
+      }
+    } catch (e) {
+      // Ignore querySelector syntax errors.
+    }
+    if (target) {
+      return target;
+    }
+
+    // 3. Match heading text by slug (for Markdown TOCs where headings lack explicit IDs).
+    const targetSlug = normalizeSlug(decodedId);
+    if (targetSlug) {
+      for (const heading of document.querySelectorAll('h1, h2, h3, h4, h5, h6')) {
+        if (normalizeSlug(heading.textContent || '') === targetSlug) {
+          return heading;
+        }
+      }
+    }
+
+    return null;
+  }
+
+  document.addEventListener('click', function(event) {
+    const target = event.target;
+    const anchor = target && typeof target.closest === 'function' ? target.closest('a') : null;
+    if (!anchor) {
+      return;
+    }
+
+    const href = anchor.getAttribute('href');
+    if (
+      !href ||
+      href.trim().toLowerCase().startsWith('javascript:') ||
+      anchor.hasAttribute('download')
+    ) {
+      return;
+    }
+
+    // Check if the link is an in-page hash / anchor link.
+    if (href.startsWith('#')) {
+      event.preventDefault();
+      const targetElement = findTargetElement(href);
+      if (targetElement) {
+        targetElement.scrollIntoView({behavior: 'smooth', block: 'start'});
+      }
+      return;
+    }
+
+    // Check if the URL has the same origin/pathname but with a hash.
+    try {
+      const url = new URL(anchor.href, window.location.href);
+      if (
+        url.hash &&
+        url.origin === window.location.origin &&
+        url.pathname === window.location.pathname
+      ) {
+        event.preventDefault();
+        const targetElement = findTargetElement(url.hash);
+        if (targetElement) {
+          targetElement.scrollIntoView({behavior: 'smooth', block: 'start'});
+        }
+        return;
+      }
+    } catch (e) {
+      // Fall through if URL parsing fails.
+    }
+
+    // For all external or full navigation links, prevent iframe-level navigation
+    // (which breaks in AGSA WebView or sandboxed iframes) and ensure they open
+    // safely in a new tab/window.
+    if (anchor.target !== '_blank') {
+      event.preventDefault();
+      window.open(anchor.href, '_blank', 'noopener,noreferrer');
+    }
+  }, {capture: true});
+})();</script><script data-bard-client-injected="true">(function(){'use strict';function a(){window.parent.postMessage({type:"interaction"},"*")}window.addEventListener("click",a,{capture:!0,passive:!0});window.addEventListener("touchstart",a,{capture:!0,passive:!0});window.addEventListener("keydown",a,{capture:!0,passive:!0});}).call(this);
+</script><script data-bard-client-injected="true">(function() {
+  const originalConsoleLog = console.log;
+  const originalConsoleError = console.error;
+
+    /**
+   * Normalizes an error event or a promise rejection reason into a structured error object.
+   * @param {*} errorEventOrReason The error object or reason.
+   * @return {object} Structured error data { message, name, stack }.
+   */
+  function getErrorObject(errorEventOrReason) {
+    if (errorEventOrReason instanceof Error) {
+      return {
+        message: errorEventOrReason.message,
+        name: errorEventOrReason.name,
+        stack: errorEventOrReason.stack,
+      };
+    }
+    // Fallback for non-Error objects.
+    try {
+      return {
+        message: JSON.stringify(errorEventOrReason),
+        name: 'UnknownErrorType',
+        stack: null,
+      };
+    } catch (e) {
+      return {
+        message: String(errorEventOrReason),
+        name: 'UnknownErrorTypeNonStringifiable',
+        stack: null,
+      };
+    }
+  }
+
+  /**
+   * Converts an array of arguments (from log/error) into a single string.
+   * Handles Error objects specially to include their message and stack.
+   * @param {Array<*>} args - Arguments passed to console methods.
+   * @return {string} A string representation of the arguments.
+   */
+  function stringifyArgs(args) {
+    return args
+      .map((arg) => {
+        if (arg instanceof Error) {
+          const {message, stack} = arg;
+          return `Error: ${message}${stack ? ('\nStack: ' + stack) : ''}`;
+        }
+        if (typeof arg === 'object' && arg !== null) {
+          try {
+            return JSON.stringify(arg);
+          } catch (error) {
+            return '[Circular Object]';
+          }
+        } else {
+          return String(arg);
+        }
+      })
+      .join(' ');
+  }
+
+  console.log = function(...args) {
+    const logString = stringifyArgs(args);
+    window.parent.postMessage({ type: 'log', message: logString }, '*');
+    originalConsoleLog.apply(console, args);
+  };
+
+  console.error = function(...args) {
+    let errorData;
+    if (args.length > 0 && args[0] instanceof Error) {
+      const err = args[0];
+      // If the first arg is an Error, capture its details.
+      errorData = {
+        type: 'error',
+        source: 'CONSOLE_ERROR',
+        ...getErrorObject(err),
+        rawArgsString: stringifyArgs(args.slice(1)),
+        timestamp: new Date().toISOString(),
+      };
+    } else {
+      // If not an Error object, treat all args as a general error message.
+      errorData = {
+        type: 'error',
+        source: 'CONSOLE_ERROR',
+        message: stringifyArgs(args),
+        name: 'ConsoleLoggedError',
+        stack: null,
+        timestamp: new Date().toISOString(),
+      };
+    }
+    window.parent.postMessage(errorData, '*');
+    originalConsoleError.apply(console, args);
+  };
+
+  // Listen for global unhandled synchronous errors.
+  window.addEventListener('error', function(event) {
+    const errorDetails = event.error ? getErrorObject(event.error) : {
+      message: event.message,
+      name: 'GlobalError',
+      stack: null,
+      filename: event.filename,
+      lineno: event.lineno,
+      colno: event.colno,
+    };
+
+    window.parent.postMessage({
+      type: 'error',
+      source: 'global',
+      ...errorDetails,
+      message: errorDetails.message || event.message,
+      timestamp: new Date().toISOString(),
+    }, '*');
+  });
+
+  // Listen for unhandled promise rejections (asynchronous errors).
+  window.addEventListener('unhandledrejection', function(event) {
+    const errorDetails = getErrorObject(event.reason);
+
+    window.parent.postMessage({
+      type: 'error',
+      source: 'unhandledrejection',
+      ...errorDetails,
+      message: errorDetails.message || 'Unhandled Promise Rejection',
+      timestamp: new Date().toISOString(),
+    }, '*');
+  });
+
+})();</script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="영어마스터RPG">
+  <title>영어 마스터 RPG - 슈퍼마리오풍 영어 &amp; 영문법 어드벤처</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Tone.js for Retro Game SFX -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tone/14.8.49/Tone.js" crossorigin="anonymous"></script>
+  <!-- Google Fonts: Jua (Game Title), Noto Sans KR, Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Jua&amp;family=Noto+Sans+KR:wght@400;500;700;900&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --sat: env(safe-area-inset-top, 0px);
+      --sab: env(safe-area-inset-bottom, 0px);
+    }
+
+    * {
+      box-sizing: border-box;
+      -webkit-tap-highlight-color: transparent;
+      user-select: none;
+    }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100dvh;
+      overflow: hidden;
+      font-family: 'Noto Sans KR', sans-serif;
+    }
+
+    .font-game {
+      font-family: 'Jua', 'Noto Sans KR', sans-serif;
+      letter-spacing: -0.02em;
+    }
+
+    .font-en {
+      font-family: 'Plus Jakarta Sans', 'Noto Sans KR', sans-serif;
+    }
+
+    /* Background Village Themes */
+    body.theme-day {
+      background: linear-gradient(180deg, #38bdf8 0%, #7dd3fc 58%, #bae6fd 82%, #4ade80 82%, #22c55e 91%, #b45309 91%, #92400e 100%);
+    }
+
+    body.theme-night {
+      background: linear-gradient(180deg, #0f172a 0%, #1e1b4b 60%, #312e81 82%, #065f46 82%, #047857 91%, #451a03 91%, #270e02 100%);
+    }
+
+    body.theme-snow {
+      background: linear-gradient(180deg, #0284c7 0%, #bae6fd 58%, #f0f9ff 82%, #ffffff 82%, #e2e8f0 91%, #64748b 91%, #475569 100%);
+    }
+
+    /* Retro Card & Button Styling */
+    .card-retro {
+      background: rgba(255, 255, 255, 0.96);
+      border: 3px solid #1e293b;
+      box-shadow: 0 4px 0 #1e293b;
+    }
+
+    .btn-retro {
+      border: 2.5px solid #1e293b;
+      box-shadow: 0 3px 0 #1e293b;
+      transition: transform 0.08s ease, box-shadow 0.08s ease;
+    }
+
+    .btn-retro:active {
+      transform: translateY(2px);
+      box-shadow: 0 1px 0 #1e293b;
+    }
+
+    /* Hide Scrollbar */
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+    .no-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+
+    /* Animations */
+    @keyframes floatCloud {
+      0% { transform: translateX(-12%); }
+      50% { transform: translateX(8%); }
+      100% { transform: translateX(-12%); }
+    }
+    .cloud-anim-1 { animation: floatCloud 18s ease-in-out infinite; }
+    .cloud-anim-2 { animation: floatCloud 24s ease-in-out infinite reverse; }
+
+    @keyframes mascotIdle {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-4px); }
+    }
+    .mascot-idle { animation: mascotIdle 2.2s ease-in-out infinite; }
+
+    @keyframes mascotJump {
+      0% { transform: translateY(0) scale(1); }
+      40% { transform: translateY(-16px) scale(1.08); }
+      100% { transform: translateY(0) scale(1); }
+    }
+    .mascot-jump { animation: mascotJump 0.35s ease-out; }
+
+    @keyframes wingFlap {
+      0%, 100% { transform: rotate(0deg); }
+      50% { transform: rotate(-16deg); }
+    }
+    .wing-l { transform-origin: 22px 46px; animation: wingFlap 0.45s ease-in-out infinite; }
+    .wing-r { transform-origin: 78px 46px; animation: wingFlap 0.45s ease-in-out infinite reverse; }
+
+    @keyframes qBlockPulse {
+      0%, 100% { transform: scale(1) rotate(0deg); }
+      50% { transform: scale(1.06) rotate(-2deg); }
+    }
+    .q-block-anim { animation: qBlockPulse 1.8s ease-in-out infinite; }
+
+    @keyframes coinPop {
+      0% { opacity: 1; transform: translate(-50%, 0) scale(0.8); }
+      60% { opacity: 1; transform: translate(-50%, -45px) scale(1.15); }
+      100% { opacity: 0; transform: translate(-50%, -70px) scale(0.95); }
+    }
+    .coin-float { animation: coinPop 0.9s ease-out forwards; }
+
+    .app-shell {
+      padding-top: max(8px, var(--sat));
+      padding-bottom: max(6px, var(--sab));
+    }
+  </style>
+<style>*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/* ! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.pointer-events-none{pointer-events:none}.fixed{position:fixed}.absolute{position:absolute}.relative{position:relative}.inset-0{inset:0px}.bottom-\[9\%\]{bottom:9%}.left-0{left:0px}.left-1\/2{left:50%}.left-4{left:1rem}.right-3{right:0.75rem}.top-14{top:3.5rem}.top-20{top:5rem}.top-28{top:7rem}.z-0{z-index:0}.z-10{z-index:10}.z-40{z-index:40}.z-50{z-index:50}.mx-auto{margin-left:auto;margin-right:auto}.mb-1{margin-bottom:0.25rem}.mt-0\.5{margin-top:0.125rem}.mt-1{margin-top:0.25rem}.flex{display:flex}.grid{display:grid}.hidden{display:none}.h-12{height:3rem}.h-14{height:3.5rem}.h-24{height:6rem}.h-8{height:2rem}.h-full{height:100%}.h-20{height:5rem}.max-h-\[86dvh\]{max-height:86dvh}.w-24{width:6rem}.w-28{width:7rem}.w-8{width:2rem}.w-full{width:100%}.w-12{width:3rem}.w-20{width:5rem}.min-w-0{min-width:0px}.max-w-lg{max-width:32rem}.max-w-md{max-width:28rem}.flex-1{flex:1 1 0%}.shrink-0{flex-shrink:0}.-translate-x-1\/2{--tw-translate-x:-50%;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.cursor-pointer{cursor:pointer}.grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.flex-col{flex-direction:column}.items-end{align-items:flex-end}.items-center{align-items:center}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-1{gap:0.25rem}.gap-1\.5{gap:0.375rem}.gap-2\.5{gap:0.625rem}.gap-3{gap:0.75rem}.gap-2{gap:0.5rem}.space-y-3 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.75rem * var(--tw-space-y-reverse))}.space-y-2\.5 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.625rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.625rem * var(--tw-space-y-reverse))}.space-y-2 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.5rem * var(--tw-space-y-reverse))}.overflow-hidden{overflow:hidden}.overflow-y-auto{overflow-y:auto}.truncate{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.whitespace-nowrap{white-space:nowrap}.rounded-2xl{border-radius:1rem}.rounded-3xl{border-radius:1.5rem}.rounded-full{border-radius:9999px}.rounded-lg{border-radius:0.5rem}.rounded-xl{border-radius:0.75rem}.rounded{border-radius:0.25rem}.border-2{border-width:2px}.border-amber-400{--tw-border-opacity:1;border-color:rgb(251 191 36 / var(--tw-border-opacity, 1))}.border-slate-800{--tw-border-opacity:1;border-color:rgb(30 41 59 / var(--tw-border-opacity, 1))}.border-slate-900{--tw-border-opacity:1;border-color:rgb(15 23 42 / var(--tw-border-opacity, 1))}.border-indigo-300{--tw-border-opacity:1;border-color:rgb(165 180 252 / var(--tw-border-opacity, 1))}.border-slate-300{--tw-border-opacity:1;border-color:rgb(203 213 225 / var(--tw-border-opacity, 1))}.bg-amber-300{--tw-bg-opacity:1;background-color:rgb(252 211 77 / var(--tw-bg-opacity, 1))}.bg-emerald-400{--tw-bg-opacity:1;background-color:rgb(52 211 153 / var(--tw-bg-opacity, 1))}.bg-indigo-600{--tw-bg-opacity:1;background-color:rgb(79 70 229 / var(--tw-bg-opacity, 1))}.bg-rose-400{--tw-bg-opacity:1;background-color:rgb(251 113 133 / var(--tw-bg-opacity, 1))}.bg-sky-400{--tw-bg-opacity:1;background-color:rgb(56 189 248 / var(--tw-bg-opacity, 1))}.bg-slate-100{--tw-bg-opacity:1;background-color:rgb(241 245 249 / var(--tw-bg-opacity, 1))}.bg-slate-700{--tw-bg-opacity:1;background-color:rgb(51 65 85 / var(--tw-bg-opacity, 1))}.bg-slate-900{--tw-bg-opacity:1;background-color:rgb(15 23 42 / var(--tw-bg-opacity, 1))}.bg-slate-900\/60{background-color:rgb(15 23 42 / 0.6)}.bg-slate-900\/95{background-color:rgb(15 23 42 / 0.95)}.bg-violet-500{--tw-bg-opacity:1;background-color:rgb(139 92 246 / var(--tw-bg-opacity, 1))}.bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255 / var(--tw-bg-opacity, 1))}.bg-white\/95{background-color:rgb(255 255 255 / 0.95)}.bg-amber-100{--tw-bg-opacity:1;background-color:rgb(254 243 199 / var(--tw-bg-opacity, 1))}.bg-amber-500{--tw-bg-opacity:1;background-color:rgb(245 158 11 / var(--tw-bg-opacity, 1))}.bg-emerald-100{--tw-bg-opacity:1;background-color:rgb(209 250 229 / var(--tw-bg-opacity, 1))}.bg-emerald-500{--tw-bg-opacity:1;background-color:rgb(16 185 129 / var(--tw-bg-opacity, 1))}.bg-rose-100{--tw-bg-opacity:1;background-color:rgb(255 228 230 / var(--tw-bg-opacity, 1))}.bg-rose-500{--tw-bg-opacity:1;background-color:rgb(244 63 94 / var(--tw-bg-opacity, 1))}.bg-sky-100{--tw-bg-opacity:1;background-color:rgb(224 242 254 / var(--tw-bg-opacity, 1))}.bg-sky-500{--tw-bg-opacity:1;background-color:rgb(14 165 233 / var(--tw-bg-opacity, 1))}.bg-indigo-50{--tw-bg-opacity:1;background-color:rgb(238 242 255 / var(--tw-bg-opacity, 1))}.bg-slate-50{--tw-bg-opacity:1;background-color:rgb(248 250 252 / var(--tw-bg-opacity, 1))}.bg-gradient-to-b{background-image:linear-gradient(to bottom, var(--tw-gradient-stops))}.bg-gradient-to-br{background-image:linear-gradient(to bottom right, var(--tw-gradient-stops))}.bg-gradient-to-r{background-image:linear-gradient(to right, var(--tw-gradient-stops))}.from-amber-300{--tw-gradient-from:#fcd34d var(--tw-gradient-from-position);--tw-gradient-to:rgb(252 211 77 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-cyan-300{--tw-gradient-from:#67e8f9 var(--tw-gradient-from-position);--tw-gradient-to:rgb(103 232 249 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-indigo-50{--tw-gradient-from:#eef2ff var(--tw-gradient-from-position);--tw-gradient-to:rgb(238 242 255 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.to-amber-500{--tw-gradient-to:#f59e0b var(--tw-gradient-to-position)}.to-orange-400{--tw-gradient-to:#fb923c var(--tw-gradient-to-position)}.to-purple-50{--tw-gradient-to:#faf5ff var(--tw-gradient-to-position)}.to-sky-400{--tw-gradient-to:#38bdf8 var(--tw-gradient-to-position)}.p-2{padding:0.5rem}.p-4{padding:1rem}.p-3{padding:0.75rem}.p-3\.5{padding:0.875rem}.p-2\.5{padding:0.625rem}.px-2{padding-left:0.5rem;padding-right:0.5rem}.px-2\.5{padding-left:0.625rem;padding-right:0.625rem}.px-3{padding-left:0.75rem;padding-right:0.75rem}.px-4{padding-left:1rem;padding-right:1rem}.py-0\.5{padding-top:0.125rem;padding-bottom:0.125rem}.py-1{padding-top:0.25rem;padding-bottom:0.25rem}.py-2{padding-top:0.5rem;padding-bottom:0.5rem}.py-2\.5{padding-top:0.625rem;padding-bottom:0.625rem}.py-3{padding-top:0.75rem;padding-bottom:0.75rem}.px-1{padding-left:0.25rem;padding-right:0.25rem}.pb-2{padding-bottom:0.5rem}.pb-4{padding-bottom:1rem}.pt-1{padding-top:0.25rem}.text-left{text-align:left}.font-mono{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace}.text-\[11px\]{font-size:11px}.text-base{font-size:1rem;line-height:1.5rem}.text-sm{font-size:0.875rem;line-height:1.25rem}.text-xs{font-size:0.75rem;line-height:1rem}.text-2xl{font-size:1.5rem;line-height:2rem}.text-\[10px\]{font-size:10px}.text-\[9px\]{font-size:9px}.text-lg{font-size:1.125rem;line-height:1.75rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.font-black{font-weight:900}.font-bold{font-weight:700}.leading-none{line-height:1}.leading-snug{line-height:1.375}.leading-relaxed{line-height:1.625}.text-amber-300{--tw-text-opacity:1;color:rgb(252 211 77 / var(--tw-text-opacity, 1))}.text-slate-800{--tw-text-opacity:1;color:rgb(30 41 59 / var(--tw-text-opacity, 1))}.text-slate-900{--tw-text-opacity:1;color:rgb(15 23 42 / var(--tw-text-opacity, 1))}.text-white{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.text-amber-500{--tw-text-opacity:1;color:rgb(245 158 11 / var(--tw-text-opacity, 1))}.text-amber-800{--tw-text-opacity:1;color:rgb(146 64 14 / var(--tw-text-opacity, 1))}.text-amber-950{--tw-text-opacity:1;color:rgb(69 26 3 / var(--tw-text-opacity, 1))}.text-cyan-200{--tw-text-opacity:1;color:rgb(165 243 252 / var(--tw-text-opacity, 1))}.text-emerald-800{--tw-text-opacity:1;color:rgb(6 95 70 / var(--tw-text-opacity, 1))}.text-indigo-500{--tw-text-opacity:1;color:rgb(99 102 241 / var(--tw-text-opacity, 1))}.text-indigo-700{--tw-text-opacity:1;color:rgb(67 56 202 / var(--tw-text-opacity, 1))}.text-indigo-900{--tw-text-opacity:1;color:rgb(49 46 129 / var(--tw-text-opacity, 1))}.text-indigo-950{--tw-text-opacity:1;color:rgb(30 27 75 / var(--tw-text-opacity, 1))}.text-rose-800{--tw-text-opacity:1;color:rgb(159 18 57 / var(--tw-text-opacity, 1))}.text-sky-800{--tw-text-opacity:1;color:rgb(7 89 133 / var(--tw-text-opacity, 1))}.text-slate-400{--tw-text-opacity:1;color:rgb(148 163 184 / var(--tw-text-opacity, 1))}.text-slate-500{--tw-text-opacity:1;color:rgb(100 116 139 / var(--tw-text-opacity, 1))}.text-slate-600{--tw-text-opacity:1;color:rgb(71 85 105 / var(--tw-text-opacity, 1))}.text-slate-800\/80{color:rgb(30 41 59 / 0.8)}.text-white\/95{color:rgb(255 255 255 / 0.95)}.opacity-0{opacity:0}.opacity-80{opacity:0.8}.opacity-90{opacity:0.9}.shadow-lg{--tw-shadow:0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-md{--tw-shadow:0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.drop-shadow{--tw-drop-shadow:drop-shadow(0 1px 2px rgb(0 0 0 / 0.1)) drop-shadow(0 1px 1px rgb(0 0 0 / 0.06));filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.drop-shadow-\[0_2px_0_\#78350f\]{--tw-drop-shadow:drop-shadow(0 2px 0 #78350f);filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.drop-shadow-\[0_2px_1px_rgba\(0\2c 0\2c 0\2c 0\.6\)\]{--tw-drop-shadow:drop-shadow(0 2px 1px rgba(0,0,0,0.6));filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.transition-all{transition-property:all;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.duration-300{transition-duration:300ms}.hover\:bg-amber-200:hover{--tw-bg-opacity:1;background-color:rgb(253 230 138 / var(--tw-bg-opacity, 1))}.hover\:bg-slate-600:hover{--tw-bg-opacity:1;background-color:rgb(71 85 105 / var(--tw-bg-opacity, 1))}.hover\:bg-amber-50:hover{--tw-bg-opacity:1;background-color:rgb(255 251 235 / var(--tw-bg-opacity, 1))}.hover\:bg-emerald-50:hover{--tw-bg-opacity:1;background-color:rgb(236 253 245 / var(--tw-bg-opacity, 1))}.hover\:bg-rose-50:hover{--tw-bg-opacity:1;background-color:rgb(255 241 242 / var(--tw-bg-opacity, 1))}.hover\:bg-sky-50:hover{--tw-bg-opacity:1;background-color:rgb(240 249 255 / var(--tw-bg-opacity, 1))}.hover\:from-indigo-100:hover{--tw-gradient-from:#e0e7ff var(--tw-gradient-from-position);--tw-gradient-to:rgb(224 231 255 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.hover\:to-purple-100:hover{--tw-gradient-to:#f3e8ff var(--tw-gradient-to-position)}.active\:scale-90:active{--tw-scale-x:.9;--tw-scale-y:.9;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}@media (min-width: 640px){.sm\:items-center{align-items:center}.sm\:p-4{padding:1rem}}</style></head>
+<body id="app-body" class="theme-day">
+
+  <!-- Decorative Super Mario Style Village Background -->
+  <div class="fixed inset-0 pointer-events-none overflow-hidden z-0">
+    <!-- Clouds -->
+    <svg class="cloud-anim-1 absolute top-14 left-4 w-28 h-14 opacity-90" viewBox="0 0 120 60">
+      <path d="M25 50 H95 A18 18 0 0 0 95 16 A24 24 0 0 0 52 10 A20 20 0 0 0 25 50 Z" fill="#ffffff" stroke="#1e293b" stroke-width="3"></path>
+      <rect x="46" y="26" width="3" height="9" rx="1.5" fill="#1e293b"></rect>
+      <rect x="58" y="26" width="3" height="9" rx="1.5" fill="#1e293b"></rect>
+    </svg>
+    <svg class="cloud-anim-2 absolute top-28 right-3 w-24 h-12 opacity-80" viewBox="0 0 120 60">
+      <path d="M25 50 H95 A18 18 0 0 0 95 16 A24 24 0 0 0 52 10 A20 20 0 0 0 25 50 Z" fill="#ffffff" stroke="#1e293b" stroke-width="3"></path>
+    </svg>
+
+    <!-- Bottom Green Hills & Warp Pipe -->
+    <svg class="absolute bottom-[9%] left-0 w-full h-24" viewBox="0 0 400 100" preserveAspectRatio="none">
+      <path d="M-10 100 Q55 15 120 100 Z" fill="#16a34a" stroke="#1e293b" stroke-width="3"></path>
+      <path d="M260 100 Q335 25 410 100 Z" fill="#15803d" stroke="#1e293b" stroke-width="3"></path>
+      <!-- Green Warp Pipe -->
+      <rect x="326" y="54" width="36" height="46" fill="#22c55e" stroke="#1e293b" stroke-width="3"></rect>
+      <rect x="321" y="44" width="46" height="12" rx="3" fill="#4ade80" stroke="#1e293b" stroke-width="3"></rect>
+    </svg>
+  </div>
+
+  <!-- Main App Shell (100dvh Full Screen Mobile Layout) -->
+  <div class="app-shell relative z-10 w-full max-w-lg mx-auto h-full flex flex-col">
+
+    <!-- Top Retro Game HUD Header -->
+    <header class="px-3 pb-2 shrink-0">
+      <div class="card-retro rounded-2xl px-2.5 py-2 flex items-center justify-between gap-1.5 bg-white/95">
+        <!-- Left: Back/Home + Level & Title -->
+        <div class="flex items-center gap-1.5 min-w-0">
+          <button id="btn-home-nav" onclick="goHome()" class="hidden btn-retro bg-amber-300 hover:bg-amber-200 px-2 py-1 rounded-xl text-xs font-black text-slate-900 shrink-0" title="월드맵으로">
+            🏠 맵
+          </button>
+          <div class="min-w-0">
+            <div class="flex items-center gap-1">
+              <span id="hud-level" class="font-game text-xs bg-indigo-600 text-white px-2 py-0.5 rounded-lg">LV.1</span>
+              <span id="hud-title" class="font-bold text-[11px] text-slate-800 truncate">🌱 초보 모험가</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Coins, Shop, Stats, Backup, Add, Sound -->
+        <div class="flex items-center gap-1 shrink-0">
+          <button onclick="openModal('shop')" class="btn-retro bg-amber-300 hover:bg-amber-200 px-2 py-1 rounded-xl flex items-center gap-1 text-xs font-black text-slate-900" title="마을 코인 상점">
+            <span>🪙</span>
+            <span id="hud-coins" class="font-game">0</span>
+          </button>
+          <button onclick="openModal('shop')" class="btn-retro bg-rose-400 text-white w-8 h-8 rounded-xl flex items-center justify-center text-sm" title="코인 상점">🏪</button>
+          <button onclick="openModal('stats')" class="btn-retro bg-sky-400 text-white w-8 h-8 rounded-xl flex items-center justify-center text-sm" title="학습 트래킹 &amp; 오답노트">📊</button>
+          <button onclick="openModal('backup')" class="btn-retro bg-emerald-400 text-white w-8 h-8 rounded-xl flex items-center justify-center text-sm" title="백업 및 복원">💾</button>
+          <button onclick="openModal('add')" class="btn-retro bg-violet-500 text-white w-8 h-8 rounded-xl flex items-center justify-center text-sm font-black" title="나만의 단어/문장 추가">＋</button>
+          <button id="btn-sfx" onclick="toggleSfx()" class="btn-retro bg-slate-100 text-slate-800 w-8 h-8 rounded-xl flex items-center justify-center text-sm" title="게임 효과음">🔔</button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Scrollable Main View Container -->
+    <main id="main-content" class="flex-1 overflow-y-auto no-scrollbar px-3 pb-4">
+    <div class="space-y-3 pt-1">
+      <!-- Mascot Cheer & Question Bonus Block -->
+      <div class="card-retro rounded-3xl p-3.5 flex items-center gap-3 relative overflow-hidden">
+        <div id="mascot-box" onclick="pokeMascot()" class="w-20 h-20 shrink-0 cursor-pointer mascot-idle">
+          
+    <svg viewBox="0 0 100 100" class="w-full h-full">
+      <g class="wing-l"><ellipse cx="14" cy="46" rx="10" ry="6" fill="#fff" stroke="#1e293b" stroke-width="2.5"></ellipse></g>
+      <g class="wing-r"><ellipse cx="86" cy="46" rx="10" ry="6" fill="#fff" stroke="#1e293b" stroke-width="2.5"></ellipse></g>
+      <circle cx="50" cy="54" r="32" fill="#fde68a" stroke="#1e293b" stroke-width="3.5"></circle>
+      <path d="M22 44 Q50 18 78 44" fill="#6366f1" stroke="#1e293b" stroke-width="3"></path>
+      
+      <rect x="27" y="39" width="21" height="17" rx="5" fill="#ffffff" stroke="#1e293b" stroke-width="3"></rect>
+      <rect x="52" y="39" width="21" height="17" rx="5" fill="#ffffff" stroke="#1e293b" stroke-width="3"></rect>
+      <line x1="48" y1="47" x2="52" y2="47" stroke="#1e293b" stroke-width="3"></line>
+      <path d="M34 48 Q40 42 46 48" fill="none" stroke="#1e293b" stroke-width="3" stroke-linecap="round"></path><path d="M54 48 Q60 42 66 48" fill="none" stroke="#1e293b" stroke-width="3" stroke-linecap="round"></path>
+      <circle cx="31" cy="62" r="4" fill="#fb7185" opacity="0.7"></circle>
+      <circle cx="69" cy="62" r="4" fill="#fb7185" opacity="0.7"></circle>
+      <path d="M43 66 Q50 74 57 66" fill="none" stroke="#1e293b" stroke-width="3" stroke-linecap="round"></path>
+    </svg>
+  
+        </div>
+        <div onclick="pokeMascot()" class="flex-1 min-w-0 cursor-pointer">
+          <div class="flex items-center gap-1.5 mb-1">
+            <span class="text-[10px] font-black bg-rose-500 text-white px-2 py-0.5 rounded-full">에이미짱</span>
+            <span class="text-[10px] font-bold text-slate-500">터치해서 응원 듣기 🔊</span>
+          </div>
+          <p id="mascot-en" class="font-en font-bold text-sm text-indigo-900 leading-snug">"You're doing awesome! Keep going!"</p>
+          <p id="mascot-ko" class="text-xs font-bold text-slate-600 mt-0.5">정말 잘하고 있어요! 계속 나아가요!</p>
+        </div>
+        <button onclick="hitQuestionBlock()" class="q-block-anim w-12 h-12 rounded-2xl bg-gradient-to-b from-amber-300 to-amber-500 border-3 border-slate-900 shadow-md flex flex-col items-center justify-center shrink-0 active:scale-90" title="보너스 코인 블록">
+          <span class="font-game text-2xl leading-none text-white drop-shadow-[0_2px_0_#78350f]">?</span>
+          <span class="text-[9px] font-black text-amber-950">+5🪙</span>
+        </button>
+      </div>
+
+      <!-- Subway Commute Quick Tools (5-Min SRS + Audio Loop) -->
+      <div class="grid grid-cols-2 gap-2.5">
+        <button onclick="openView('quick_srs')" class="btn-retro rounded-2xl p-3 bg-gradient-to-br from-amber-300 to-orange-400 text-left relative">
+          <div class="flex items-center justify-between">
+            <span class="text-xl">⚡</span>
+            <span class="text-[10px] font-black bg-slate-900 text-amber-300 px-2 py-0.5 rounded-full">15개 대기</span>
+          </div>
+          <div class="font-game text-sm text-slate-900 mt-1">5분 퀵 복습 (SRS)</div>
+          <div class="text-[11px] font-bold text-slate-800/80">한 손 스와이프 암기</div>
+        </button>
+
+        <button onclick="openView('audio_loop')" class="btn-retro rounded-2xl p-3 bg-gradient-to-br from-cyan-300 to-sky-400 text-left">
+          <div class="flex items-center justify-between">
+            <span class="text-xl">🎧</span>
+            <span class="text-[10px] font-black bg-slate-900 text-cyan-200 px-2 py-0.5 rounded-full">출퇴근 모드</span>
+          </div>
+          <div class="font-game text-sm text-slate-900 mt-1">오디오 루프 듣기</div>
+          <div class="text-[11px] font-bold text-slate-800/80">한→생각→영(느림/보통)</div>
+        </button>
+      </div>
+
+      <!-- 5 RPG World Stages -->
+      <div class="space-y-2.5">
+        <div class="flex items-center justify-between px-1">
+          <span class="font-game text-sm text-white drop-shadow-[0_2px_1px_rgba(0,0,0,0.6)]">🗺️ 모험 스테이지 선택</span>
+          <span class="text-[11px] font-bold text-white/95 drop-shadow">연속 학습 🔥 1일째</span>
+        </div>
+
+        <button onclick="openView('world1')" class="btn-retro w-full rounded-2xl p-3.5 bg-white/95 hover:bg-emerald-50 flex items-center justify-between text-left">
+          <div class="flex items-center gap-3">
+            <div class="w-12 h-12 rounded-2xl bg-emerald-500 border-2 border-slate-800 flex items-center justify-center text-2xl shrink-0">🌱</div>
+            <div>
+              <div class="flex items-center gap-1.5">
+                <span class="text-[10px] font-black bg-emerald-100 text-emerald-800 px-2 py-0.5 rounded">WORLD 1</span>
+                <span class="text-xs font-bold text-amber-500">☆☆☆</span>
+              </div>
+              <h3 class="font-game text-base text-slate-900 mt-0.5">초원 마을 · 파닉스 &amp; 연음</h3>
+              <p class="text-xs text-slate-500">R/L·TH 발음 &amp; 원어민 연음 규칙(Flap T)</p>
+            </div>
+          </div>
+          <span class="font-game text-slate-400 text-lg">▶</span>
+        </button>
+
+        <button onclick="openView('world2')" class="btn-retro w-full rounded-2xl p-3.5 bg-white/95 hover:bg-amber-50 flex items-center justify-between text-left">
+          <div class="flex items-center gap-3">
+            <div class="w-12 h-12 rounded-2xl bg-amber-500 border-2 border-slate-800 flex items-center justify-center text-2xl shrink-0">🍄</div>
+            <div>
+              <div class="flex items-center gap-1.5">
+                <span class="text-[10px] font-black bg-amber-100 text-amber-800 px-2 py-0.5 rounded">WORLD 2</span>
+                <span class="text-xs font-bold text-amber-500">☆☆☆</span>
+              </div>
+              <h3 class="font-game text-base text-slate-900 mt-0.5">버섯 성채 · 간판 &amp; 구동사</h3>
+              <p class="text-xs text-slate-500">현지 표지판·메뉴판 해독 &amp; 필수 구동사</p>
+            </div>
+          </div>
+          <span class="font-game text-slate-400 text-lg">▶</span>
+        </button>
+
+        <button onclick="openView('world3')" class="btn-retro w-full rounded-2xl p-3.5 bg-white/95 hover:bg-sky-50 flex items-center justify-between text-left">
+          <div class="flex items-center gap-3">
+            <div class="w-12 h-12 rounded-2xl bg-sky-500 border-2 border-slate-800 flex items-center justify-center text-2xl shrink-0">🧪</div>
+            <div>
+              <div class="flex items-center gap-1.5">
+                <span class="text-[10px] font-black bg-sky-100 text-sky-800 px-2 py-0.5 rounded">WORLD 3</span>
+                <span class="text-xs font-bold text-amber-500">☆☆☆</span>
+              </div>
+              <h3 class="font-game text-base text-slate-900 mt-0.5">토관 미로 · 뉴스·필수 영단어</h3>
+              <p class="text-xs text-slate-500">시사·정치·업무·일상 어휘 + 한글 발음 표기</p>
+            </div>
+          </div>
+          <span class="font-game text-slate-400 text-lg">▶</span>
+        </button>
+
+        <button onclick="openView('world4')" class="btn-retro w-full rounded-2xl p-3.5 bg-white/95 hover:bg-rose-50 flex items-center justify-between text-left">
+          <div class="flex items-center gap-3">
+            <div class="w-12 h-12 rounded-2xl bg-rose-500 border-2 border-slate-800 flex items-center justify-center text-2xl shrink-0">🏰</div>
+            <div>
+              <div class="flex items-center gap-1.5">
+                <span class="text-[10px] font-black bg-rose-100 text-rose-800 px-2 py-0.5 rounded">WORLD 4</span>
+                <span class="text-xs font-bold text-amber-500">☆☆☆</span>
+              </div>
+              <h3 class="font-game text-base text-slate-900 mt-0.5">쿠파 성 · 실전 회화 &amp; 뉴스 브리핑</h3>
+              <p class="text-xs text-slate-500">공식 vs 일상 비교 · 블록조립 · 3턴 실전대화</p>
+            </div>
+          </div>
+          <span class="font-game text-slate-400 text-lg">▶</span>
+        </button>
+
+        <button onclick="openView('world5', { ch: null })" class="btn-retro w-full rounded-2xl p-3.5 bg-gradient-to-r from-indigo-50 to-purple-50 hover:from-indigo-100 hover:to-purple-100 flex items-center justify-between text-left">
+          <div class="flex items-center gap-3">
+            <div class="w-12 h-12 rounded-2xl bg-indigo-600 border-2 border-slate-800 flex items-center justify-center text-2xl shrink-0">📘</div>
+            <div>
+              <div class="flex items-center gap-1.5">
+                <span class="text-[10px] font-black bg-indigo-600 text-white px-2 py-0.5 rounded">WORLD 5 · NEW</span>
+                <span class="text-xs font-bold text-amber-500">☆☆☆</span>
+              </div>
+              <h3 class="font-game text-base text-indigo-950 mt-0.5">문법의 신전 · 체계적 영문법 목차</h3>
+              <p class="text-xs text-indigo-700 font-bold">8대 챕터(관사·완료·부사어순·뉴스구문) &amp; 게임</p>
+            </div>
+          </div>
+          <span class="font-game text-indigo-500 text-lg">▶</span>
+        </button>
+      </div>
+    </div>
+  </main>
+
+  </div>
+
+  <!-- Floating Coin FX Layer -->
+  <div id="fx-layer" class="fixed inset-0 pointer-events-none z-50"></div>
+
+  <!-- Toast Message Box (Replaces alert/confirm) -->
+  <div id="toast-box" class="fixed top-20 left-1/2 -translate-x-1/2 z-50 pointer-events-none opacity-0 transition-all duration-300">
+    <div id="toast-msg" class="bg-slate-900/95 text-white font-bold text-xs px-4 py-2.5 rounded-full border-2 border-amber-400 shadow-lg whitespace-nowrap"></div>
+  </div>
+
+  <!-- Bottom Sheet / Modal Overlay -->
+  <div id="modal-overlay" class="fixed inset-0 bg-slate-900/60 backdrop-blur-xs z-40 flex items-end sm:items-center justify-center p-2 sm:p-4" onclick="closeModalOnBackdrop(event)">
+    <div id="modal-panel" class="card-retro w-full max-w-md max-h-[86dvh] rounded-3xl bg-white flex flex-col overflow-hidden">
+      <div class="px-4 py-3 bg-slate-900 text-white flex items-center justify-between shrink-0">
+        <h3 id="modal-title" class="font-game text-base text-amber-300">💾 파일 다운로드 &amp; 데이터 백업</h3>
+        <button onclick="closeModal()" class="w-8 h-8 rounded-full bg-slate-700 hover:bg-slate-600 text-white font-black text-sm flex items-center justify-center">✕</button>
+      </div>
+      <div id="modal-body" class="p-4 overflow-y-auto no-scrollbar space-y-3">
+      <div class="p-3 rounded-2xl bg-indigo-50 border-2 border-indigo-300 space-y-2">
+        <div class="font-bold text-xs text-indigo-950">📱 아이폰 고정 주소(Tiiny.host) 등록용 파일 받기</div>
+        <p class="text-[11px] text-slate-600 leading-relaxed">
+          Gemini 상단에 다운로드 버튼이 안 보일 때는 아래 버튼을 누르세요. 아이폰 [파일] 앱에 <strong>index.html</strong>로 바로 저장됩니다!
+        </p>
+        <button onclick="downloadSelfHtml()" class="btn-retro w-full bg-indigo-600 text-white py-3 rounded-xl font-game text-sm">⬇️ index.html 파일로 바로 다운로드</button>
+      </div>
+
+      <p class="text-xs text-slate-600 leading-relaxed pt-1">
+        기기 변경이나 주소 이전 시에는 아래 백업 코드를 복사해 두세요.
+      </p>
+      <textarea id="backup-textarea" rows="3" class="w-full p-2.5 rounded-2xl border-2 border-slate-300 text-[11px] font-mono bg-slate-50">eyJjb2lucyI6MCwiZXhwIjowLCJzdHJlYWsiOjEsImxhc3RTdHVkeURhdGUiOiIyMDI2LTExLTIzIiwic2Z4RW5hYmxlZCI6dHJ1ZSwidGhlbWUiOiJ0aGVtZS1kYXkiLCJlcXVpcHBlZENvc21ldGljIjoibm9uZSIsInVubG9ja2VkQ29zbWV0aWNzIjpbIm5vbmUiXSwidW5sb2NrZWRUaGVtZXMiOlsidGhlbWUtZGF5Il0sImhpbnRQb3Rpb25zIjoyLCJtYXN0ZXJlZElkcyI6W10sInNyc0RhdGEiOnt9LCJhY3Rpdml0eUxvZyI6eyIyMDI2LTExLTIzIjoxfSwiY3VzdG9tV29yZHMiOltdLCJjdXN0b21QaHJhc2VzIjpbXX0=</textarea>
+      <div class="grid grid-cols-2 gap-2">
+        <button onclick="copyBackupCode()" class="btn-retro bg-sky-400 text-white py-2.5 rounded-xl font-bold text-xs">📋 백업 코드 복사</button>
+        <button onclick="restoreBackupCode()" class="btn-retro bg-emerald-500 text-white py-2.5 rounded-xl font-bold text-xs">📥 코드로 복원하기</button>
+      </div>
+    </div>
+    </div>
+  </div>
+
+<script>
+/* ==========================================================================
+   1. TRIPLE PERSISTENT STORAGE (localStorage + IndexedDB + window.name)
+   ========================================================================== */
+const STORAGE_KEY = 'english_master_rpg_clean_v1';
+const IDB_NAME = 'EnglishMasterRPG_CleanDB';
+const IDB_STORE = 'state_store';
+const IDB_KEY = 'main_state';
+
+function getTodayDateStr() {
+  const d = new Date();
+  return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
+}
+
+const DEFAULT_STATE = {
+  coins: 0,
+  exp: 0,
+  streak: 1,
+  lastStudyDate: getTodayDateStr(),
+  sfxEnabled: true,
+  theme: 'theme-day',
+  equippedCosmetic: 'none',
+  unlockedCosmetics: ['none'],
+  unlockedThemes: ['theme-day'],
+  hintPotions: 2,
+  masteredIds: [],
+  srsData: {},
+  activityLog: { [getTodayDateStr()]: 1 },
+  customWords: [],
+  customPhrases: []
+};
+
+let state = JSON.parse(JSON.stringify(DEFAULT_STATE));
+let stateHydrated = false;
+
+function readSyncState() {
+  try {
+    const raw = localStorage.getItem(STORAGE_KEY);
+    if (raw) return JSON.parse(raw);
+  } catch (e) {}
+  try {
+    if (window.name && window.name.startsWith('EMRPG:')) {
+      return JSON.parse(window.name.slice(6));
+    }
+  } catch (e) {}
+  return null;
+}
+
+function writeSyncState(obj) {
+  try {
+    const str = JSON.stringify(obj);
+    localStorage.setItem(STORAGE_KEY, str);
+    window.name = 'EMRPG:' + str;
+  } catch (e) {}
+}
+
+function openIDB() {
+  return new Promise((resolve, reject) => {
+    if (!window.indexedDB) return reject('No IDB');
+    const req = indexedDB.open(IDB_NAME, 1);
+    req.onupgradeneeded = (e) => {
+      const db = e.target.result;
+      if (!db.objectStoreNames.contains(IDB_STORE)) db.createObjectStore(IDB_STORE);
+    };
+    req.onsuccess = () => resolve(req.result);
+    req.onerror = () => reject(req.error);
+  });
+}
+
+async function saveToIDB(data) {
+  try {
+    const db = await openIDB();
+    const tx = db.transaction(IDB_STORE, 'readwrite');
+    tx.objectStore(IDB_STORE).put(data, IDB_KEY);
+  } catch (e) {}
+}
+
+async function loadFromIDB() {
+  try {
+    const db = await openIDB();
+    return new Promise((resolve) => {
+      const tx = db.transaction(IDB_STORE, 'readonly');
+      const req = tx.objectStore(IDB_STORE).get(IDB_KEY);
+      req.onsuccess = () => resolve(req.result || null);
+      req.onerror = () => resolve(null);
+    });
+  } catch (e) {
+    return null;
+  }
+}
+
+function saveState() {
+  if (!stateHydrated) return;
+  const today = getTodayDateStr();
+  if (state.lastStudyDate !== today) {
+    const y = new Date();
+    y.setDate(y.getDate() - 1);
+    const yStr = `${y.getFullYear()}-${String(y.getMonth() + 1).padStart(2, '0')}-${String(y.getDate()).padStart(2, '0')}`;
+    state.streak = state.lastStudyDate === yStr ? state.streak + 1 : 1;
+    state.lastStudyDate = today;
+  }
+  state.activityLog[today] = (state.activityLog[today] || 0) + 1;
+  writeSyncState(state);
+  saveToIDB(state);
+  updateHUD();
+}
+
+async function loadState() {
+  const syncObj = readSyncState();
+  const idbObj = await loadFromIDB();
+
+  if (syncObj || idbObj) {
+    const base = syncObj || idbObj;
+    const other = idbObj || syncObj;
+    state = {
+      ...DEFAULT_STATE,
+      ...base,
+      coins: Math.max(base.coins || 0, other.coins || 0),
+      exp: Math.max(base.exp || 0, other.exp || 0),
+      streak: Math.max(base.streak || 1, other.streak || 1),
+      masteredIds: Array.from(new Set([...(base.masteredIds || []), ...(other.masteredIds || [])])),
+      unlockedCosmetics: Array.from(new Set(['none', ...(base.unlockedCosmetics || []), ...(other.unlockedCosmetics || [])])),
+      unlockedThemes: Array.from(new Set(['theme-day', ...(base.unlockedThemes || []), ...(other.unlockedThemes || [])])),
+      srsData: { ...(other.srsData || {}), ...(base.srsData || {}) },
+      customWords: (base.customWords && base.customWords.length >= (other.customWords || []).length) ? base.customWords : (other.customWords || []),
+      customPhrases: (base.customPhrases && base.customPhrases.length >= (other.customPhrases || []).length) ? base.customPhrases : (other.customPhrases || [])
+    };
+  }
+  stateHydrated = true;
+  applyTheme(state.theme, false);
+  updateHUD();
+}
+
+window.addEventListener('pagehide', () => {
+  if (stateHydrated) writeSyncState(state);
+});
+
+/* ==========================================================================
+   2. SOUND EFFECTS (Tone.js) & NATIVE TTS (en-US / ko-KR)
+   ========================================================================== */
+function playSfx(type) {
+  if (!state.sfxEnabled || typeof Tone === 'undefined') return;
+  try {
+    if (Tone.context.state !== 'running') Tone.start();
+    const synth = new Tone.Synth({
+      oscillator: { type: 'triangle' },
+      envelope: { attack: 0.01, decay: 0.12, sustain: 0.05, release: 0.15 }
+    }).toDestination();
+    const now = Tone.now();
+    if (type === 'coin') {
+      synth.triggerAttackRelease('B5', '16n', now);
+      synth.triggerAttackRelease('E6', '8n', now + 0.08);
+    } else if (type === 'correct') {
+      synth.triggerAttackRelease('C5', '16n', now);
+      synth.triggerAttackRelease('E5', '16n', now + 0.07);
+      synth.triggerAttackRelease('G5', '8n', now + 0.14);
+    } else if (type === 'wrong') {
+      synth.triggerAttackRelease('E3', '8n', now);
+      synth.triggerAttackRelease('C3', '4n', now + 0.1);
+    } else if (type === 'powerup') {
+      ['C5', 'E5', 'G5', 'C6'].forEach((n, i) => synth.triggerAttackRelease(n, '16n', now + i * 0.06));
+    } else {
+      synth.triggerAttackRelease('G5', '32n', now);
+    }
+  } catch (e) {}
+}
+
+function toggleSfx() {
+  state.sfxEnabled = !state.sfxEnabled;
+  saveState();
+  showToast(state.sfxEnabled ? '🔔 게임 효과음 ON' : '🔇 게임 효과음 OFF');
+}
+
+function speakEn(text, rate = 0.95, onEnd = null) {
+  if (!('speechSynthesis' in window)) return;
+  window.speechSynthesis.cancel();
+  const utter = new SpeechSynthesisUtterance(text);
+  utter.lang = 'en-US';
+  utter.rate = rate;
+  const voices = window.speechSynthesis.getVoices();
+  const enVoice = voices.find(v => v.lang.includes('en-US') && (v.name.includes('Samantha') || v.name.includes('Google') || v.name.includes('Natural'))) || voices.find(v => v.lang.startsWith('en'));
+  if (enVoice) utter.voice = enVoice;
+  if (onEnd) utter.onend = onEnd;
+  window.speechSynthesis.speak(utter);
+}
+
+function speakKo(text, onEnd = null) {
+  if (!('speechSynthesis' in window)) return;
+  window.speechSynthesis.cancel();
+  const utter = new SpeechSynthesisUtterance(text);
+  utter.lang = 'ko-KR';
+  utter.rate = 1.05;
+  if (onEnd) utter.onend = onEnd;
+  window.speechSynthesis.speak(utter);
+}
+
+/* ==========================================================================
+   3. COMPLETE CURRICULUM DATASETS (WORLD 1 ~ WORLD 5)
+   ========================================================================== */
+const PHONICS_DATA = [
+  { id: 'ph_1', cat: 'vowel', symbol: '/æ/ vs /e/', example: 'bad vs bed', ko: '입을 크게 벌리는 애 vs 가벼운 에', tip: '/æ/는 턱을 아래로 툭 떨어뜨리며 "애"와 "아" 중간 소리를 냅니다.', sampleWord: 'bad vs bed', sampleKo: '배드 vs 베드' },
+  { id: 'ph_2', cat: 'vowel', symbol: '/ɪ/ vs /iː/', example: 'ship vs sheep', ko: '짧고 힘 뺀 이 vs 길게 웃는 이~', tip: 'ship은 한국어 "에"와 "이" 사이로 짧게 끊어 발음합니다.', sampleWord: 'ship vs sheep', sampleKo: '쉽 vs 쉬입' },
+  { id: 'ph_3', cat: 'vowel', symbol: '/ʌ/ vs /ɑː/', example: 'cut vs cart', ko: '짧게 툭 내뱉는 어 vs 입 벌린 아', tip: 'cup, bus의 u는 "어"를 아주 짧고 힘있게 끊어줍니다.', sampleWord: 'cup of coffee', sampleKo: '컵 어브 커피' },
+  { id: 'ph_4', cat: 'consonant', symbol: '/r/ vs /l/', example: 'right vs light', ko: '혀 말아 굴리는 R vs 윗니 뒤 닿는 L', tip: 'R은 혀끝이 입천장 어디에도 닿지 않게 뒤로 살짝 말아줍니다.', sampleWord: 'right and left', sampleKo: '라잇 앤 레프트' },
+  { id: 'ph_5', cat: 'consonant', symbol: '/f/ vs /p/', example: 'fan vs pan', ko: '아랫입술 살짝 물고 바람 빼는 F', tip: '윗니로 아랫입술을 가볍게 스치며 바람 소리(프~)만 냅니다.', sampleWord: 'five fans', sampleKo: '파이브 팬즈' },
+  { id: 'ph_6', cat: 'consonant', symbol: '/v/ vs /b/', example: 'very vs berry', ko: '입술 진동 브~ V vs 두 입술 터지는 B', tip: 'F 입모양 그대로 성대를 울려 진동음을 만듭니다.', sampleWord: 'very good', sampleKo: '베리 굿' },
+  { id: 'ph_7', cat: 'consonant', symbol: '/θ/ & /ð/ (TH)', example: 'think / this', ko: '혀끝을 윗니·아랫니 사이에 살짝 물기', tip: '혀끝을 1mm 내밀고 바람을 빼면 think, 성대를 울리면 this가 됩니다.', sampleWord: 'thank you', sampleKo: '땡큐' },
+  { id: 'ph_8', cat: 'linking', symbol: 'Flap T (탄음화)', example: 'water / better', ko: '모음 사이 T가 ㄹ(R) 소리로 변신!', tip: '미국 영어에서 모음과 모음 사이 T는 "워터"가 아니라 [워러]로 부드럽게 굴러갑니다.', sampleWord: 'a bottle of water', sampleKo: '어 바를 어브 워러' },
+  { id: 'ph_9', cat: 'linking', symbol: '자음 + 모음 연음', example: 'Check it out', ko: '앞 단어 끝 자음 + 뒷 단어 첫 모음 합체', tip: '따로 끊어 읽지 않고 [체키라웃]처럼 한 단어처럼 이어 읽습니다.', sampleWord: 'Check it out!', sampleKo: '체키라웃!' },
+  { id: 'ph_10', cat: 'linking', symbol: '축약 연음 (Wanna / Gonna)', example: 'want to / going to', ko: '원어민 회화 속도 2배 업그레이드 공식', tip: 'want to는 [워너], going to는 [거너], got to는 [가러]로 축약됩니다.', sampleWord: 'I wanna go home', sampleKo: '아이 워너 고 홈' }
+];
+
+const SIGN_PHRASAL_DATA = [
+  { id: 'sp_1', cat: 'sign', en: 'For here or to go?', koRead: '포 히어 오어 투 고?', ko: '매장에서 드실 건가요, 포장해 가실 건가요?', tip: '카페·패스트푸드점 계산대 필수 질문! 매장 식사는 For here, 포장은 To go.' },
+  { id: 'sp_2', cat: 'sign', en: 'Out of order', koRead: '아웃 어브 오더', ko: '고장 / 사용 불가 안내문', tip: '엘리베이터, 자판기, 화장실 문에 붙어 있으면 고장 나서 작동하지 않는다는 뜻입니다.' },
+  { id: 'sp_3', cat: 'sign', en: 'Restrooms / Occupied', koRead: '레스트룸즈 / 아큐파이드', ko: '화장실 / 사용 중 (빈칸은 Vacant)', tip: '비행기·기차 화장실 문 자물쇠에 빨간색 Occupied가 뜨면 안에 사람이 있다는 뜻입니다.' },
+  { id: 'sp_4', cat: 'sign', en: 'Baggage Claim', koRead: '배기지 클레임', ko: '수하물 찾는 곳 (공항 표지판)', tip: '입국 심사 후 위탁 수하물을 찾는 컨베이어 벨트 구역 표지판입니다.' },
+  { id: 'sp_5', cat: 'sign', en: 'Keep right / Watch your step', koRead: '킵 라잇 / 왓치 유어 스텝', ko: '우측통행 / 발밑 조심', tip: '에스컬레이터나 계단, 지하철 승강장에서 가장 자주 보이는 안전 문구입니다.' },
+  { id: 'sp_6', cat: 'sign', en: 'Sold out / Out of stock', koRead: '솔드 아웃 / 아웃 어브 스탁', ko: '매진 / 품절 안내', tip: '메뉴판이나 상점 진열대에 붙어 있으면 재고가 다 떨어졌다는 의미입니다.' },
+  { id: 'sp_7', cat: 'phrasal', en: 'figure out', koRead: '피겨 아웃', ko: '~을 알아내다 / 해결하다', tip: '뉴스·업무·일상 모두 1순위 구동사! Let’s figure it out together. (함께 해결해 봅시다)' },
+  { id: 'sp_8', cat: 'phrasal', en: 'run out of', koRead: '런 아웃 어브', ko: '~이 다 떨어지다 / 고갈되다', tip: '시간, 배터리, 예산이 바닥날 때 씁니다. We are running out of time. (시간이 다 돼가요)' },
+  { id: 'sp_9', cat: 'phrasal', en: 'call off', koRead: '콜 오프', ko: '(회의·행사 등을) 취소하다', tip: '비즈니스와 뉴스에서 cancel 대신 매우 자주 쓰는 구동사입니다.' },
+  { id: 'sp_10', cat: 'phrasal', en: 'look into', koRead: '룩 인투', ko: '~을 조사하다 / 검토하다', tip: '정부·경찰·회사가 사안을 면밀히 들여다볼 때 씁니다. Officials are looking into the issue.' },
+  { id: 'sp_11', cat: 'phrasal', en: 'bring up', koRead: '브링 업', ko: '(화제·안건을) 꺼내다 / 제기하다', tip: '회의나 뉴스 토론에서 새로운 주제를 꺼낼 때 필수 표현입니다.' },
+  { id: 'sp_12', cat: 'phrasal', en: 'carry out', koRead: '캐리 아웃', ko: '(계획·임무·조사를) 수행하다 / 이행하다', tip: '뉴스 보도에서 작전이나 정책을 실행에 옮길 때 implement와 함께 자주 나옵니다.' }
+];
+
+const WORDS_DATA = [
+  { id: 'wd_1', cat: 'news', en: 'bipartisan', koRead: '바이파티즌', ko: '초당파적인 (여야가 함께 합의하는)', ex: 'Lawmakers passed a bipartisan bill. (의원들이 초당적 법안을 통과시켰다.)' },
+  { id: 'wd_2', cat: 'news', en: 'legislation', koRead: '레지슬레이션', ko: '법률 제정 / 법안', ex: 'New legislation will take effect next month. (새 법안이 다음 달 발효된다.)' },
+  { id: 'wd_3', cat: 'news', en: 'implement', koRead: '임플리먼트', ko: '(정책·계획을) 시행하다, 이행하다', ex: 'The government will implement the reform. (정부는 그 개혁안을 시행할 것이다.)' },
+  { id: 'wd_4', cat: 'news', en: 'stakeholder', koRead: '스테이크홀더', ko: '이해관계자 (주주·기관·당사자)', ex: 'We consulted all key stakeholders. (우리는 모든 주요 이해관계자와 협의했다.)' },
+  { id: 'wd_5', cat: 'news', en: 'sanctions', koRead: '생션즈', ko: '(경제·외교) 제재 조치', ex: 'Strict economic sanctions were imposed. (강력한 경제 제재가 부과되었다.)' },
+  { id: 'wd_6', cat: 'news', en: 'diplomatic', koRead: '디플로매틱', ko: '외교의 / 외교적인', ex: 'Both nations resumed diplomatic talks. (양국은 외교 회담을 재개했다.)' },
+  { id: 'wd_7', cat: 'news', en: 'inflation', koRead: '인플레이션', ko: '물가 상승 / 인플레이션', ex: 'The central bank aims to curb inflation. (중앙은행은 물가 상승 억제를 목표로 한다.)' },
+  { id: 'wd_8', cat: 'news', en: 'compliance', koRead: '컴플라이언스', ko: '법규 준수 / 규정 이행', ex: 'Strict compliance is mandatory for all staff. (엄격한 규정 준수는 전 직원 의무다.)' },
+  { id: 'wd_9', cat: 'news', en: 'address', koRead: '어드레스', ko: '(문제를) 다루다·해결하다 / 연설하다', ex: 'The summit will address climate change. (이번 정상회담은 기후 변화를 다룰 것이다.)' },
+  { id: 'wd_10', cat: 'news', en: 'ratify', koRead: '래티파이', ko: '(조약·협정을) 비준하다, 공식 승인하다', ex: 'Parliament voted to ratify the trade deal. (의회는 무역 협정을 비준하기로 표결했다.)' },
+  { id: 'wd_11', cat: 'daily', en: 'definitely', koRead: '데피니틀리', ko: '분명히, 확실히, 당연하지!', ex: 'I will definitely be there on time. (제시간에 꼭 갈게요.)' },
+  { id: 'wd_12', cat: 'daily', en: 'available', koRead: '어베일러블', ko: '이용 가능한 / 시간 되는', ex: 'Are you available tomorrow afternoon? (내일 오후에 시간 되시나요?)' },
+  { id: 'wd_13', cat: 'travel', en: 'reservation', koRead: '레저베이션', ko: '예약', ex: 'I have a reservation under Kim. (김이라는 이름으로 예약했습니다.)' },
+  { id: 'wd_14', cat: 'travel', en: 'itinerary', koRead: '아이티너러리', ko: '여행 일정표', ex: 'Let me double-check our flight itinerary. (항공 일정을 다시 확인해 볼게요.)' },
+  { id: 'wd_15', cat: 'business', en: 'agenda', koRead: '어젠다', ko: '회의 안건, 의제', ex: 'What is the first item on the agenda? (첫 번째 회의 안건이 무엇인가요?)' },
+  { id: 'wd_16', cat: 'business', en: 'deadline', koRead: '데드라인', ko: '마감 기한', ex: 'Can we extend the deadline by two days? (마감 기한을 이틀 연장할 수 있을까요?)' },
+  { id: 'wd_17', cat: 'emotion', en: 'overwhelmed', koRead: '오버웰름드', ko: '압도된 / (일·감정이) 벅찬', ex: 'I feel a bit overwhelmed with work lately. (요즘 업무가 좀 벅차게 느껴져요.)' },
+  { id: 'wd_18', cat: 'emotion', en: 'relieved', koRead: '릴리브드', ko: '안도하는, 다행으로 여기는', ex: 'I’m so relieved to hear that! (그 말을 들으니 정말 안심이 되네요!)' }
+];
+
+const PHRASES_DATA = [
+  {
+    id: 'ph_s1', cat: 'news',
+    ko: '당국자들에 따르면 협상이 교착 상태에 빠졌습니다.',
+    politeEn: 'According to officials, talks have stalled over the budget.',
+    politeKoRead: '어코딩 투 오피셜즈, 톡스 해브 스톨드 오버 더 버짓.',
+    casualEn: 'Officials say the budget talks are stuck right now.',
+    casualKoRead: '오피셜즈 세이 더 버짓 톡스 아 스턱 라잇 나우.',
+    blocks: ['According', 'to', 'officials,', 'talks', 'have', 'stalled.']
+  },
+  {
+    id: 'ph_s2', cat: 'news',
+    ko: '정부는 다음 달 새 정책을 공식 시행할 예정입니다.',
+    politeEn: 'The administration is scheduled to implement the policy next month.',
+    politeKoRead: '디 어드미니스트레이션 이즈 스케줄드 투 임플리먼트 더 폴리시 넥스트 먼쓰.',
+    casualEn: 'The government plans to roll out the new rule next month.',
+    casualKoRead: '더 거번먼트 플랜즈 투 롤 아웃 더 뉴 룰 넥스트 먼쓰.',
+    blocks: ['The', 'government', 'will', 'implement', 'the', 'new', 'policy.']
+  },
+  {
+    id: 'ph_s3', cat: 'business',
+    ko: '늦어서 대단히 죄송합니다 / 늦어서 미안해!',
+    politeEn: 'I sincerely apologize for the delay.',
+    politeKoRead: '아이 신시얼리 어폴로자이즈 포 더 딜레이.',
+    casualEn: 'My bad! Sorry I’m late!',
+    casualKoRead: '마이 배드! 쏘리 아임 레잇!',
+    blocks: ['I', 'sincerely', 'apologize', 'for', 'the', 'delay.']
+  },
+  {
+    id: 'ph_s4', cat: 'business',
+    ko: '알겠습니다, 바로 처리하겠습니다 / 알겠어, 내가 할게!',
+    politeEn: 'Certainly, I will take care of that right away.',
+    politeKoRead: '써튼리, 아이 윌 테이크 케어 어브 댓 라잇 어웨이.',
+    casualEn: 'Sounds good! I’m on it.',
+    casualKoRead: '사운즈 굿! 아임 온 잇.',
+    blocks: ['I', 'will', 'take', 'care', 'of', 'that', 'right', 'away.']
+  },
+  {
+    id: 'ph_s5', cat: 'daily',
+    ko: '도와주셔서 정말 감사합니다 / 진짜 고마워!',
+    politeEn: 'I really appreciate your help.',
+    politeKoRead: '아이 리얼리 어플리시에이트 유어 헬프.',
+    casualEn: 'Thanks a ton! You’re a lifesaver!',
+    casualKoRead: '땡스 어 톤! 유어 어 라이프세이버!',
+    blocks: ['I', 'really', 'appreciate', 'your', 'help.']
+  },
+  {
+    id: 'ph_s6', cat: 'travel',
+    ko: '이 근처에 지하철역이 어디 있는지 알려주시겠어요?',
+    politeEn: 'Could you tell me where the nearest subway station is?',
+    politeKoRead: '쿠쥬 텔 미 웨어 더 니어리스트 서브웨이 스테이션 이즈?',
+    casualEn: 'Hey, where’s the closest subway station?',
+    casualKoRead: '헤이, 웨어즈 더 클로지스트 서브웨이 스테이션?',
+    blocks: ['Could', 'you', 'tell', 'me', 'where', 'the', 'station', 'is?']
+  }
+];
+
+const DIALOGUE_SCENARIOS = [
+  {
+    title: '📰 외신 뉴스 브리핑 & 회의',
+    turns: [
+      {
+        npc: '뉴스 앵커 (Anchor)',
+        npcLine: 'Breaking news: Lawmakers have reached a bipartisan deal on the budget.',
+        npcKo: '속보입니다: 의원들이 예산안에 대해 초당적 합의에 도달했습니다.',
+        options: [
+          { en: 'Will the president ratify the legislation this week?', ko: '대통령이 이번 주에 그 법안을 비준할 예정인가요?', correct: true },
+          { en: 'For here or to go, please.', ko: '매장에서 드실 건가요 포장인가요.', correct: false },
+          { en: 'My bad, traffic was crazy!', ko: '내 실수야, 차가 너무 막혔어!', correct: false }
+        ]
+      },
+      {
+        npc: '정치부 기자 (Correspondent)',
+        npcLine: 'Yes, according to officials, it will be implemented next Monday.',
+        npcKo: '네, 당국자들에 따르면 다음 주 월요일에 시행될 예정입니다.',
+        options: [
+          { en: 'Thank you for the comprehensive briefing.', ko: '상세한 브리핑 감사합니다.', correct: true },
+          { en: 'Out of order, sorry.', ko: '고장 났습니다, 죄송합니다.', correct: false },
+          { en: 'I wanna sleep now.', ko: '나 지금 자고 싶어.', correct: false }
+        ]
+      }
+    ]
+  },
+  {
+    title: '☕ 뉴욕 카페 주문 실전',
+    turns: [
+      {
+        npc: '바리스타 (Barista)',
+        npcLine: 'Hi there! What can I get started for you today?',
+        npcKo: '안녕하세요! 오늘 어떤 음료로 준비해 드릴까요?',
+        options: [
+          { en: 'Could I please get an iced Americano?', ko: '아이스 아메리카노 한 잔 주시겠어요?', correct: true },
+          { en: 'The central bank cut rates.', ko: '중앙은행이 금리를 인하했습니다.', correct: false },
+          { en: 'Check it out, bro!', ko: '이것 좀 봐, 친구!', correct: false }
+        ]
+      },
+      {
+        npc: '바리스타 (Barista)',
+        npcLine: 'Sure thing! Is that for here or to go?',
+        npcKo: '네, 알겠습니다! 매장에서 드실 건가요, 가져가실 건가요?',
+        options: [
+          { en: 'To go, please. Thanks!', ko: '포장으로 부탁해요. 감사합니다!', correct: true },
+          { en: 'I sincerely apologize for the delay.', ko: '지연되어 대단히 죄송합니다.', correct: false },
+          { en: 'Occupied right now.', ko: '지금 사용 중입니다.', correct: false }
+        ]
+      }
+    ]
+  }
+];
+
+const NUANCE_BATTLE_DATA = [
+  {
+    situation: '🏢 직장 상사에게 회의 지연을 사과할 때',
+    ko: '늦어서 대단히 죄송합니다.',
+    options: [
+      { en: 'I sincerely apologize for the delay.', sub: '👔 정중체 (비즈니스 공식)', correct: true },
+      { en: 'My bad! Sorry I’m late!', sub: '🗣️ 반말·슬랭 (친구 사이)', correct: false }
+    ]
+  },
+  {
+    situation: '🍻 10년 지기 친한 친구에게 고마움을 전할 때',
+    ko: '진짜 고마워! 넌 내 생명의 은인이야!',
+    options: [
+      { en: 'Thanks a ton! You’re a lifesaver!', sub: '🗣️ 찐 구어체 (친구·가족)', correct: true },
+      { en: 'I sincerely appreciate your kind assistance.', sub: '👔 격식체 (공식 문서)', correct: false }
+    ]
+  },
+  {
+    situation: '📰 외신 뉴스 브리핑에서 출처를 밝힐 때',
+    ko: '당국자들에 따르면 협상이 교착 상태입니다.',
+    options: [
+      { en: 'According to officials, talks have stalled.', sub: '👔 뉴스·공식 보도 문체', correct: true },
+      { en: 'Officials say talks are totally stuck, bro.', sub: '🗣️ 캐주얼 구어체', correct: false }
+    ]
+  },
+  {
+    situation: '☕ 카페 직원에게 포장 주문을 요청할 때',
+    ko: '포장으로 부탁드립니다. 감사합니다!',
+    options: [
+      { en: 'To go, please. Thanks!', sub: '👔 자연스러운 매장 회화', correct: true },
+      { en: 'Carry out the legislation immediately.', sub: '📰 정치·행정 용어', correct: false }
+    ]
+  }
+];
+
+// WORLD 5: GRAMMAR TEMPLE (성문종합영어 목차 기반 8대 챕터 & 실전 10초 공식)
+const GRAMMAR_CHAPTERS = [
+  {
+    id: 'ch1',
+    num: 'CH.01',
+    icon: '🏷️',
+    title: '관사와 명사 (Articles & Nouns)',
+    subtitle: 'a / an / the / 무관사 · 가산·불가산',
+    summary: '영어 명사 앞에는 "막연한 하나(a/an)"인지 "서로 아는 특정 대상(the)"인지 신호등을 반드시 켜줘야 합니다. 특히 뉴스·공식 문서에서는 정부(the government), 중앙은행(the central bank)처럼 유일한 기관 앞에 the를 붙이는 것이 핵심입니다.'
+  },
+  {
+    id: 'ch2',
+    num: 'CH.02',
+    icon: '⏳',
+    title: '시제와 현재완료 (Tenses & Perfect)',
+    subtitle: '현재완료(have p.p.) vs 단순과거 · 진행형',
+    summary: '단순과거는 "어제 끝난 점"이고, 현재완료(have/has + p.p.)는 "과거에 시작해 현재까지 이어지는 선"입니다. 따라서 yesterday, ago, in 2024 같은 명백한 과거 시점과는 현재완료를 절대 함께 쓸 수 없습니다.'
+  },
+  {
+    id: 'ch3',
+    num: 'CH.03',
+    icon: '📍',
+    title: '부사와 어순 배치 (Adverbs & Word Order)',
+    subtitle: 'always / often / never 위치 · 조비뒤 일앞',
+    summary: '한국어와 달리 영어 부사는 동사의 종류에 따라 지정석이 정해져 있습니다. 빈도부사(always, usually, often, rarely, never)는 "조동사·be동사 뒤, 일반동사 앞(조비뒤 일앞)" 황금 공식만 기억하면 1초 만에 어순을 잡을 수 있습니다.'
+  },
+  {
+    id: 'ch4',
+    num: 'CH.04',
+    icon: '⚡',
+    title: '조동사와 가정법 (Modals & Subjunctive)',
+    subtitle: 'must / should / would / could · 공손한 제안',
+    summary: '조동사는 동사 앞에 붙어 화자의 추측, 의무, 공손함을 더합니다. 특히 비즈니스와 외교 뉴스에서는 직설적인 will 대신 완곡하고 격식 있는 would, could, may가 압도적으로 자주 쓰입니다.'
+  },
+  {
+    id: 'ch5',
+    num: 'CH.05',
+    icon: '🔄',
+    title: '수동태와 뉴스 구문 (Passive & News Syntax)',
+    subtitle: 'be + p.p. · It is reported that · 헤드라인 to부정사',
+    summary: '누가 했는지보다 "무슨 일이 벌어졌는지(객관적 팩트)"가 중요한 뉴스·공식 보고서에서는 수동태(is expected to, was ratified)가 필수입니다. 신문 헤드라인에서는 미래 예정을 "주어 + to + 동사원형"으로 압축합니다.'
+  },
+  {
+    id: 'ch6',
+    num: 'CH.06',
+    icon: '🧩',
+    title: '준동사: 부정사와 동명사 (Infinitives & Gerunds)',
+    subtitle: 'to + 동사원형(미래·목적) vs ~ing(과거·경험)',
+    summary: '동사를 명사·형용사·부사처럼 변신시켜 문장을 길고 풍부하게 만드는 핵심 장치입니다. decide, plan, expect 뒤에는 미래 지향적인 to부정사가, finish, consider, avoid 뒤에는 동명사(~ing)가 옵니다.'
+  },
+  {
+    id: 'ch7',
+    num: 'CH.07',
+    icon: '🔗',
+    title: '관계사와 접속사 (Relatives & Conjunctions)',
+    subtitle: 'who / which / that · despite vs although',
+    summary: '두 문장을 하나로 매끄럽게 이어주는 연결고리입니다. 선행사가 사람이면 who, 사물·법안이면 which/that으로 뒤에서 수식하며, 뉴스에서는 "비록 ~일지라도"를 뜻하는 although(절)와 despite(명사구) 구분이 자주 출제됩니다.'
+  },
+  {
+    id: 'ch8',
+    num: 'CH.08',
+    icon: '⚖️',
+    title: '비교구문과 특수어순 (Comparisons & Inversion)',
+    subtitle: '비교급 강조(much/far) · not only A but also B',
+    summary: '수치 변화가 잦은 경제·정치 보도에서는 "훨씬 더(~er)"를 강조할 때 very 대신 much, far, significantly를 씁니다. 또한 부정어(Never, Rarely)가 문장 맨 앞에 오면 의문문처럼 주어와 동사가 도치됩니다.'
+  }
+];
+
+const GRAMMAR_DATA = [
+  {
+    id: 'gr_1', cat: 'ch1',
+    title: '처음 꺼내는 말은 a/an, 서로 아는 그 대상은 the',
+    formula: '막연한 하나(단수) = a / an  |  앞에서 언급했거나 유일한 것 = the',
+    wrong: 'I bought the laptop yesterday. A laptop is fast.',
+    right: 'I bought a laptop yesterday. The laptop is fast.',
+    koRead: '아이 보트 어 랩탑 예스터데이. 더 랩탑 이즈 패스트.',
+    ko: '어제 노트북을 한 대 샀다. (방금 말한) 그 노트북은 빠르다.',
+    tip: '처음 등장할 때는 "어떤 하나(a)"로 소개하고, 두 번째 말할 때부터는 듣는 사람도 알기 때문에 "그것(the)"을 붙입니다.'
+  },
+  {
+    id: 'gr_2', cat: 'ch1',
+    title: '뉴스·공식 직책과 기관 앞에는 the가 필수!',
+    formula: 'the President / the government / the committee / the central bank',
+    wrong: 'Government announced new policy to curb inflation.',
+    right: 'The government announced a new policy to curb inflation.',
+    koRead: '더 거번먼트 어나운스트 어 뉴 폴리시 투 커브 인플레이션.',
+    ko: '정부는 인플레이션을 억제하기 위한 새 정책을 발표했다.',
+    tip: '뉴스에서 "그 나라 정부/대통령/중앙은행"처럼 세상에 하나뿐인 공식 기관 앞에는 항상 the를 붙입니다.'
+  },
+  {
+    id: 'gr_3', cat: 'ch1',
+    title: '모음 소리(아·에·이·오·우) 앞에서는 a 대신 an',
+    formula: 'an hour (h 묵음) / an official / an urgent issue (vs a university)',
+    wrong: 'We had a urgent meeting for a hour.',
+    right: 'We had an urgent meeting for an hour.',
+    koRead: '위 해드 언 얼전트 미팅 포 언 아워.',
+    ko: '우리는 한 시간 동안 긴급 회의를 했다.',
+    tip: '철자가 아니라 "발음"이 기준입니다! hour는 [아워] 모음 시작이므로 an hour, university는 [유] 자음 시작이라 a university입니다.'
+  },
+  {
+    id: 'gr_4', cat: 'ch2',
+    title: '과거의 사건이 지금까지 이어질 때: have/has + p.p.',
+    formula: '과거 시작 → 현재까지 영향/결과 유지 = have / has + 과거분사',
+    wrong: 'Talks stalled since last Monday.',
+    right: 'Talks have stalled since last Monday.',
+    koRead: '톡스 해브 스톨드 신스 라스트 먼데이.',
+    ko: '협상은 지난 월요일부터 지금까지 교착 상태에 빠져 있다.',
+    tip: 'since(~이래로)나 for(~동안)처럼 "과거부터 지금까지" 기간이 나오면 단순과거가 아니라 반드시 have/has + p.p.를 씁니다.'
+  },
+  {
+    id: 'gr_5', cat: 'ch2',
+    title: 'yesterday, last week 등 명백한 과거 시점과는 사용 불가!',
+    formula: 'yesterday / ago / in 2024 → 무조건 단순과거 (have p.p. ❌)',
+    wrong: 'The committee has ratified the bill yesterday.',
+    right: 'The committee ratified the bill yesterday.',
+    koRead: '더 커미티 래티파이드 더 빌 예스터데이.',
+    ko: '위원회는 어제 그 법안을 비준했다.',
+    tip: 'yesterday처럼 끝난 과거 시점이 문장에 있으면 현재완료(has ratified)를 절대 쓸 수 없습니다.'
+  },
+  {
+    id: 'gr_6', cat: 'ch2',
+    title: '방금 막 완료된 뉴스 속보: has just + p.p.',
+    formula: '주어 + have/has + just / already + p.p. (방금/이미 ~했다)',
+    wrong: 'The president just arrived at the summit.',
+    right: 'The president has just arrived at the summit.',
+    koRead: '더 프레지던트 해즈 저스트 어라이브드 앳 더 써밋.',
+    ko: '대통령이 방금 정상회담장에 도착했습니다.',
+    tip: '뉴스 앵커가 방금 일어난 소식을 전할 때 has just + p.p.를 쓰면 생생한 현장감이 살아납니다.'
+  },
+  {
+    id: 'gr_7', cat: 'ch3',
+    title: '빈도부사(always, often, never) 1초 어순 공식: 조비뒤 일앞!',
+    formula: '조동사(will/can) · be동사(am/is/are) 뒤  |  일반동사 앞',
+    wrong: 'She always is late for work. / He checks always email.',
+    right: 'She is always late for work. / He always checks email.',
+    koRead: '쉬 이즈 올웨이즈 레이트 포 워크. / 히 올웨이즈 첵스 이메일.',
+    ko: '그녀는 항상 직장에 늦는다. / 그는 항상 이메일을 확인한다.',
+    tip: '"조비뒤 일앞(조동사·be동사 뒤, 일반동사 앞)" 5글자만 기억하면 빈도부사 위치를 절대 틀리지 않습니다!'
+  },
+  {
+    id: 'gr_8', cat: 'ch3',
+    title: '조동사(will, can, should)나 have p.p.가 있을 때 부사 위치',
+    formula: '조동사 + [always / rarely / clearly] + 동사원형',
+    wrong: 'We will implement always strict compliance.',
+    right: 'We will always implement strict compliance.',
+    koRead: '위 윌 올웨이즈 임플리먼트 스트릭트 컴플라이언스.',
+    ko: '우리는 항상 엄격한 법규 준수를 이행할 것입니다.',
+    tip: '조동사(will)와 본동사(implement) 사이가 부사의 지정석입니다! has already passed처럼 have와 p.p. 사이도 동일합니다.'
+  },
+  {
+    id: 'gr_9', cat: 'ch3',
+    title: '부정어(never, rarely, seldom)가 오면 not을 또 쓰지 않는다!',
+    formula: '주어 + never / rarely + 일반동사 (이중부정 금지)',
+    wrong: 'Officials do not rarely comment on ongoing talks.',
+    right: 'Officials rarely comment on ongoing talks.',
+    koRead: '오피셜즈 레얼리 코멘트 온 온고잉 톡스.',
+    ko: '당국자들은 진행 중인 협상에 대해 거의 논평하지 않는다.',
+    tip: 'rarely(거의 ~않다) 자체에 이미 부정 뜻이 들어 있으므로 don’t를 빼고 일반동사 바로 앞에 둡니다.'
+  },
+  {
+    id: 'gr_10', cat: 'ch4',
+    title: '비즈니스·공식 요청에서 공손함을 높이는 Would / Could',
+    formula: 'Would you please + 동사원형? / Could you confirm ~?',
+    wrong: 'You must send me the report right now.',
+    right: 'Could you please send me the report by noon?',
+    koRead: '쿠쥬 플리즈 센드 미 더 리포트 바이 눈?',
+    ko: '정오까지 보고서를 보내주실 수 있으실까요?',
+    tip: '직설적인 명령문이나 must 대신 Could/Would를 쓰면 격식 있고 세련된 비즈니스 영어가 됩니다.'
+  },
+  {
+    id: 'gr_11', cat: 'ch4',
+    title: '가정법 과거: 현재 사실과 반대되는 상황 가정하기',
+    formula: 'If + 주어 + 과거동사(were), 주어 + would / could + 동사원형',
+    wrong: 'If I am you, I will accept the proposal.',
+    right: 'If I were you, I would accept the proposal.',
+    koRead: '이프 아이 워 유, 아이 우드 억셉트 더 프로포절.',
+    ko: '내가 당신이라면 그 제안을 수락할 텐데요.',
+    tip: '현재의 상상을 말할 때는 If절에 과거형(were)을 쓰고, 주절에는 will 대신 would를 짝지어 줍니다.'
+  },
+  {
+    id: 'gr_12', cat: 'ch5',
+    title: '뉴스 헤드라인 공식: 미래 예정은 "to + 동사원형"으로 축약',
+    formula: '주어 + to + 동사원형 = ~할 예정이다 (will be / is going to 생략)',
+    wrong: 'Headline: President will going to visit Seoul tomorrow.',
+    right: 'Headline: President to visit Seoul tomorrow.',
+    koRead: '프레지던트 투 비짓 서울 투모로우.',
+    ko: '[헤드라인] 대통령, 내일 서울 방문 예정',
+    tip: '뉴스 자막과 신문 제목은 글자 수를 줄이기 위해 be동사와 will을 빼고 "주어 + to부정사"만으로 미래 일정을 표현합니다.'
+  },
+  {
+    id: 'gr_13', cat: 'ch5',
+    title: '객관적 보도 수동태: It is reported / expected that ~',
+    formula: 'It is reported / believed / expected that + 주어 + 동사',
+    wrong: 'It reports that the central bank will cut rates.',
+    right: 'It is reported that the central bank will cut rates.',
+    koRead: '잇 이즈 리포티드 댓 더 센트럴 뱅크 윌 컷 레이츠.',
+    ko: '중앙은행이 금리를 인하할 것이라고 보도되고 있다.',
+    tip: '뉴스에서 "사람들이 그렇게 보도한다/전망한다"라고 객관성을 유지할 때 가장 많이 쓰는 수동태 틀입니다.'
+  },
+  {
+    id: 'gr_14', cat: 'ch5',
+    title: '출처 밝히기 공식: According to + 명사 (주의: according to me ❌)',
+    formula: 'According to officials / reports / data, + 주절',
+    wrong: 'According to me, this policy is effective.',
+    right: 'In my opinion, / According to experts, this policy is effective.',
+    koRead: '어코딩 투 엑스퍼츠, 디스 폴리시 이즈 이펙티브.',
+    ko: '전문가들에 따르면, 이 정책은 효과적이다.',
+    tip: 'According to 뒤에는 반드시 외부 출처(officials, reports, experts)만 옵니다! 내 생각을 말할 때는 In my opinion을 쓰세요.'
+  },
+  {
+    id: 'gr_15', cat: 'ch6',
+    title: '미래 지향 동사(decide, plan, expect) 뒤에는 to + 동사원형',
+    formula: 'decide / plan / expect / agree + to + 동사원형',
+    wrong: 'Lawmakers agreed passing the bipartisan bill.',
+    right: 'Lawmakers agreed to pass the bipartisan bill.',
+    koRead: '로메이커스 어그리드 투 패스 더 바이파티즌 빌.',
+    ko: '의원들은 그 초당적 법안을 통과시키기로 합의했다.',
+    tip: '앞으로 할 일을 결정·합의·계획하는 동사 뒤에는 반드시 to부정사가 따라옵니다.'
+  },
+  {
+    id: 'gr_16', cat: 'ch6',
+    title: '전치사(to, for, of, in) 뒤에는 명사 또는 동명사(~ing)!',
+    formula: 'look forward to + ~ing  |  committed to + ~ing',
+    wrong: 'We look forward to meet all stakeholders.',
+    right: 'We look forward to meeting all stakeholders.',
+    koRead: '위 룩 포워드 투 미팅 올 스테이크홀더즈.',
+    ko: '모든 이해관계자분들을 만나 뵙기를 고대합니다.',
+    tip: '이메일 최빈출 함정! look forward to의 to는 전치사이므로 뒤에 동사원형이 아니라 ~ing(meeting)가 와야 합니다.'
+  },
+  {
+    id: 'gr_17', cat: 'ch7',
+    title: '명사를 뒤에서 꾸며주는 관계대명사: who(사람) / which·that(사물)',
+    formula: '선행사(명사) + who / which / that + 불완전한 문장',
+    wrong: 'The bill who passed yesterday will take effect soon.',
+    right: 'The bill which passed yesterday will take effect soon.',
+    koRead: '더 빌 위치 패스트 예스터데이 윌 테이크 이펙트 순.',
+    ko: '어제 통과된 그 법안은 곧 발효될 것이다.',
+    tip: '법안(The bill)은 사물이므로 who가 아니라 which나 that으로 연결해 뒤에서 수식합니다.'
+  },
+  {
+    id: 'gr_18', cat: 'ch7',
+    title: '"~에도 불구하고": Despite + 명사구  vs  Although + 주어·동사',
+    formula: 'Despite + 명사(구)  |  Although + 주어 + 동사',
+    wrong: 'Despite inflation was high, consumer spending grew.',
+    right: 'Despite high inflation, consumer spending grew.',
+    koRead: '디스파이트 하이 인플레이션, 컨슈머 스펜딩 그루.',
+    ko: '높은 인플레이션에도 불구하고, 소비 지출은 증가했다.',
+    tip: 'Despite 뒤에는 동사가 없는 "명사 덩어리(high inflation)"만 오고, 주어+동사가 오려면 Although를 씁니다.'
+  },
+  {
+    id: 'gr_19', cat: 'ch8',
+    title: '비교급("훨씬 더 ~한")을 강조할 때는 very 대신 much / far!',
+    formula: 'much / far / significantly + 비교급(~er / more ~)',
+    wrong: 'The economic impact was very bigger than expected.',
+    right: 'The economic impact was much bigger than expected.',
+    koRead: '디 이코노믹 임팩트 워즈 머치 비거 댄 익스펙티드.',
+    ko: '경제적 파급력은 예상보다 훨씬 더 컸다.',
+    tip: 'very는 원급(very big)만 꾸며줄 수 있고, 비교급(bigger, more important) 앞에서는 much나 far를 씁니다.'
+  },
+  {
+    id: 'gr_20', cat: 'ch8',
+    title: '부정어(Never, Rarely)가 문장 맨 앞에 오면 주어·동사 도치!',
+    formula: 'Rarely / Never + 조동사(do/does/have) + 주어 + 본동사',
+    wrong: 'Rarely the central bank changes rates so quickly.',
+    right: 'Rarely does the central bank change rates so quickly.',
+    koRead: '레얼리 더즈 더 센트럴 뱅크 체인지 레이츠 쏘 퀵클리.',
+    ko: '중앙은행이 이토록 빠르게 금리를 변경하는 경우는 드물다.',
+    tip: '강조를 위해 부정어(Rarely)를 문장 맨 앞으로 빼면, 뒤따르는 어순이 의문문처럼(does + 주어 + 동사원형) 바뀝니다.'
+  }
+];
+
+const ORDER_SNIPER_DATA = [
+  { id: 'os_1', cat: 'ch3', targetWord: 'always', meaning: '그녀는 항상 업무에 늦는다. (조비뒤 일앞!)', slots: ['She', 'is', 'late', 'for work.'], correctSlot: 2, explain: 'be동사(is) 바로 뒤가 빈도부사 always의 자리입니다!' },
+  { id: 'os_2', cat: 'ch3', targetWord: 'often', meaning: '그는 아침에 자주 뉴스를 읽는다. (조비뒤 일앞!)', slots: ['He', 'reads', 'the news', 'in the morning.'], correctSlot: 1, explain: '일반동사(reads) 바로 앞이 빈도부사 often의 자리입니다!' },
+  { id: 'os_3', cat: 'ch3', targetWord: 'already', meaning: '의회는 이미 그 무역 조약을 비준했다.', slots: ['Parliament', 'has', 'ratified', 'the trade treaty.'], correctSlot: 2, explain: '현재완료(has + p.p.)에서는 조동사 has와 과거분사 ratified 사이에 들어갑니다!' },
+  { id: 'os_4', cat: 'ch1', targetWord: 'the', meaning: '당국자들은 그 새 법안을 시행할 것이다. (특정 대상)', slots: ['Officials', 'will implement', 'new legislation', 'next month.'], correctSlot: 2, explain: '이미 논의된 특정한 "그 새 법안"을 가리키므로 명사구 앞에 the가 들어갑니다!' },
+  { id: 'os_5', cat: 'ch1', targetWord: 'an', meaning: '우리는 한 시간 동안 긴급 브리핑을 가졌다.', slots: ['We', 'held', 'urgent briefing', 'this morning.'], correctSlot: 2, explain: 'urgent가 모음 소리 [어]로 시작하는 단수 명사구이므로 앞에 an이 들어갑니다!' },
+  { id: 'os_6', cat: 'ch2', targetWord: 'have', meaning: '협상은 지난주부터 교착 상태에 빠져 있다.', slots: ['Peace talks', 'stalled', 'since last week.'], correctSlot: 1, explain: 'since last week(지난주 이래로 지금까지)이 있으므로 복수주어 뒤에 have를 넣어 현재완료를 만듭니다!' },
+  { id: 'os_7', cat: 'ch5', targetWord: 'to', meaning: '[뉴스 헤드라인] 대통령, 내일 정상회담 참석 예정', slots: ['President', 'attend', 'the summit', 'tomorrow.'], correctSlot: 1, explain: '뉴스 헤드라인에서는 미래 예정(will attend)을 "주어 + to + 동사원형"으로 줄여 씁니다!' },
+  { id: 'os_8', cat: 'ch4', targetWord: 'would', meaning: '내가 당신이라면 그 제안을 수락할 텐데요. (가정법 과거)', slots: ['If I were you, I', 'accept', 'the proposal.'], correctSlot: 1, explain: '가정법 과거 주절에서는 주어 뒤에 조동사 would를 배치합니다!' },
+  { id: 'os_9', cat: 'ch6', targetWord: 'to', meaning: '의원들은 그 초당적 법안을 통과시키기로 합의했다.', slots: ['Lawmakers', 'agreed', 'pass', 'the bipartisan bill.'], correctSlot: 2, explain: 'agree 뒤에는 미래 지향적인 to부정사(to pass)가 이어집니다!' },
+  { id: 'os_10', cat: 'ch7', targetWord: 'which', meaning: '어제 통과된 그 법안은 곧 발효될 것이다.', slots: ['The bill', 'passed yesterday', 'will take effect soon.'], correctSlot: 1, explain: '선행사 The bill(사물) 바로 뒤에 주격 관계대명사 which를 배치해 뒤에서 수식합니다!' },
+  { id: 'os_11', cat: 'ch8', targetWord: 'much', meaning: '경제적 파급력은 예상보다 훨씬 더 컸다.', slots: ['The impact was', 'bigger', 'than expected.'], correctSlot: 1, explain: '비교급(bigger) 바로 앞에 much를 두어 "훨씬 더"라는 뜻을 강조합니다!' }
+];
+
+const GRAMMAR_QUIZ_DATA = [
+  {
+    cat: 'ch1',
+    prompt: '_____ central bank held interest rates steady today.',
+    sub: '[CH.01 관사] 뉴스에서 유일한 공식 기관(중앙은행)을 지칭할 때 알맞은 관사는?',
+    options: [
+      { label: 'The (특정·유일한 공식 기관)', correct: true },
+      { label: 'A (불특정한 하나)', correct: false },
+      { label: 'An (모음 앞 부정관사)', correct: false },
+      { label: '관사 불필요', correct: false }
+    ]
+  },
+  {
+    cat: 'ch1',
+    prompt: 'The meeting lasted for _____ hour.',
+    sub: '[CH.01 관사] 철자는 h지만 발음이 [아워]로 시작할 때 알맞은 표현은?',
+    options: [
+      { label: 'an hour', correct: true },
+      { label: 'a hour', correct: false },
+      { label: 'the hours', correct: false },
+      { label: 'an hours', correct: false }
+    ]
+  },
+  {
+    cat: 'ch2',
+    prompt: 'Lawmakers _____ the new bill yesterday.',
+    sub: '[CH.02 시제] 문장 끝에 명백한 과거 시점(yesterday)이 있을 때 올바른 동사는?',
+    options: [
+      { label: 'ratified (단순과거)', correct: true },
+      { label: 'have ratified (현재완료)', correct: false },
+      { label: 'has ratified (현재완료)', correct: false },
+      { label: 'have been ratify', correct: false }
+    ]
+  },
+  {
+    cat: 'ch2',
+    prompt: 'The two nations _____ diplomatic ties since 2020.',
+    sub: '[CH.02 시제] 2020년부터 지금까지(since 2020) 외교 관계를 유지해 왔다는 뜻은?',
+    options: [
+      { label: 'have maintained (현재완료)', correct: true },
+      { label: 'maintained (단순과거)', correct: false },
+      { label: 'maintains (단순현재)', correct: false },
+      { label: 'will maintained', correct: false }
+    ]
+  },
+  {
+    cat: 'ch3',
+    prompt: '빈도부사 always가 들어갈 위치로 가장 자연스러운 문장은?',
+    sub: '[CH.03 부사 어순] 공식: 조동사·be동사 뒤, 일반동사 앞 (조비뒤 일앞)',
+    options: [
+      { label: 'Our team is always ready for updates.', correct: true },
+      { label: 'Our team always is ready for updates.', correct: false },
+      { label: 'Our team is ready always for updates.', correct: false },
+      { label: 'Always our team is ready for updates.', correct: false }
+    ]
+  },
+  {
+    cat: 'ch3',
+    prompt: '일반동사(reviews)와 빈도부사(often)의 올바른 어순은?',
+    sub: '[CH.03 부사 어순] 그녀는 자주 모든 계약서를 검토한다.',
+    options: [
+      { label: 'She often reviews every contract.', correct: true },
+      { label: 'She reviews often every contract.', correct: false },
+      { label: 'Often she reviews every contract is.', correct: false },
+      { label: 'She does often reviews contract.', correct: false }
+    ]
+  },
+  {
+    cat: 'ch4',
+    prompt: 'If I _____ you, I would accept the proposal.',
+    sub: '[CH.04 조동사·가정법] 현재 사실의 반대를 가정하는 가정법 과거의 공식은?',
+    options: [
+      { label: 'were', correct: true },
+      { label: 'am', correct: false },
+      { label: 'will be', correct: false },
+      { label: 'have been', correct: false }
+    ]
+  },
+  {
+    cat: 'ch5',
+    prompt: '[뉴스 헤드라인] "장관, 다음 주 새 정책 발표 예정"을 영어로 줄이면?',
+    sub: '[CH.05 수동태·뉴스] 뉴스 제목에서는 미래 예정(will announce)을 어떻게 축약할까요?',
+    options: [
+      { label: 'Minister to announce new policy next week', correct: true },
+      { label: 'Minister announcing new policy yesterday', correct: false },
+      { label: 'Minister will to announce new policy', correct: false },
+      { label: 'Minister announced new policy next week', correct: false }
+    ]
+  },
+  {
+    cat: 'ch5',
+    prompt: '_____ officials, the bipartisan bill will pass soon.',
+    sub: '[CH.05 수동태·뉴스] "당국자들에 따르면"이라는 뉴스 출처 표기 공식은?',
+    options: [
+      { label: 'According to', correct: true },
+      { label: 'According as', correct: false },
+      { label: 'According me', correct: false },
+      { label: 'Report to', correct: false }
+    ]
+  },
+  {
+    cat: 'ch6',
+    prompt: 'We look forward to _____ all key stakeholders.',
+    sub: '[CH.06 준동사] 전치사 to 뒤에는 동사원형이 아닌 무엇이 올까요?',
+    options: [
+      { label: 'meeting (동명사 ~ing)', correct: true },
+      { label: 'meet (동사원형)', correct: false },
+      { label: 'met (과거형)', correct: false },
+      { label: 'to meet', correct: false }
+    ]
+  },
+  {
+    cat: 'ch7',
+    prompt: '_____ high inflation, consumer spending continued to grow.',
+    sub: '[CH.07 관계사·접속사] 뒤에 동사 없이 명사구(high inflation)만 올 때 알맞은 단어는?',
+    options: [
+      { label: 'Despite (~에도 불구하고 + 명사구)', correct: true },
+      { label: 'Although (~에도 불구하고 + 주어·동사)', correct: false },
+      { label: 'Because (접속사 + 주어·동사)', correct: false },
+      { label: 'Which (관계대명사)', correct: false }
+    ]
+  },
+  {
+    cat: 'ch8',
+    prompt: 'The economic impact was _____ bigger than expected.',
+    sub: '[CH.08 비교·도치] 비교급(bigger) 앞에서 "훨씬 더"를 강조하는 부사는?',
+    options: [
+      { label: 'much', correct: true },
+      { label: 'very', correct: false },
+      { label: 'many', correct: false },
+      { label: 'so much as', correct: false }
+    ]
+  }
+];
+
+const MASCOT_CHEERS = [
+  { en: "You're doing awesome! Keep going!", ko: "정말 잘하고 있어요! 계속 나아가요!" },
+  { en: "Every single word brings you closer to fluency!", ko: "단어 하나하나가 유창함에 가까워지는 길이에요!" },
+  { en: "Let's master English grammar like a pro!", ko: "프로처럼 영문법을 정복해 봐요!" },
+  { en: "Consistency beats intensity. Great job today!", ko: "꾸준함이 강함을 이깁니다. 오늘도 최고예요!" },
+  { en: "Ready to understand global news effortlessly?", ko: "외신 뉴스도 막힘없이 이해할 준비 되셨나요?" }
+];
+
+/* ==========================================================================
+   4. GLOBAL APP STATE, NAVIGATION & MODAL HELPERS
+   ========================================================================== */
+let currentView = 'home';
+let viewParams = {};
+let cheerIdx = 0;
+let audioLoopTimer = null;
+let audioLoopRunning = false;
+let audioLoopIdx = 0;
+
+function showToast(msg) {
+  const box = document.getElementById('toast-box');
+  const text = document.getElementById('toast-msg');
+  if (!box || !text) return;
+  text.textContent = msg;
+  box.classList.remove('opacity-0');
+  box.classList.add('opacity-100');
+  clearTimeout(box._timer);
+  box._timer = setTimeout(() => {
+    box.classList.remove('opacity-100');
+    box.classList.add('opacity-0');
+  }, 2200);
+}
+
+function showFloatingCoin(text = '+10 🪙') {
+  const layer = document.getElementById('fx-layer');
+  if (!layer) return;
+  const el = document.createElement('div');
+  el.className = 'coin-float fixed left-1/2 top-1/3 -translate-x-1/2 font-game text-xl text-amber-400 drop-shadow-[0_2px_2px_rgba(0,0,0,0.85)]';
+  el.textContent = text;
+  layer.appendChild(el);
+  setTimeout(() => el.remove(), 950);
+}
+
+function awardCoins(amount, expGain = 10) {
+  state.coins = (state.coins || 0) + amount;
+  state.exp = (state.exp || 0) + expGain;
+  playSfx('coin');
+  showFloatingCoin(`+${amount} 🪙`);
+  saveState();
+}
+
+function getLevelInfo() {
+  const lv = Math.floor((state.exp || 0) / 100) + 1;
+  let title = '🌱 초보 모험가';
+  if (lv >= 15) title = '👑 영어 마스터';
+  else if (lv >= 8) title = '🗣️ 원어민급 수다쟁이';
+  else if (lv >= 3) title = '✈️ 뉴욕 여행자';
+  return { lv, title };
+}
+
+function updateHUD() {
+  const { lv, title } = getLevelInfo();
+  const lvEl = document.getElementById('hud-level');
+  const titleEl = document.getElementById('hud-title');
+  const coinEl = document.getElementById('hud-coins');
+  const sfxEl = document.getElementById('btn-sfx');
+  const homeBtn = document.getElementById('btn-home-nav');
+  if (lvEl) lvEl.textContent = `LV.${lv}`;
+  if (titleEl) titleEl.textContent = title;
+  if (coinEl) coinEl.textContent = state.coins || 0;
+  if (sfxEl) sfxEl.textContent = state.sfxEnabled ? '🔔' : '🔇';
+  if (homeBtn) homeBtn.classList.toggle('hidden', currentView === 'home');
+}
+
+function applyTheme(themeClass, persist = true) {
+  const body = document.getElementById('app-body');
+  if (body) {
+    body.classList.remove('theme-day', 'theme-night', 'theme-snow');
+    body.classList.add(themeClass || 'theme-day');
+  }
+  state.theme = themeClass || 'theme-day';
+  if (persist) saveState();
+}
+
+function goHome() {
+  stopAudioLoop();
+  currentView = 'home';
+  viewParams = {};
+  updateHUD();
+  renderCurrentView();
+}
+
+function openView(viewName, params = {}) {
+  stopAudioLoop();
+  playSfx('tap');
+  currentView = viewName;
+  viewParams = params;
+  updateHUD();
+  renderCurrentView();
+  const main = document.getElementById('main-content');
+  if (main) main.scrollTop = 0;
+}
+
+function closeModal() {
+  const overlay = document.getElementById('modal-overlay');
+  if (overlay) overlay.classList.add('hidden');
+}
+
+function closeModalOnBackdrop(event) {
+  if (event && event.target && event.target.id === 'modal-overlay') {
+    closeModal();
+  }
+}
+
+function getMascotSVG(mood = 'happy') {
+  const cos = state.equippedCosmetic || 'none';
+  let hatSvg = '';
+  if (cos === 'cap') {
+    hatSvg = `<path d="M26 26 Q50 8 74 26 L82 30 L18 30 Z" fill="#ef4444" stroke="#1e293b" stroke-width="3"/><circle cx="50" cy="20" r="5" fill="#fff"/>`;
+  } else if (cos === 'cat') {
+    hatSvg = `<polygon points="26,30 34,10 46,26" fill="#fbbf24" stroke="#1e293b" stroke-width="3"/><polygon points="74,30 66,10 54,26" fill="#fbbf24" stroke="#1e293b" stroke-width="3"/>`;
+  } else if (cos === 'crown') {
+    hatSvg = `<polygon points="30,26 36,10 50,20 64,10 70,26" fill="#facc15" stroke="#1e293b" stroke-width="3"/>`;
+  }
+  const glassesColor = cos === 'sunglasses' ? '#0f172a' : '#ffffff';
+  const eyeContent = mood === 'happy'
+    ? `<path d="M34 48 Q40 42 46 48" fill="none" stroke="#1e293b" stroke-width="3" stroke-linecap="round"/><path d="M54 48 Q60 42 66 48" fill="none" stroke="#1e293b" stroke-width="3" stroke-linecap="round"/>`
+    : `<circle cx="40" cy="48" r="3.5" fill="#1e293b"/><circle cx="60" cy="48" r="3.5" fill="#1e293b"/>`;
+
+  return `
+    <svg viewBox="0 0 100 100" class="w-full h-full">
+      <g class="wing-l"><ellipse cx="14" cy="46" rx="10" ry="6" fill="#fff" stroke="#1e293b" stroke-width="2.5"/></g>
+      <g class="wing-r"><ellipse cx="86" cy="46" rx="10" ry="6" fill="#fff" stroke="#1e293b" stroke-width="2.5"/></g>
+      <circle cx="50" cy="54" r="32" fill="#fde68a" stroke="#1e293b" stroke-width="3.5"/>
+      <path d="M22 44 Q50 18 78 44" fill="#6366f1" stroke="#1e293b" stroke-width="3"/>
+      ${hatSvg}
+      <rect x="27" y="39" width="21" height="17" rx="5" fill="${glassesColor}" stroke="#1e293b" stroke-width="3"/>
+      <rect x="52" y="39" width="21" height="17" rx="5" fill="${glassesColor}" stroke="#1e293b" stroke-width="3"/>
+      <line x1="48" y1="47" x2="52" y2="47" stroke="#1e293b" stroke-width="3"/>
+      ${cos === 'sunglasses' ? '' : eyeContent}
+      <circle cx="31" cy="62" r="4" fill="#fb7185" opacity="0.7"/>
+      <circle cx="69" cy="62" r="4" fill="#fb7185" opacity="0.7"/>
+      <path d="M43 66 Q50 74 57 66" fill="none" stroke="#1e293b" stroke-width="3" stroke-linecap="round"/>
+    </svg>
+  `;
+}
+
+function pokeMascot() {
+  cheerIdx = (cheerIdx + 1) % MASCOT_CHEERS.length;
+  const cheer = MASCOT_CHEERS[cheerIdx];
+  const enEl = document.getElementById('mascot-en');
+  const koEl = document.getElementById('mascot-ko');
+  const box = document.getElementById('mascot-box');
+  if (enEl) enEl.textContent = `"${cheer.en}"`;
+  if (koEl) koEl.textContent = cheer.ko;
+  if (box) {
+    box.classList.remove('mascot-jump');
+    void box.offsetWidth;
+    box.classList.add('mascot-jump');
+  }
+  playSfx('tap');
+  speakEn(cheer.en, 0.98);
+}
+
+function hitQuestionBlock() {
+  awardCoins(5, 5);
+  pokeMascot();
+  showToast('❓ 보너스 블록! +5 코인 획득!');
+}
+
+function toggleMastered(id) {
+  const idx = state.masteredIds.indexOf(id);
+  if (idx === -1) {
+    state.masteredIds.push(id);
+    awardCoins(5, 10);
+    showToast('✅ 암기 완료! +5 코인');
+  } else {
+    state.masteredIds.splice(idx, 1);
+    saveState();
+    showToast('🔄 암기 체크 해제됨');
+  }
+  renderCurrentView();
+}
+
+function recordSrsResult(id, isCorrect) {
+  const prev = state.srsData[id] || { interval: 0, wrongCount: 0, nextDue: 0 };
+  const now = Date.now();
+  if (isCorrect) {
+    const nextInt = prev.interval === 0 ? 1 : prev.interval === 1 ? 3 : prev.interval === 3 ? 7 : 14;
+    state.srsData[id] = {
+      interval: nextInt,
+      wrongCount: prev.wrongCount || 0,
+      nextDue: now + nextInt * 86400000
+    };
+  } else {
+    state.srsData[id] = {
+      interval: 0,
+      wrongCount: (prev.wrongCount || 0) + 1,
+      nextDue: now
+    };
+  }
+  saveState();
+}
+
+function getAllStudyItems() {
+  const words = [...WORDS_DATA, ...(state.customWords || [])].map(w => ({
+    id: w.id,
+    front: w.en,
+    read: w.koRead || '',
+    back: w.ko,
+    sub: w.ex || ''
+  }));
+  const phrases = [...PHRASES_DATA, ...(state.customPhrases || [])].map(p => ({
+    id: p.id,
+    front: p.politeEn,
+    read: p.politeKoRead || '',
+    back: p.ko,
+    sub: p.casualEn ? `🗣️ 친구: ${p.casualEn}` : ''
+  }));
+  const signs = SIGN_PHRASAL_DATA.map(s => ({
+    id: s.id,
+    front: s.en,
+    read: s.koRead,
+    back: s.ko,
+    sub: s.tip
+  }));
+  return [...words, ...phrases, ...signs];
+}
+
+function getDueSrsItems() {
+  const all = getAllStudyItems();
+  const now = Date.now();
+  const due = all.filter(item => {
+    const rec = state.srsData[item.id];
+    if (!rec) return !state.masteredIds.includes(item.id);
+    return rec.nextDue <= now || rec.wrongCount > 0;
+  });
+  return due.length > 0 ? due.slice(0, 15) : all.slice(0, 10);
+}
+
+function getWorldStars(worldNum) {
+  let ids = [];
+  if (worldNum === 1) ids = PHONICS_DATA.map(x => x.id);
+  else if (worldNum === 2) ids = SIGN_PHRASAL_DATA.map(x => x.id);
+  else if (worldNum === 3) ids = WORDS_DATA.map(x => x.id);
+  else if (worldNum === 4) ids = PHRASES_DATA.map(x => x.id);
+  else if (worldNum === 5) ids = GRAMMAR_DATA.map(x => x.id);
+  if (!ids.length) return 0;
+  const done = ids.filter(id => state.masteredIds.includes(id)).length;
+  const ratio = done / ids.length;
+  if (ratio >= 0.8) return 3;
+  if (ratio >= 0.4) return 2;
+  if (done >= 1) return 1;
+  return 0;
+}
+
+function renderStars(count) {
+  return '★'.repeat(count) + '☆'.repeat(3 - count);
+}
+
+/* ==========================================================================
+   5. MODALS: SHOP, STATS/WRONG NOTE, BACKUP/RESTORE, CUSTOM ADD
+   ========================================================================== */
+function openModal(type) {
+  playSfx('tap');
+  const overlay = document.getElementById('modal-overlay');
+  const title = document.getElementById('modal-title');
+  const body = document.getElementById('modal-body');
+  if (!overlay || !title || !body) return;
+  overlay.classList.remove('hidden');
+
+  if (type === 'shop') {
+    title.textContent = `🏪 마을 코인 상점 (보유: ${state.coins} 🪙)`;
+    const cosmetics = [
+      { id: 'none', name: '기본 날개 모자', price: 0, icon: '🧢' },
+      { id: 'cap', name: '슈퍼 레드 캡', price: 30, icon: '🍄' },
+      { id: 'cat', name: '황금 고양이귀', price: 50, icon: '🐱' },
+      { id: 'sunglasses', name: '블루 선글라스', price: 70, icon: '🕶️' },
+      { id: 'crown', name: '영어 마스터 왕관', price: 120, icon: '👑' }
+    ];
+    const themes = [
+      { id: 'theme-day', name: '맑은 초원 마을', price: 0, icon: '☀️' },
+      { id: 'theme-night', name: '별빛 밤하늘 마을', price: 40, icon: '🌙' },
+      { id: 'theme-snow', name: '눈꽃 겨울 마을', price: 60, icon: '❄️' }
+    ];
+
+    body.innerHTML = `
+      <div class="p-3 rounded-2xl bg-amber-50 border-2 border-amber-300 flex items-center justify-between">
+        <div>
+          <div class="font-bold text-sm text-slate-900">💡 50:50 힌트 물약 (보유: ${state.hintPotions}개)</div>
+          <div class="text-xs text-slate-600">퀴즈에서 오답 2개를 즉시 지워줍니다.</div>
+        </div>
+        <button onclick="buyPotion()" class="btn-retro bg-amber-400 px-3 py-1.5 rounded-xl text-xs font-black">15 🪙 구매</button>
+      </div>
+
+      <div>
+        <div class="font-game text-xs text-slate-700 mb-1.5">🎀 에이미짱 코스튬</div>
+        <div class="grid grid-cols-2 gap-2">
+          ${cosmetics.map(c => {
+            const unlocked = state.unlockedCosmetics.includes(c.id);
+            const equipped = state.equippedCosmetic === c.id;
+            return `
+              <button onclick="buyOrEquipCosmetic('${c.id}', ${c.price})" class="btn-retro p-2.5 rounded-2xl text-left ${equipped ? 'bg-indigo-100 border-indigo-600' : 'bg-slate-50'}">
+                <div class="text-lg">${c.icon}</div>
+                <div class="font-bold text-xs text-slate-900 mt-0.5">${c.name}</div>
+                <div class="text-[11px] font-black ${equipped ? 'text-indigo-700' : 'text-amber-600'}">
+                  ${equipped ? '✅ 착용 중' : unlocked ? '장착하기' : `${c.price} 🪙`}
+                </div>
+              </button>
+            `;
+          }).join('')}
+        </div>
+      </div>
+
+      <div>
+        <div class="font-game text-xs text-slate-700 mb-1.5">🗺️ 월드맵 배경 테마</div>
+        <div class="grid grid-cols-3 gap-2">
+          ${themes.map(t => {
+            const unlocked = state.unlockedThemes.includes(t.id);
+            const active = state.theme === t.id;
+            return `
+              <button onclick="buyOrEquipTheme('${t.id}', ${t.price})" class="btn-retro p-2 rounded-2xl text-center ${active ? 'bg-sky-100 border-sky-600' : 'bg-slate-50'}">
+                <div class="text-lg">${t.icon}</div>
+                <div class="font-bold text-[11px] text-slate-900 mt-0.5">${t.name}</div>
+                <div class="text-[10px] font-black ${active ? 'text-sky-700' : 'text-amber-600'}">
+                  ${active ? '적용 중' : unlocked ? '변경' : `${t.price} 🪙`}
+                </div>
+              </button>
+            `;
+          }).join('')}
+        </div>
+      </div>
+    `;
+  } else if (type === 'stats') {
+    title.textContent = '📊 학습 트래킹 & 스마트 오답노트';
+    const all = getAllStudyItems();
+    const wrongItems = all.filter(i => state.srsData[i.id] && state.srsData[i.id].wrongCount > 0);
+    body.innerHTML = `
+      <div class="grid grid-cols-3 gap-2 text-center">
+        <div class="p-2.5 rounded-2xl bg-emerald-50 border-2 border-emerald-300">
+          <div class="text-xs font-bold text-emerald-700">암기 완료</div>
+          <div class="font-game text-lg text-emerald-900">${state.masteredIds.length}개</div>
+        </div>
+        <div class="p-2.5 rounded-2xl bg-amber-50 border-2 border-amber-300">
+          <div class="text-xs font-bold text-amber-700">연속 학습</div>
+          <div class="font-game text-lg text-amber-900">${state.streak}일 🔥</div>
+        </div>
+        <div class="p-2.5 rounded-2xl bg-indigo-50 border-2 border-indigo-300">
+          <div class="text-xs font-bold text-indigo-700">누적 경험치</div>
+          <div class="font-game text-lg text-indigo-900">${state.exp} XP</div>
+        </div>
+      </div>
+
+      <div>
+        <div class="font-game text-xs text-rose-600 mb-1.5">🚨 자주 틀리는 오답노트 (${wrongItems.length}개)</div>
+        ${wrongItems.length === 0
+          ? `<div class="p-4 rounded-2xl bg-slate-50 text-center text-xs text-slate-500">아직 틀린 항목이 없습니다. 퀴즈에 도전해 보세요!</div>`
+          : wrongItems.map(item => `
+              <div class="p-2.5 rounded-2xl bg-rose-50 border border-rose-200 flex items-center justify-between gap-2 mb-1.5">
+                <div class="min-w-0">
+                  <div class="font-en font-bold text-sm text-slate-900 truncate">${item.front}</div>
+                  <div class="text-xs text-slate-600 truncate">${item.back}</div>
+                </div>
+                <div class="flex items-center gap-1 shrink-0">
+                  <button onclick="speakEn('${item.front.replace(/'/g, "\\'")}')" class="px-2 py-1 rounded-lg bg-white border text-xs">🔊</button>
+                  <button onclick="clearWrongItem('${item.id}')" class="px-2 py-1 rounded-lg bg-emerald-500 text-white text-[11px] font-bold">완료</button>
+                </div>
+              </div>
+            `).join('')}
+      </div>
+    `;
+  } else if (type === 'backup') {
+    title.textContent = '💾 파일 다운로드 & 데이터 백업';
+    const encoded = btoa(unescape(encodeURIComponent(JSON.stringify(state))));
+    body.innerHTML = `
+      <div class="p-3 rounded-2xl bg-indigo-50 border-2 border-indigo-300 space-y-2">
+        <div class="font-bold text-xs text-indigo-950">📱 아이폰 고정 주소(Tiiny.host) 등록용 파일 받기</div>
+        <p class="text-[11px] text-slate-600 leading-relaxed">
+          Gemini 상단에 다운로드 버튼이 안 보일 때는 아래 버튼을 누르세요. 아이폰 [파일] 앱에 <strong>index.html</strong>로 바로 저장됩니다!
+        </p>
+        <button onclick="downloadSelfHtml()" class="btn-retro w-full bg-indigo-600 text-white py-3 rounded-xl font-game text-sm">⬇️ index.html 파일로 바로 다운로드</button>
+      </div>
+
+      <p class="text-xs text-slate-600 leading-relaxed pt-1">
+        기기 변경이나 주소 이전 시에는 아래 백업 코드를 복사해 두세요.
+      </p>
+      <textarea id="backup-textarea" rows="3" class="w-full p-2.5 rounded-2xl border-2 border-slate-300 text-[11px] font-mono bg-slate-50">${encoded}</textarea>
+      <div class="grid grid-cols-2 gap-2">
+        <button onclick="copyBackupCode()" class="btn-retro bg-sky-400 text-white py-2.5 rounded-xl font-bold text-xs">📋 백업 코드 복사</button>
+        <button onclick="restoreBackupCode()" class="btn-retro bg-emerald-500 text-white py-2.5 rounded-xl font-bold text-xs">📥 코드로 복원하기</button>
+      </div>
+    `;
+  } else if (type === 'add') {
+    title.textContent = '＋ 나만의 영단어 / 실전 문장 추가';
+    body.innerHTML = `
+      <div class="space-y-2.5">
+        <div>
+          <label class="text-xs font-bold text-slate-700">영어 단어 또는 문장</label>
+          <input id="custom-en" type="text" placeholder="예: bipartisan / Could you clarify that?" class="w-full mt-1 p-2.5 rounded-xl border-2 border-slate-300 text-sm font-en">
+        </div>
+        <div>
+          <label class="text-xs font-bold text-slate-700">한글 발음 표기 (선택)</label>
+          <input id="custom-read" type="text" placeholder="예: 바이파티즌 / 쿠쥬 클래리파이 댓?" class="w-full mt-1 p-2.5 rounded-xl border-2 border-slate-300 text-sm">
+        </div>
+        <div>
+          <label class="text-xs font-bold text-slate-700">한국어 뜻</label>
+          <input id="custom-ko" type="text" placeholder="예: 초당파적인 / 명확히 설명해 주시겠어요?" class="w-full mt-1 p-2.5 rounded-xl border-2 border-slate-300 text-sm">
+        </div>
+        <button onclick="saveCustomEntry()" class="btn-retro w-full bg-indigo-600 text-white py-3 rounded-2xl font-game text-sm">✨ 저장하고 +10 코인 받기</button>
+      </div>
+    `;
+  }
+}
+
+function buyPotion() {
+  if (state.coins < 15) return showToast('🪙 코인이 부족합니다! (15 코인 필요)');
+  state.coins -= 15;
+  state.hintPotions = (state.hintPotions || 0) + 1;
+  playSfx('powerup');
+  saveState();
+  openModal('shop');
+  showToast('💡 50:50 힌트 물약 구매 완료!');
+}
+
+function buyOrEquipCosmetic(id, price) {
+  if (!state.unlockedCosmetics.includes(id)) {
+    if (state.coins < price) return showToast(`🪙 코인이 부족합니다! (${price} 코인 필요)`);
+    state.coins -= price;
+    state.unlockedCosmetics.push(id);
+    playSfx('powerup');
+  } else {
+    playSfx('tap');
+  }
+  state.equippedCosmetic = id;
+  saveState();
+  openModal('shop');
+  if (currentView === 'home') renderCurrentView();
+  showToast('🎀 코스튬이 적용되었습니다!');
+}
+
+function buyOrEquipTheme(id, price) {
+  if (!state.unlockedThemes.includes(id)) {
+    if (state.coins < price) return showToast(`🪙 코인이 부족합니다! (${price} 코인 필요)`);
+    state.coins -= price;
+    state.unlockedThemes.push(id);
+    playSfx('powerup');
+  } else {
+    playSfx('tap');
+  }
+  applyTheme(id, true);
+  openModal('shop');
+  showToast('🗺️ 마을 배경 테마가 변경되었습니다!');
+}
+
+function clearWrongItem(id) {
+  if (state.srsData[id]) {
+    state.srsData[id].wrongCount = 0;
+    state.srsData[id].nextDue = Date.now() + 86400000;
+    saveState();
+    openModal('stats');
+    showToast('✅ 오답노트에서 복습 완료 처리되었습니다!');
+  }
+}
+
+function copyBackupCode() {
+  const ta = document.getElementById('backup-textarea');
+  if (!ta) return;
+  ta.select();
+  try {
+    document.execCommand('copy');
+    showToast('📋 백업 코드가 클립보드에 복사되었습니다!');
+  } catch (e) {
+    showToast('코드를 길게 눌러 복사해 주세요.');
+  }
+}
+
+function downloadSelfHtml() {
+  try {
+    const htmlContent = '<!DOCTYPE html>\n' + document.documentElement.outerHTML;
+    const blob = new Blob([htmlContent], { type: 'text/html;charset=utf-8' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = 'index.html';
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    setTimeout(() => URL.revokeObjectURL(url), 1000);
+    showToast('⬇️ index.html 다운로드 완료! [파일] 앱을 확인하세요.');
+  } catch (e) {
+    showToast('⚠️ 브라우저에서 다운로드를 지원하지 않으면 코드를 복사해 주세요.');
+  }
+}
+
+function restoreBackupCode() {
+  const ta = document.getElementById('backup-textarea');
+  if (!ta || !ta.value.trim()) return;
+  try {
+    const jsonStr = decodeURIComponent(escape(atob(ta.value.trim())));
+    const parsed = JSON.parse(jsonStr);
+    if (parsed && typeof parsed === 'object') {
+      state = { ...DEFAULT_STATE, ...parsed };
+      applyTheme(state.theme, false);
+      saveState();
+      closeModal();
+      renderCurrentView();
+      showToast('🎉 학습 데이터가 성공적으로 복원되었습니다!');
+    }
+  } catch (e) {
+    showToast('⚠️ 올바른 백업 코드가 아닙니다.');
+  }
+}
+
+function saveCustomEntry() {
+  const en = (document.getElementById('custom-en')?.value || '').trim();
+  const read = (document.getElementById('custom-read')?.value || '').trim();
+  const ko = (document.getElementById('custom-ko')?.value || '').trim();
+  if (!en || !ko) return showToast('영어 표현과 한국어 뜻을 모두 입력해 주세요.');
+  state.customWords.unshift({
+    id: 'cw_' + Date.now(),
+    cat: 'daily',
+    en,
+    koRead: read,
+    ko,
+    ex: '나만의 등록 표현'
+  });
+  awardCoins(10, 15);
+  closeModal();
+  renderCurrentView();
+  showToast('✨ 나만의 단어장에 등록되었습니다!');
+}
+
+/* ==========================================================================
+   6. VIEW ROUTER
+   ========================================================================== */
+function renderCurrentView() {
+  const container = document.getElementById('main-content');
+  if (!container) return;
+  if (currentView === 'home') renderHomeView(container);
+  else if (currentView === 'world1') renderWorld1View(container);
+  else if (currentView === 'world2') renderWorld2View(container);
+  else if (currentView === 'world3') renderWorld3View(container);
+  else if (currentView === 'world4') renderWorld4View(container);
+  else if (currentView === 'world5') renderWorld5View(container);
+  else if (currentView === 'quick_srs') renderQuickSrsView(container);
+  else if (currentView === 'audio_loop') renderAudioLoopView(container);
+  else if (currentView === 'quiz') renderQuizView(container);
+}
+
+/* ==========================================================================
+   7. HOME VIEW (SUPER MARIO WORLD MAP & MASCOT CARD)
+   ========================================================================== */
+function renderHomeView(container) {
+  const cheer = MASCOT_CHEERS[cheerIdx % MASCOT_CHEERS.length];
+  const dueCount = getDueSrsItems().length;
+
+  container.innerHTML = `
+    <div class="space-y-3 pt-1">
+      <!-- Mascot Cheer & Question Bonus Block -->
+      <div class="card-retro rounded-3xl p-3.5 flex items-center gap-3 relative overflow-hidden">
+        <div id="mascot-box" onclick="pokeMascot()" class="w-20 h-20 shrink-0 cursor-pointer mascot-idle">
+          ${getMascotSVG('happy')}
+        </div>
+        <div onclick="pokeMascot()" class="flex-1 min-w-0 cursor-pointer">
+          <div class="flex items-center gap-1.5 mb-1">
+            <span class="text-[10px] font-black bg-rose-500 text-white px-2 py-0.5 rounded-full">에이미짱</span>
+            <span class="text-[10px] font-bold text-slate-500">터치해서 응원 듣기 🔊</span>
+          </div>
+          <p id="mascot-en" class="font-en font-bold text-sm text-indigo-900 leading-snug">"${cheer.en}"</p>
+          <p id="mascot-ko" class="text-xs font-bold text-slate-600 mt-0.5">${cheer.ko}</p>
+        </div>
+        <button onclick="hitQuestionBlock()" class="q-block-anim w-12 h-12 rounded-2xl bg-gradient-to-b from-amber-300 to-amber-500 border-3 border-slate-900 shadow-md flex flex-col items-center justify-center shrink-0 active:scale-90" title="보너스 코인 블록">
+          <span class="font-game text-2xl leading-none text-white drop-shadow-[0_2px_0_#78350f]">?</span>
+          <span class="text-[9px] font-black text-amber-950">+5🪙</span>
+        </button>
+      </div>
+
+      <!-- Subway Commute Quick Tools (5-Min SRS + Audio Loop) -->
+      <div class="grid grid-cols-2 gap-2.5">
+        <button onclick="openView('quick_srs')" class="btn-retro rounded-2xl p-3 bg-gradient-to-br from-amber-300 to-orange-400 text-left relative">
+          <div class="flex items-center justify-between">
+            <span class="text-xl">⚡</span>
+            <span class="text-[10px] font-black bg-slate-900 text-amber-300 px-2 py-0.5 rounded-full">${dueCount}개 대기</span>
+          </div>
+          <div class="font-game text-sm text-slate-900 mt-1">5분 퀵 복습 (SRS)</div>
+          <div class="text-[11px] font-bold text-slate-800/80">한 손 스와이프 암기</div>
+        </button>
+
+        <button onclick="openView('audio_loop')" class="btn-retro rounded-2xl p-3 bg-gradient-to-br from-cyan-300 to-sky-400 text-left">
+          <div class="flex items-center justify-between">
+            <span class="text-xl">🎧</span>
+            <span class="text-[10px] font-black bg-slate-900 text-cyan-200 px-2 py-0.5 rounded-full">출퇴근 모드</span>
+          </div>
+          <div class="font-game text-sm text-slate-900 mt-1">오디오 루프 듣기</div>
+          <div class="text-[11px] font-bold text-slate-800/80">한→생각→영(느림/보통)</div>
+        </button>
+      </div>
+
+      <!-- 5 RPG World Stages -->
+      <div class="space-y-2.5">
+        <div class="flex items-center justify-between px-1">
+          <span class="font-game text-sm text-white drop-shadow-[0_2px_1px_rgba(0,0,0,0.6)]">🗺️ 모험 스테이지 선택</span>
+          <span class="text-[11px] font-bold text-white/95 drop-shadow">연속 학습 🔥 ${state.streak}일째</span>
+        </div>
+
+        <button onclick="openView('world1')" class="btn-retro w-full rounded-2xl p-3.5 bg-white/95 hover:bg-emerald-50 flex items-center justify-between text-left">
+          <div class="flex items-center gap-3">
+            <div class="w-12 h-12 rounded-2xl bg-emerald-500 border-2 border-slate-800 flex items-center justify-center text-2xl shrink-0">🌱</div>
+            <div>
+              <div class="flex items-center gap-1.5">
+                <span class="text-[10px] font-black bg-emerald-100 text-emerald-800 px-2 py-0.5 rounded">WORLD 1</span>
+                <span class="text-xs font-bold text-amber-500">${renderStars(getWorldStars(1))}</span>
+              </div>
+              <h3 class="font-game text-base text-slate-900 mt-0.5">초원 마을 · 파닉스 & 연음</h3>
+              <p class="text-xs text-slate-500">R/L·TH 발음 & 원어민 연음 규칙(Flap T)</p>
+            </div>
+          </div>
+          <span class="font-game text-slate-400 text-lg">▶</span>
+        </button>
+
+        <button onclick="openView('world2')" class="btn-retro w-full rounded-2xl p-3.5 bg-white/95 hover:bg-amber-50 flex items-center justify-between text-left">
+          <div class="flex items-center gap-3">
+            <div class="w-12 h-12 rounded-2xl bg-amber-500 border-2 border-slate-800 flex items-center justify-center text-2xl shrink-0">🍄</div>
+            <div>
+              <div class="flex items-center gap-1.5">
+                <span class="text-[10px] font-black bg-amber-100 text-amber-800 px-2 py-0.5 rounded">WORLD 2</span>
+                <span class="text-xs font-bold text-amber-500">${renderStars(getWorldStars(2))}</span>
+              </div>
+              <h3 class="font-game text-base text-slate-900 mt-0.5">버섯 성채 · 간판 & 구동사</h3>
+              <p class="text-xs text-slate-500">현지 표지판·메뉴판 해독 & 필수 구동사</p>
+            </div>
+          </div>
+          <span class="font-game text-slate-400 text-lg">▶</span>
+        </button>
+
+        <button onclick="openView('world3')" class="btn-retro w-full rounded-2xl p-3.5 bg-white/95 hover:bg-sky-50 flex items-center justify-between text-left">
+          <div class="flex items-center gap-3">
+            <div class="w-12 h-12 rounded-2xl bg-sky-500 border-2 border-slate-800 flex items-center justify-center text-2xl shrink-0">🧪</div>
+            <div>
+              <div class="flex items-center gap-1.5">
+                <span class="text-[10px] font-black bg-sky-100 text-sky-800 px-2 py-0.5 rounded">WORLD 3</span>
+                <span class="text-xs font-bold text-amber-500">${renderStars(getWorldStars(3))}</span>
+              </div>
+              <h3 class="font-game text-base text-slate-900 mt-0.5">토관 미로 · 뉴스·필수 영단어</h3>
+              <p class="text-xs text-slate-500">시사·정치·업무·일상 어휘 + 한글 발음 표기</p>
+            </div>
+          </div>
+          <span class="font-game text-slate-400 text-lg">▶</span>
+        </button>
+
+        <button onclick="openView('world4')" class="btn-retro w-full rounded-2xl p-3.5 bg-white/95 hover:bg-rose-50 flex items-center justify-between text-left">
+          <div class="flex items-center gap-3">
+            <div class="w-12 h-12 rounded-2xl bg-rose-500 border-2 border-slate-800 flex items-center justify-center text-2xl shrink-0">🏰</div>
+            <div>
+              <div class="flex items-center gap-1.5">
+                <span class="text-[10px] font-black bg-rose-100 text-rose-800 px-2 py-0.5 rounded">WORLD 4</span>
+                <span class="text-xs font-bold text-amber-500">${renderStars(getWorldStars(4))}</span>
+              </div>
+              <h3 class="font-game text-base text-slate-900 mt-0.5">쿠파 성 · 실전 회화 & 뉴스 브리핑</h3>
+              <p class="text-xs text-slate-500">공식 vs 일상 비교 · 블록조립 · 3턴 실전대화</p>
+            </div>
+          </div>
+          <span class="font-game text-slate-400 text-lg">▶</span>
+        </button>
+
+        <button onclick="openView('world5', { ch: null })" class="btn-retro w-full rounded-2xl p-3.5 bg-gradient-to-r from-indigo-50 to-purple-50 hover:from-indigo-100 hover:to-purple-100 flex items-center justify-between text-left">
+          <div class="flex items-center gap-3">
+            <div class="w-12 h-12 rounded-2xl bg-indigo-600 border-2 border-slate-800 flex items-center justify-center text-2xl shrink-0">📘</div>
+            <div>
+              <div class="flex items-center gap-1.5">
+                <span class="text-[10px] font-black bg-indigo-600 text-white px-2 py-0.5 rounded">WORLD 5 · NEW</span>
+                <span class="text-xs font-bold text-amber-500">${renderStars(getWorldStars(5))}</span>
+              </div>
+              <h3 class="font-game text-base text-indigo-950 mt-0.5">문법의 신전 · 체계적 영문법 목차</h3>
+              <p class="text-xs text-indigo-700 font-bold">8대 챕터(관사·완료·부사어순·뉴스구문) & 게임</p>
+            </div>
+          </div>
+          <span class="font-game text-indigo-500 text-lg">▶</span>
+        </button>
+      </div>
+    </div>
+  `;
+}
+
+/* ==========================================================================
+   8. WORLD 1 ~ WORLD 4 VIEWS
+   ========================================================================== */
+function renderWorld1View(container) {
+  const cat = viewParams.cat || 'all';
+  const list = cat === 'all' ? PHONICS_DATA : PHONICS_DATA.filter(i => i.cat === cat);
+
+  container.innerHTML = `
+    <div class="space-y-3 pt-1">
+      <div class="card-retro rounded-2xl p-3 flex items-center justify-between">
+        <div>
+          <span class="text-[10px] font-black bg-emerald-100 text-emerald-800 px-2 py-0.5 rounded">WORLD 1</span>
+          <h2 class="font-game text-base text-slate-900 mt-0.5">🌱 초원 마을 · 파닉스 & 연음</h2>
+        </div>
+        <button onclick="startGenericQuiz('world1')" class="btn-retro bg-emerald-500 text-white px-3 py-2 rounded-xl font-game text-xs">🎯 퀴즈 도전</button>
+      </div>
+
+      <div class="flex gap-1.5 overflow-x-auto no-scrollbar">
+        ${[
+          { id: 'all', label: '전체' },
+          { id: 'vowel', label: '핵심 모음' },
+          { id: 'consonant', label: 'R/L · F/V · TH' },
+          { id: 'linking', label: '원어민 연음' }
+        ].map(t => `
+          <button onclick="openView('world1', { cat: '${t.id}' })" class="px-3 py-1.5 rounded-full text-xs font-black border-2 border-slate-800 shrink-0 ${cat === t.id ? 'bg-slate-900 text-amber-300' : 'bg-white text-slate-800'}">${t.label}</button>
+        `).join('')}
+      </div>
+
+      <div class="space-y-2.5">
+        ${list.map(item => {
+          const done = state.masteredIds.includes(item.id);
+          return `
+            <div class="card-retro rounded-2xl p-3.5 ${done ? 'bg-emerald-50/95' : 'bg-white'}">
+              <div class="flex items-center justify-between gap-2">
+                <div>
+                  <span class="font-en font-extrabold text-base text-emerald-800">${item.symbol}</span>
+                  <span class="ml-2 font-en font-bold text-sm text-slate-700">${item.example}</span>
+                </div>
+                <div class="flex items-center gap-1.5">
+                  <button onclick="speakEn('${item.sampleWord.replace(/'/g, "\\'")}', 0.85)" class="btn-retro bg-sky-100 px-2.5 py-1 rounded-xl text-xs font-bold">🐢 느리게</button>
+                  <button onclick="speakEn('${item.sampleWord.replace(/'/g, "\\'")}', 1.0)" class="btn-retro bg-amber-300 px-2.5 py-1 rounded-xl text-xs font-bold">🔊 듣기</button>
+                  <button onclick="toggleMastered('${item.id}')" class="w-8 h-8 rounded-xl border-2 border-slate-800 font-black text-xs ${done ? 'bg-emerald-500 text-white' : 'bg-slate-100 text-slate-400'}">✓</button>
+                </div>
+              </div>
+              <div class="mt-2 text-xs font-bold text-slate-800">${item.ko} <span class="text-indigo-600">[${item.sampleKo}]</span></div>
+              <div class="mt-1 text-[11px] text-slate-600 bg-slate-100 p-2 rounded-xl">💡 ${item.tip}</div>
+            </div>
+          `;
+        }).join('')}
+      </div>
+    </div>
+  `;
+}
+
+function renderWorld2View(container) {
+  const cat = viewParams.cat || 'all';
+  const list = cat === 'all' ? SIGN_PHRASAL_DATA : SIGN_PHRASAL_DATA.filter(i => i.cat === cat);
+
+  container.innerHTML = `
+    <div class="space-y-3 pt-1">
+      <div class="card-retro rounded-2xl p-3 flex items-center justify-between">
+        <div>
+          <span class="text-[10px] font-black bg-amber-100 text-amber-800 px-2 py-0.5 rounded">WORLD 2</span>
+          <h2 class="font-game text-base text-slate-900 mt-0.5">🍄 버섯 성채 · 간판 & 구동사</h2>
+        </div>
+        <button onclick="startGenericQuiz('world2')" class="btn-retro bg-amber-500 text-white px-3 py-2 rounded-xl font-game text-xs">👾 보스전 퀴즈</button>
+      </div>
+
+      <div class="flex gap-1.5">
+        ${[
+          { id: 'all', label: '전체 (12)' },
+          { id: 'sign', label: '🚏 현지 간판·메뉴판' },
+          { id: 'phrasal', label: '🚀 필수 구동사' }
+        ].map(t => `
+          <button onclick="openView('world2', { cat: '${t.id}' })" class="px-3 py-1.5 rounded-full text-xs font-black border-2 border-slate-800 ${cat === t.id ? 'bg-slate-900 text-amber-300' : 'bg-white text-slate-800'}">${t.label}</button>
+        `).join('')}
+      </div>
+
+      <div class="space-y-2.5">
+        ${list.map(item => {
+          const done = state.masteredIds.includes(item.id);
+          return `
+            <div class="card-retro rounded-2xl p-3.5 ${done ? 'bg-amber-50/95' : 'bg-white'}">
+              <div class="flex items-start justify-between gap-2">
+                <div>
+                  <span class="text-[10px] font-black px-2 py-0.5 rounded ${item.cat === 'sign' ? 'bg-rose-100 text-rose-700' : 'bg-indigo-100 text-indigo-700'}">${item.cat === 'sign' ? '표지판' : '구동사'}</span>
+                  <div class="font-en font-extrabold text-base text-slate-900 mt-1">${item.en}</div>
+                  <div class="text-xs font-bold text-indigo-600">[${item.koRead}]</div>
+                </div>
+                <div class="flex items-center gap-1.5 shrink-0">
+                  <button onclick="speakEn('${item.en.replace(/'/g, "\\'")}')" class="btn-retro bg-amber-300 px-2.5 py-1.5 rounded-xl text-xs font-bold">🔊</button>
+                  <button onclick="toggleMastered('${item.id}')" class="w-8 h-8 rounded-xl border-2 border-slate-800 font-black text-xs ${done ? 'bg-emerald-500 text-white' : 'bg-slate-100 text-slate-400'}">✓</button>
+                </div>
+              </div>
+              <div class="mt-1.5 font-bold text-xs text-slate-800">${item.ko}</div>
+              <div class="mt-1 text-[11px] text-slate-600 bg-slate-100 p-2 rounded-xl">💡 ${item.tip}</div>
+            </div>
+          `;
+        }).join('')}
+      </div>
+    </div>
+  `;
+}
+
+function renderWorld3View(container) {
+  const cat = viewParams.cat || 'all';
+  const allWords = [...(state.customWords || []), ...WORDS_DATA];
+  const list = cat === 'all' ? allWords : allWords.filter(i => i.cat === cat);
+
+  container.innerHTML = `
+    <div class="space-y-3 pt-1">
+      <div class="card-retro rounded-2xl p-3 flex items-center justify-between">
+        <div>
+          <span class="text-[10px] font-black bg-sky-100 text-sky-800 px-2 py-0.5 rounded">WORLD 3</span>
+          <h2 class="font-game text-base text-slate-900 mt-0.5">🧪 토관 미로 · 뉴스·필수 영단어</h2>
+        </div>
+        <button onclick="startGenericQuiz('world3')" class="btn-retro bg-sky-500 text-white px-3 py-2 rounded-xl font-game text-xs">🎯 단어 테스트</button>
+      </div>
+
+      <div class="flex gap-1.5 overflow-x-auto no-scrollbar">
+        ${[
+          { id: 'all', label: '전체' },
+          { id: 'news', label: '📰 뉴스·정치·공식' },
+          { id: 'business', label: '💼 비즈니스' },
+          { id: 'daily', label: '☕ 일상' },
+          { id: 'travel', label: '✈️ 여행' },
+          { id: 'emotion', label: '💬 감정' }
+        ].map(t => `
+          <button onclick="openView('world3', { cat: '${t.id}' })" class="px-3 py-1.5 rounded-full text-xs font-black border-2 border-slate-800 shrink-0 ${cat === t.id ? 'bg-slate-900 text-amber-300' : 'bg-white text-slate-800'}">${t.label}</button>
+        `).join('')}
+      </div>
+
+      <div class="space-y-2.5">
+        ${list.map(item => {
+          const done = state.masteredIds.includes(item.id);
+          return `
+            <div class="card-retro rounded-2xl p-3.5 ${done ? 'bg-sky-50/95' : 'bg-white'}">
+              <div class="flex items-start justify-between gap-2">
+                <div>
+                  <div class="flex items-center gap-2">
+                    <span class="font-en font-extrabold text-lg text-slate-900">${item.en}</span>
+                    ${item.koRead ? `<span class="text-xs font-bold text-indigo-600">[${item.koRead}]</span>` : ''}
+                  </div>
+                  <div class="font-bold text-xs text-slate-800 mt-0.5">${item.ko}</div>
+                </div>
+                <div class="flex items-center gap-1.5 shrink-0">
+                  <button onclick="speakEn('${item.en.replace(/'/g, "\\'")}')" class="btn-retro bg-sky-200 px-2.5 py-1.5 rounded-xl text-xs font-bold">🔊</button>
+                  <button onclick="toggleMastered('${item.id}')" class="w-8 h-8 rounded-xl border-2 border-slate-800 font-black text-xs ${done ? 'bg-emerald-500 text-white' : 'bg-slate-100 text-slate-400'}">✓</button>
+                </div>
+              </div>
+              ${item.ex ? `<div class="mt-2 text-[11px] text-slate-600 bg-slate-100 p-2 rounded-xl font-en">${item.ex}</div>` : ''}
+            </div>
+          `;
+        }).join('')}
+      </div>
+    </div>
+  `;
+}
+
+function renderWorld4View(container) {
+  const mode = viewParams.mode || 'list';
+  const cat = viewParams.cat || 'all';
+
+  container.innerHTML = `
+    <div class="space-y-3 pt-1">
+      <div class="card-retro rounded-2xl p-3">
+        <div>
+          <span class="text-[10px] font-black bg-rose-100 text-rose-800 px-2 py-0.5 rounded">WORLD 4</span>
+          <h2 class="font-game text-base text-slate-900 mt-0.5">🏰 쿠파 성 · 실전 회화 & 뉴스 브리핑</h2>
+        </div>
+        <div class="grid grid-cols-4 gap-1.5 mt-2.5">
+          ${[
+            { id: 'list', label: '👔 공식vs일상' },
+            { id: 'blocks', label: '🧱 블록조립' },
+            { id: 'dialogue', label: '💬 실전대화' },
+            { id: 'nuance', label: '🎭 눈치배틀' }
+          ].map(m => `
+            <button onclick="openView('world4', { mode: '${m.id}', cat: '${cat}' })" class="py-2 px-1 rounded-xl text-[11px] font-black border-2 border-slate-800 ${mode === m.id ? 'bg-rose-500 text-white' : 'bg-slate-100 text-slate-800'}">${m.label}</button>
+          `).join('')}
+        </div>
+      </div>
+
+      <div id="world4-body"></div>
+    </div>
+  `;
+
+  const body = document.getElementById('world4-body');
+  if (mode === 'list') {
+    const list = cat === 'all' ? PHRASES_DATA : PHRASES_DATA.filter(i => i.cat === cat);
+    body.innerHTML = `
+      <div class="flex gap-1.5 overflow-x-auto no-scrollbar mb-2.5">
+        ${[
+          { id: 'all', label: '전체' },
+          { id: 'news', label: '📰 뉴스·공식 브리핑' },
+          { id: 'business', label: '💼 비즈니스' },
+          { id: 'daily', label: '☕ 일상' },
+          { id: 'travel', label: '✈️ 여행' }
+        ].map(t => `
+          <button onclick="openView('world4', { mode: 'list', cat: '${t.id}' })" class="px-3 py-1.5 rounded-full text-xs font-black border-2 border-slate-800 shrink-0 ${cat === t.id ? 'bg-slate-900 text-amber-300' : 'bg-white text-slate-800'}">${t.label}</button>
+        `).join('')}
+      </div>
+      <div class="space-y-2.5">
+        ${list.map(item => {
+          const done = state.masteredIds.includes(item.id);
+          return `
+            <div class="card-retro rounded-2xl p-3.5 space-y-2 ${done ? 'bg-rose-50/95' : 'bg-white'}">
+              <div class="flex items-center justify-between">
+                <span class="font-bold text-xs text-slate-800">${item.ko}</span>
+                <button onclick="toggleMastered('${item.id}')" class="w-7 h-7 rounded-lg border-2 border-slate-800 font-black text-xs ${done ? 'bg-emerald-500 text-white' : 'bg-slate-100 text-slate-400'}">✓</button>
+              </div>
+              <div onclick="speakEn('${item.politeEn.replace(/'/g, "\\'")}')" class="p-2.5 rounded-xl bg-indigo-50 border border-indigo-200 cursor-pointer">
+                <div class="text-[10px] font-black text-indigo-700">👔 공식 · 정중체 (터치해서 듣기 🔊)</div>
+                <div class="font-en font-bold text-sm text-slate-900 mt-0.5">${item.politeEn}</div>
+                <div class="text-[11px] text-indigo-600">[${item.politeKoRead}]</div>
+              </div>
+              <div onclick="speakEn('${item.casualEn.replace(/'/g, "\\'")}')" class="p-2.5 rounded-xl bg-rose-50 border border-rose-200 cursor-pointer">
+                <div class="text-[10px] font-black text-rose-700">🗣️ 일상 · 친한 사이 (터치해서 듣기 🔊)</div>
+                <div class="font-en font-bold text-sm text-slate-900 mt-0.5">${item.casualEn}</div>
+                <div class="text-[11px] text-rose-600">[${item.casualKoRead}]</div>
+              </div>
+            </div>
+          `;
+        }).join('')}
+      </div>
+    `;
+  } else if (mode === 'blocks') {
+    const idx = viewParams.bIdx || 0;
+    const item = PHRASES_DATA[idx % PHRASES_DATA.length];
+    const picked = viewParams.picked || [];
+    const pool = viewParams.pool || [...item.blocks].sort(() => Math.random() - 0.5);
+
+    body.innerHTML = `
+      <div class="card-retro rounded-2xl p-4 space-y-3">
+        <div class="text-xs font-black text-indigo-600">🧱 한 손 엄지 문장 블록 조립 (${(idx % PHRASES_DATA.length) + 1}/${PHRASES_DATA.length})</div>
+        <div class="font-bold text-sm text-slate-900">${item.ko}</div>
+        <div class="min-h-[54px] p-2.5 rounded-2xl bg-slate-100 border-2 border-dashed border-slate-400 flex flex-wrap gap-1.5 items-center">
+          ${picked.length === 0
+            ? `<span class="text-xs text-slate-400">아래 단어 블록을 순서대로 터치하세요</span>`
+            : picked.map((w, i) => `<button onclick="unpickBlock(${i})" class="px-2.5 py-1.5 rounded-xl bg-indigo-600 text-white font-en font-bold text-xs">${w}</button>`).join('')}
+        </div>
+        <div class="flex flex-wrap gap-1.5">
+          ${pool.map((w, i) => w === null ? '' : `<button onclick="pickBlock(${i})" class="btn-retro px-3 py-2 rounded-xl bg-amber-200 font-en font-bold text-xs text-slate-900">${w}</button>`).join('')}
+        </div>
+        <div class="flex gap-2 pt-1">
+          <button onclick="openView('world4', { mode: 'blocks', bIdx: ${idx} })" class="btn-retro flex-1 bg-slate-200 py-2.5 rounded-xl font-bold text-xs">🔄 초기화</button>
+          <button onclick="checkBlockSentence(${idx})" class="btn-retro flex-2 bg-emerald-500 text-white py-2.5 px-4 rounded-xl font-game text-xs">✅ 정답 확인</button>
+        </div>
+      </div>
+    `;
+    viewParams._pool = pool;
+    viewParams._picked = picked;
+  } else if (mode === 'dialogue') {
+    const sIdx = viewParams.sIdx || 0;
+    const tIdx = viewParams.tIdx || 0;
+    const scenario = DIALOGUE_SCENARIOS[sIdx % DIALOGUE_SCENARIOS.length];
+    const turn = scenario.turns[tIdx];
+
+    body.innerHTML = `
+      <div class="card-retro rounded-2xl p-4 space-y-3">
+        <div class="flex items-center justify-between">
+          <span class="font-game text-xs text-rose-600">${scenario.title}</span>
+          <button onclick="openView('world4', { mode: 'dialogue', sIdx: ${sIdx + 1}, tIdx: 0 })" class="text-[11px] font-bold underline text-slate-600">다른 상황 ▶</button>
+        </div>
+        <div class="p-3 rounded-2xl bg-slate-900 text-white space-y-1">
+          <div class="flex items-center justify-between">
+            <span class="text-[10px] font-black text-amber-300">${turn.npc}</span>
+            <button onclick="speakEn('${turn.npcLine.replace(/'/g, "\\'")}')" class="text-xs bg-slate-700 px-2 py-0.5 rounded-lg">🔊 다시 듣기</button>
+          </div>
+          <div class="font-en font-bold text-sm">${turn.npcLine}</div>
+          <div class="text-xs text-slate-300">${turn.npcKo}</div>
+        </div>
+        <div class="space-y-2">
+          <div class="text-xs font-bold text-slate-700">👇 상황에 맞는 내 대사를 선택하세요:</div>
+          ${turn.options.map((opt, oi) => `
+            <button onclick="answerDialogueTurn(${sIdx}, ${tIdx}, ${oi})" class="btn-retro w-full p-3 rounded-2xl bg-white hover:bg-indigo-50 text-left">
+              <div class="font-en font-bold text-xs text-slate-900">${opt.en}</div>
+              <div class="text-[11px] text-slate-500 mt-0.5">${opt.ko}</div>
+            </button>
+          `).join('')}
+        </div>
+      </div>
+    `;
+  } else if (mode === 'nuance') {
+    const nIdx = viewParams.nIdx || 0;
+    const item = NUANCE_BATTLE_DATA[nIdx % NUANCE_BATTLE_DATA.length];
+    body.innerHTML = `
+      <div class="card-retro rounded-2xl p-4 space-y-3">
+        <div class="text-xs font-black text-purple-700">🎭 상황 눈치 배틀 (${(nIdx % NUANCE_BATTLE_DATA.length) + 1}/${NUANCE_BATTLE_DATA.length})</div>
+        <div class="p-3 rounded-2xl bg-purple-50 border border-purple-200">
+          <div class="text-xs font-bold text-purple-900">${item.situation}</div>
+          <div class="font-bold text-sm text-slate-900 mt-1">"${item.ko}"</div>
+        </div>
+        <div class="space-y-2">
+          ${item.options.map((opt, oi) => `
+            <button onclick="answerNuanceBattle(${nIdx}, ${oi})" class="btn-retro w-full p-3 rounded-2xl bg-white hover:bg-amber-50 text-left">
+              <div class="font-en font-bold text-sm text-slate-900">${opt.en}</div>
+              <div class="text-[11px] font-bold text-indigo-600 mt-0.5">${opt.sub}</div>
+            </button>
+          `).join('')}
+        </div>
+      </div>
+    `;
+  }
+}
+
+function pickBlock(poolIdx) {
+  const pool = [...(viewParams._pool || [])];
+  const picked = [...(viewParams._picked || [])];
+  const word = pool[poolIdx];
+  if (word === null) return;
+  pool[poolIdx] = null;
+  picked.push(word);
+  playSfx('tap');
+  openView('world4', { mode: 'blocks', bIdx: viewParams.bIdx || 0, pool, picked });
+}
+
+function unpickBlock(pickedIdx) {
+  const pool = [...(viewParams._pool || [])];
+  const picked = [...(viewParams._picked || [])];
+  const word = picked.splice(pickedIdx, 1)[0];
+  const emptyIdx = pool.indexOf(null);
+  if (emptyIdx !== -1) pool[emptyIdx] = word;
+  else pool.push(word);
+  playSfx('tap');
+  openView('world4', { mode: 'blocks', bIdx: viewParams.bIdx || 0, pool, picked });
+}
+
+function checkBlockSentence(idx) {
+  const item = PHRASES_DATA[idx % PHRASES_DATA.length];
+  const picked = viewParams._picked || [];
+  if (picked.join(' ') === item.blocks.join(' ')) {
+    awardCoins(15, 20);
+    speakEn(picked.join(' '));
+    showToast('🎉 완벽한 어순입니다! +15 코인');
+    openView('world4', { mode: 'blocks', bIdx: idx + 1 });
+  } else {
+    playSfx('wrong');
+    showToast('😅 순서가 조금 달라요! 다시 확인해 보세요.');
+  }
+}
+
+function answerDialogueTurn(sIdx, tIdx, optIdx) {
+  const scenario = DIALOGUE_SCENARIOS[sIdx % DIALOGUE_SCENARIOS.length];
+  const turn = scenario.turns[tIdx];
+  const chosen = turn.options[optIdx];
+  if (chosen.correct) {
+    awardCoins(10, 15);
+    speakEn(chosen.en);
+    if (tIdx + 1 < scenario.turns.length) {
+      openView('world4', { mode: 'dialogue', sIdx, tIdx: tIdx + 1 });
+    } else {
+      showToast('🏆 실전 대화 시나리오 클리어! +10 코인');
+      openView('world4', { mode: 'dialogue', sIdx: sIdx + 1, tIdx: 0 });
+    }
+  } else {
+    playSfx('wrong');
+    showToast('🤔 상대방과 상황에 어울리는 대답을 골라보세요!');
+  }
+}
+
+function answerNuanceBattle(nIdx, optIdx) {
+  const item = NUANCE_BATTLE_DATA[nIdx % NUANCE_BATTLE_DATA.length];
+  const chosen = item.options[optIdx];
+  if (chosen.correct) {
+    awardCoins(10, 15);
+    speakEn(chosen.en);
+    showToast('🎯 센스 만점! 상황에 딱 맞는 표현입니다!');
+    openView('world4', { mode: 'nuance', nIdx: nIdx + 1 });
+  } else {
+    playSfx('wrong');
+    showToast('😅 상대방과의 격식(공식 vs 친한 사이)을 다시 확인해 보세요!');
+  }
+}
+
+/* ==========================================================================
+   9. WORLD 5: GRAMMAR TEMPLE (TOC -> CHAPTER LESSON -> ORDER SNIPER & QUIZ)
+   ========================================================================== */
+function renderWorld5View(container) {
+  const chId = viewParams.ch || null;
+  const subMode = viewParams.sub || 'lesson';
+
+  if (!chId) {
+    container.innerHTML = `
+      <div class="space-y-3 pt-1">
+        <div class="card-retro rounded-2xl p-3.5 bg-gradient-to-r from-indigo-600 to-purple-700 text-white">
+          <div class="flex items-center justify-between">
+            <div>
+              <span class="text-[10px] font-black bg-amber-400 text-slate-900 px-2 py-0.5 rounded">WORLD 5 · 영문법 목차</span>
+              <h2 class="font-game text-lg mt-1">📘 문법의 신전 · 전체 커리큘럼</h2>
+              <p class="text-xs text-indigo-100 mt-0.5">단원을 선택해 핵심 공식 학습 후 게임·퀴즈에 도전하세요!</p>
+            </div>
+            <button onclick="openView('world5', { ch: 'all', sub: 'quiz' })" class="btn-retro bg-amber-300 text-slate-900 px-3 py-2 rounded-xl font-game text-xs shrink-0">🏆 종합 퀴즈</button>
+          </div>
+        </div>
+
+        <div class="space-y-2">
+          ${GRAMMAR_CHAPTERS.map(ch => {
+            const rules = GRAMMAR_DATA.filter(g => g.cat === ch.id);
+            const doneCount = rules.filter(g => state.masteredIds.includes(g.id)).length;
+            return `
+              <button onclick="openView('world5', { ch: '${ch.id}', sub: 'lesson' })" class="btn-retro w-full rounded-2xl p-3.5 bg-white hover:bg-indigo-50 text-left flex items-center justify-between gap-2">
+                <div class="flex items-start gap-3 min-w-0">
+                  <div class="w-11 h-11 rounded-2xl bg-indigo-100 border-2 border-slate-800 flex items-center justify-center text-xl shrink-0">${ch.icon}</div>
+                  <div class="min-w-0">
+                    <div class="flex items-center gap-1.5">
+                      <span class="text-[10px] font-black bg-slate-900 text-amber-300 px-1.5 py-0.5 rounded">${ch.num}</span>
+                      <span class="text-[11px] font-bold text-emerald-600">완료 ${doneCount}/${rules.length}</span>
+                    </div>
+                    <div class="font-game text-sm text-slate-900 mt-0.5 truncate">${ch.title}</div>
+                    <div class="text-[11px] text-slate-500 truncate">${ch.subtitle}</div>
+                  </div>
+                </div>
+                <span class="font-game text-indigo-500 text-base shrink-0">▶</span>
+              </button>
+            `;
+          }).join('')}
+        </div>
+      </div>
+    `;
+    return;
+  }
+
+  const chapter = GRAMMAR_CHAPTERS.find(c => c.id === chId) || {
+    id: 'all', num: 'ALL', icon: '📘', title: '전체 단원 종합 훈련', subtitle: 'CH.01 ~ CH.08 통합 테스트',
+    summary: '모든 영문법 핵심 공식을 종합하여 어순 배치 게임과 스피드 퀴즈로 실력을 점검합니다.'
+  };
+
+  container.innerHTML = `
+    <div class="space-y-3 pt-1">
+      <div class="card-retro rounded-2xl p-3.5 bg-white space-y-2">
+        <div class="flex items-center justify-between">
+          <button onclick="openView('world5', { ch: null })" class="px-2.5 py-1 rounded-xl bg-slate-100 border border-slate-300 text-xs font-black text-slate-700">◀ 전체 목차</button>
+          <span class="text-[10px] font-black bg-indigo-600 text-white px-2 py-0.5 rounded">${chapter.num}</span>
+        </div>
+        <div>
+          <h2 class="font-game text-base text-slate-900">${chapter.icon} ${chapter.title}</h2>
+          <p class="text-xs text-slate-600 leading-relaxed mt-1 bg-indigo-50/80 p-2.5 rounded-xl border border-indigo-100">${chapter.summary}</p>
+        </div>
+        <div class="grid grid-cols-3 gap-1.5 pt-1">
+          <button onclick="openView('world5', { ch: '${chId}', sub: 'lesson' })" class="py-2 rounded-xl text-xs font-black border-2 border-slate-800 ${subMode === 'lesson' ? 'bg-indigo-600 text-white' : 'bg-slate-100 text-slate-800'}">1️⃣ 공식 학습</button>
+          <button onclick="openView('world5', { ch: '${chId}', sub: 'sniper' })" class="py-2 rounded-xl text-xs font-black border-2 border-slate-800 ${subMode === 'sniper' ? 'bg-amber-400 text-slate-900' : 'bg-slate-100 text-slate-800'}">2️⃣ 어순 게임</button>
+          <button onclick="openView('world5', { ch: '${chId}', sub: 'quiz' })" class="py-2 rounded-xl text-xs font-black border-2 border-slate-800 ${subMode === 'quiz' ? 'bg-emerald-500 text-white' : 'bg-slate-100 text-slate-800'}">3️⃣ 단원 퀴즈</button>
+        </div>
+      </div>
+
+      <div id="world5-sub-body"></div>
+    </div>
+  `;
+
+  const subBody = document.getElementById('world5-sub-body');
+  if (subMode === 'lesson') {
+    const rules = chId === 'all' ? GRAMMAR_DATA : GRAMMAR_DATA.filter(g => g.cat === chId);
+    subBody.innerHTML = `
+      <div class="space-y-2.5">
+        ${rules.map(r => {
+          const done = state.masteredIds.includes(r.id);
+          return `
+            <div class="card-retro rounded-2xl p-3.5 space-y-2 ${done ? 'bg-indigo-50/90' : 'bg-white'}">
+              <div class="flex items-start justify-between gap-2">
+                <div class="font-bold text-sm text-slate-900">${r.title}</div>
+                <button onclick="toggleMastered('${r.id}')" class="w-8 h-8 rounded-xl border-2 border-slate-800 font-black text-xs shrink-0 ${done ? 'bg-emerald-500 text-white' : 'bg-slate-100 text-slate-400'}">✓</button>
+              </div>
+              <div class="px-2.5 py-1.5 rounded-xl bg-amber-100 border border-amber-300 font-bold text-xs text-amber-950">⚡ 공식: ${r.formula}</div>
+              <div class="p-2 rounded-xl bg-rose-50 border border-rose-200 text-xs font-en text-rose-800">❌ ${r.wrong}</div>
+              <div onclick="speakEn('${r.right.replace(/'/g, "\\'")}')" class="p-2.5 rounded-xl bg-emerald-50 border border-emerald-300 cursor-pointer">
+                <div class="flex items-center justify-between">
+                  <span class="text-xs font-en font-bold text-emerald-900">⭕ ${r.right}</span>
+                  <span class="text-xs">🔊</span>
+                </div>
+                <div class="text-[11px] text-indigo-600 mt-0.5">[${r.koRead}]</div>
+                <div class="text-[11px] text-slate-700 mt-0.5">${r.ko}</div>
+              </div>
+              <div class="text-[11px] text-slate-600 bg-slate-100 p-2 rounded-xl">💡 ${r.tip}</div>
+            </div>
+          `;
+        }).join('')}
+        <div class="grid grid-cols-2 gap-2 pt-1">
+          <button onclick="openView('world5', { ch: '${chId}', sub: 'sniper' })" class="btn-retro bg-amber-400 py-3 rounded-2xl font-game text-xs text-slate-900">🎯 어순 게임으로 이동 ▶</button>
+          <button onclick="openView('world5', { ch: '${chId}', sub: 'quiz' })" class="btn-retro bg-emerald-500 text-white py-3 rounded-2xl font-game text-xs">🏆 단원 퀴즈 풀기 ▶</button>
+        </div>
+      </div>
+    `;
+  } else if (subMode === 'sniper') {
+    const pool = ORDER_SNIPER_DATA.filter(s => chId === 'all' || s.cat === chId);
+    const activePool = pool.length > 0 ? pool : ORDER_SNIPER_DATA;
+    const sIdx = viewParams.sIdx || 0;
+    const item = activePool[sIdx % activePool.length];
+
+    let slotHtml = '';
+    for (let i = 0; i <= item.slots.length; i++) {
+      slotHtml += `<button onclick="checkOrderSniper('${chId}', ${sIdx}, ${i})" class="px-2 py-1 rounded-lg bg-amber-200 hover:bg-amber-400 border-2 border-dashed border-amber-600 font-black text-xs text-amber-900">[${i + 1}]</button>`;
+      if (i < item.slots.length) {
+        slotHtml += `<span class="font-en font-bold text-sm text-slate-900">${item.slots[i]}</span>`;
+      }
+    }
+
+    subBody.innerHTML = `
+      <div class="card-retro rounded-2xl p-4 space-y-3">
+        <div class="flex items-center justify-between">
+          <span class="font-game text-xs text-amber-700">🎯 어순 스나이퍼 (${(sIdx % activePool.length) + 1}/${activePool.length})</span>
+          <span class="text-xs font-black bg-indigo-600 text-white px-2.5 py-0.5 rounded-full">삽입 단어: ${item.targetWord}</span>
+        </div>
+        <div class="text-xs font-bold text-slate-700">${item.meaning}</div>
+        <div class="p-3.5 rounded-2xl bg-slate-50 border-2 border-slate-300 flex flex-wrap items-center gap-1.5 leading-loose">
+          ${slotHtml}
+        </div>
+        <div class="text-[11px] text-slate-500">👆 <strong>"${item.targetWord}"</strong>가 들어가야 할 번호 칸을 터치하세요!</div>
+      </div>
+    `;
+  } else if (subMode === 'quiz') {
+    const pool = GRAMMAR_QUIZ_DATA.filter(q => chId === 'all' || q.cat === chId);
+    const activePool = pool.length > 0 ? pool : GRAMMAR_QUIZ_DATA;
+    const qIdx = viewParams.qIdx || 0;
+    const q = activePool[qIdx % activePool.length];
+    const hiddenOpts = viewParams.hiddenOpts || [];
+
+    subBody.innerHTML = `
+      <div class="card-retro rounded-2xl p-4 space-y-3">
+        <div class="flex items-center justify-between">
+          <span class="font-game text-xs text-emerald-700">🏆 문법 스피드 퀴즈 (${(qIdx % activePool.length) + 1}/${activePool.length})</span>
+          <button onclick="useGrammarHint('${chId}', ${qIdx})" class="px-2.5 py-1 rounded-xl bg-amber-300 border border-slate-800 text-[11px] font-black">💡 50:50 (${state.hintPotions})</button>
+        </div>
+        <div class="p-3 rounded-2xl bg-indigo-50 border border-indigo-200">
+          <div class="font-en font-extrabold text-sm text-slate-900">${q.prompt}</div>
+          <div class="text-xs text-slate-600 mt-1">${q.sub}</div>
+        </div>
+        <div class="space-y-2">
+          ${q.options.map((opt, oi) => hiddenOpts.includes(oi) ? '' : `
+            <button onclick="answerGrammarQuiz('${chId}', ${qIdx}, ${oi})" class="btn-retro w-full p-3 rounded-2xl bg-white hover:bg-emerald-50 text-left font-bold text-xs text-slate-900">${opt.label}</button>
+          `).join('')}
+        </div>
+      </div>
+    `;
+  }
+}
+
+function checkOrderSniper(chId, sIdx, chosenSlot) {
+  const pool = ORDER_SNIPER_DATA.filter(s => chId === 'all' || s.cat === chId);
+  const activePool = pool.length > 0 ? pool : ORDER_SNIPER_DATA;
+  const item = activePool[sIdx % activePool.length];
+  if (chosenSlot === item.correctSlot) {
+    awardCoins(15, 20);
+    const fullSentence = [...item.slots.slice(0, chosenSlot), item.targetWord, ...item.slots.slice(chosenSlot)].join(' ');
+    speakEn(fullSentence);
+    showToast(`🎯 명중! ${item.explain}`);
+    openView('world5', { ch: chId, sub: 'sniper', sIdx: sIdx + 1 });
+  } else {
+    playSfx('wrong');
+    showToast(`❌ 빗나갔어요! ${item.explain}`);
+  }
+}
+
+function useGrammarHint(chId, qIdx) {
+  if ((state.hintPotions || 0) <= 0) return showToast('💡 힌트 물약이 없습니다. 상점에서 구매해 주세요!');
+  const pool = GRAMMAR_QUIZ_DATA.filter(q => chId === 'all' || q.cat === chId);
+  const activePool = pool.length > 0 ? pool : GRAMMAR_QUIZ_DATA;
+  const q = activePool[qIdx % activePool.length];
+  const wrongIndices = q.options.map((o, i) => (!o.correct ? i : -1)).filter(i => i !== -1);
+  state.hintPotions -= 1;
+  saveState();
+  openView('world5', { ch: chId, sub: 'quiz', qIdx, hiddenOpts: wrongIndices.slice(0, 2) });
+  showToast('💡 오답 2개를 제거했습니다!');
+}
+
+function answerGrammarQuiz(chId, qIdx, optIdx) {
+  const pool = GRAMMAR_QUIZ_DATA.filter(q => chId === 'all' || q.cat === chId);
+  const activePool = pool.length > 0 ? pool : GRAMMAR_QUIZ_DATA;
+  const q = activePool[qIdx % activePool.length];
+  if (q.options[optIdx].correct) {
+    awardCoins(15, 20);
+    showToast('🎉 정답입니다! +15 코인');
+    openView('world5', { ch: chId, sub: 'quiz', qIdx: qIdx + 1, hiddenOpts: [] });
+  } else {
+    playSfx('wrong');
+    showToast('😅 아쉽습니다! 공식을 다시 떠올려 보세요.');
+  }
+}
+
+/* ==========================================================================
+   10. QUICK SRS, COMMUTE AUDIO LOOP & GENERIC QUIZ VIEWS
+   ========================================================================== */
+function renderQuickSrsView(container) {
+  const items = getDueSrsItems();
+  const idx = viewParams.idx || 0;
+  const flipped = viewParams.flipped || false;
+  const item = items[idx % items.length];
+
+  container.innerHTML = `
+    <div class="space-y-3 pt-1">
+      <div class="card-retro rounded-2xl p-3 flex items-center justify-between">
+        <span class="font-game text-sm text-amber-700">⚡ 5분 퀵 복습 (${(idx % items.length) + 1}/${items.length})</span>
+        <button onclick="speakEn('${item.front.replace(/'/g, "\\'")}')" class="btn-retro bg-sky-200 px-3 py-1 rounded-xl text-xs font-bold">🔊 듣기</button>
+      </div>
+
+      <div onclick="openView('quick_srs', { idx: ${idx}, flipped: ${!flipped} })" class="card-retro rounded-3xl p-6 min-h-[210px] flex flex-col items-center justify-center text-center cursor-pointer bg-white">
+        <div class="text-[11px] font-bold text-slate-400 mb-2">${flipped ? '정답 및 해설' : '카드를 터치해 뜻 확인'}</div>
+        <div class="font-en font-extrabold text-xl text-slate-900">${item.front}</div>
+        ${item.read ? `<div class="text-xs font-bold text-indigo-600 mt-1">[${item.read}]</div>` : ''}
+        ${flipped ? `
+          <div class="mt-4 pt-3 border-t-2 border-dashed border-slate-200 w-full">
+            <div class="font-bold text-base text-emerald-700">${item.back}</div>
+            ${item.sub ? `<div class="text-xs text-slate-500 mt-1">${item.sub}</div>` : ''}
+          </div>
+        ` : ''}
+      </div>
+
+      <div class="grid grid-cols-2 gap-2.5">
+        <button onclick="handleSrsSwipe('${item.id}', false, ${idx})" class="btn-retro bg-rose-400 text-white py-3.5 rounded-2xl font-game text-sm">😅 다시 볼래요</button>
+        <button onclick="handleSrsSwipe('${item.id}', true, ${idx})" class="btn-retro bg-emerald-500 text-white py-3.5 rounded-2xl font-game text-sm">😎 기억나요! +5🪙</button>
+      </div>
+    </div>
+  `;
+}
+
+function handleSrsSwipe(id, remembered, idx) {
+  recordSrsResult(id, remembered);
+  if (remembered) awardCoins(5, 10);
+  else playSfx('tap');
+  openView('quick_srs', { idx: idx + 1, flipped: false });
+}
+
+function renderAudioLoopView(container) {
+  const items = getAllStudyItems();
+  const current = items[audioLoopIdx % items.length];
+
+  container.innerHTML = `
+    <div class="space-y-3 pt-1">
+      <div class="card-retro rounded-2xl p-4 text-center space-y-3">
+        <span class="text-[10px] font-black bg-cyan-600 text-white px-2.5 py-0.5 rounded-full">🎧 지하철·출퇴근 무화면 오디오 루프</span>
+        <h2 class="font-game text-base text-slate-900">한국어 뜻 → 1.5초 생각 → 느리게 → 보통 속도</h2>
+        <div class="p-4 rounded-2xl bg-sky-50 border-2 border-sky-200 min-h-[120px] flex flex-col justify-center">
+          <div id="loop-status" class="text-xs font-black text-sky-700 mb-1">${audioLoopRunning ? '▶️ 자동 루프 재생 중...' : '⏸️ 대기 중'}</div>
+          <div id="loop-en" class="font-en font-extrabold text-lg text-slate-900">${current.front}</div>
+          <div id="loop-ko" class="text-xs font-bold text-slate-600 mt-1">${current.back}</div>
+        </div>
+        <div class="grid grid-cols-2 gap-2">
+          <button onclick="startAudioLoop()" class="btn-retro bg-emerald-500 text-white py-3 rounded-2xl font-game text-sm">▶️ 루프 시작</button>
+          <button onclick="stopAudioLoop(); renderCurrentView();" class="btn-retro bg-rose-500 text-white py-3 rounded-2xl font-game text-sm">⏹️ 정지</button>
+        </div>
+      </div>
+    </div>
+  `;
+}
+
+function startAudioLoop() {
+  if (audioLoopRunning) return;
+  audioLoopRunning = true;
+  playSfx('tap');
+  runAudioLoopStep();
+}
+
+function stopAudioLoop() {
+  audioLoopRunning = false;
+  clearTimeout(audioLoopTimer);
+  if ('speechSynthesis' in window) window.speechSynthesis.cancel();
+}
+
+function runAudioLoopStep() {
+  if (!audioLoopRunning) return;
+  const items = getAllStudyItems();
+  const item = items[audioLoopIdx % items.length];
+  const enEl = document.getElementById('loop-en');
+  const koEl = document.getElementById('loop-ko');
+  const stEl = document.getElementById('loop-status');
+  if (enEl) enEl.textContent = item.front;
+  if (koEl) koEl.textContent = item.back;
+  if (stEl) stEl.textContent = `1️⃣ 한국어 뜻 (${(audioLoopIdx % items.length) + 1}/${items.length})`;
+
+  speakKo(item.back, () => {
+    if (!audioLoopRunning) return;
+    if (stEl) stEl.textContent = '2️⃣ 머릿속으로 영작해 보세요 (1.5초)...';
+    audioLoopTimer = setTimeout(() => {
+      if (!audioLoopRunning) return;
+      if (stEl) stEl.textContent = '3️⃣ 원어민 느린 속도 (0.72x)';
+      speakEn(item.front, 0.72, () => {
+        if (!audioLoopRunning) return;
+        if (stEl) stEl.textContent = '4️⃣ 원어민 자연 속도 (1.0x)';
+        speakEn(item.front, 1.0, () => {
+          if (!audioLoopRunning) return;
+          audioLoopIdx += 1;
+          audioLoopTimer = setTimeout(runAudioLoopStep, 900);
+        });
+      });
+    }, 1500);
+  });
+}
+
+function startGenericQuiz(source) {
+  openView('quiz', { source, qIdx: 0 });
+}
+
+function renderQuizView(container) {
+  const source = viewParams.source || 'world3';
+  const qIdx = viewParams.qIdx || 0;
+  let pool = [];
+  if (source === 'world1') {
+    pool = PHONICS_DATA.map(p => ({ id: p.id, prompt: p.example, sub: p.tip, answer: p.ko, allAnswers: PHONICS_DATA.map(x => x.ko) }));
+  } else if (source === 'world2') {
+    pool = SIGN_PHRASAL_DATA.map(s => ({ id: s.id, prompt: s.en, sub: `[${s.koRead}]`, answer: s.ko, allAnswers: SIGN_PHRASAL_DATA.map(x => x.ko) }));
+  } else {
+    pool = WORDS_DATA.map(w => ({ id: w.id, prompt: w.en, sub: `[${w.koRead}]`, answer: w.ko, allAnswers: WORDS_DATA.map(x => x.ko) }));
+  }
+
+  const item = pool[qIdx % pool.length];
+  const distractors = item.allAnswers.filter(a => a !== item.answer).sort(() => Math.random() - 0.5).slice(0, 3);
+  const options = [item.answer, ...distractors].sort(() => Math.random() - 0.5);
+
+  container.innerHTML = `
+    <div class="space-y-3 pt-1">
+      <div class="card-retro rounded-2xl p-4 space-y-3">
+        <div class="flex items-center justify-between">
+          <span class="font-game text-xs text-indigo-700">🎯 실전 스피드 퀴즈 (${(qIdx % pool.length) + 1}/${pool.length})</span>
+          <button onclick="speakEn('${item.prompt.replace(/'/g, "\\'")}')" class="btn-retro bg-amber-300 px-2.5 py-1 rounded-xl text-xs font-bold">🔊 발음 듣기</button>
+        </div>
+        <div class="p-4 rounded-2xl bg-slate-900 text-white text-center">
+          <div class="font-en font-extrabold text-xl">${item.prompt}</div>
+          <div class="text-xs text-amber-300 mt-1">${item.sub}</div>
+        </div>
+        <div class="space-y-2">
+          ${options.map(opt => `
+            <button onclick="submitGenericQuiz('${source}', ${qIdx}, '${item.id}', '${opt.replace(/'/g, "\\'")}', '${item.answer.replace(/'/g, "\\'")}')" class="btn-retro w-full p-3 rounded-2xl bg-white hover:bg-indigo-50 text-left font-bold text-xs text-slate-900">${opt}</button>
+          `).join('')}
+        </div>
+      </div>
+    </div>
+  `;
+}
+
+function submitGenericQuiz(source, qIdx, id, chosen, answer) {
+  const isCorrect = chosen === answer;
+  recordSrsResult(id, isCorrect);
+  if (isCorrect) {
+    awardCoins(10, 15);
+    showToast('🎉 정답! +10 코인');
+    openView('quiz', { source, qIdx: qIdx + 1 });
+  } else {
+    playSfx('wrong');
+    showToast(`❌ 오답! 정답: ${answer}`);
+  }
+}
+
+/* ==========================================================================
+   11. INITIALIZATION
+   ========================================================================== */
+window.addEventListener('DOMContentLoaded', async () => {
+  await loadState();
+  renderCurrentView();
+});
+</script>
+
+</body></html>
